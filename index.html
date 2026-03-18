@@ -3,54 +3,129 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>International Dog Adoption</title>
+  <title>Kimcanko Silifke | International Adoption Platform</title>
 
-  <!-- FONT -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
 
   <link rel="stylesheet" href="css/style.css" />
 </head>
-
 <body>
-  <header class="site-header">
-    <div class="container header-content">
-      <div class="header-copy">
-        <p class="eyebrow">International Adoption Platform</p>
-        <h1>Dogs Ready for Loving Homes</h1>
-        <p class="header-text">
-          Browse adoption candidates, view full profiles, and access photos and videos for international rescue partnerships.
-        </p>
-      </div>
+  <header class="hero-shell">
+    <div class="hero-card">
+      <nav class="top-nav container">
+        <a href="index.html" class="brand">
+          <img src="assets/logo.png" alt="Kimcanko Silifke logo" />
+          <div class="brand-text">
+            <span>KIMCANKO</span>
+            <span>SILIFKE</span>
+          </div>
+        </a>
 
-      <a href="#dogs-grid" class="btn btn-light">View Dogs</a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="#dogs-grid">Adoptable Dogs</a>
+          <a href="#how-to-adopt">How to Adopt</a>
+          <a href="#site-footer">Contact</a>
+        </div>
+
+        <a href="#dogs-grid" class="nav-cta">View Dogs</a>
+      </nav>
+
+      <section class="hero container">
+        <div class="hero-copy">
+          <p class="hero-eyebrow">International Adoption Platform</p>
+          <h1>
+            Find a dog.<br />
+            Help a dog.<br />
+            Give them a home.
+          </h1>
+          <p class="hero-text">
+            Browse adoption candidates, view full profiles, and access high-quality
+            photos and videos for international rescue partnerships.
+          </p>
+          <a href="#dogs-grid" class="hero-button">Meet the Dogs</a>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-circle hero-circle-1"></div>
+          <div class="hero-circle hero-circle-2"></div>
+          <img src="assets/dogs/sans-dog/sans1.jpg" alt="Adoptable dog" class="hero-dog hero-dog-main" />
+          <img src="assets/dogs/kirli-dog/kirli1.jpg" alt="Adoptable dog" class="hero-dog hero-dog-secondary" />
+        </div>
+      </section>
     </div>
   </header>
 
   <main>
-    <section class="dogs-section">
+    <section class="dogs-home-section">
       <div class="container">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">Available Profiles</p>
-            <h2>Meet the Dogs</h2>
-          </div>
-
-          <p class="section-text">
-            Select a profile to explore personality, health information, background, and available media.
+        <div class="dogs-home-heading">
+          <p class="section-kicker">Meet Our Dogs</p>
+          <h2>Meet Our Dogs</h2>
+          <p>
+            Browse our adoptable dogs and find your perfect companion ready to
+            move into a loving home.
           </p>
         </div>
 
         <div id="dogs-grid" class="dogs-grid"></div>
+
+        <div class="all-dogs-wrap">
+          <a href="#dogs-grid" class="all-dogs-button">View All Dogs</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="how-to-adopt" class="info-strip">
+      <div class="container info-strip-grid">
+        <div class="info-box">
+          <h3>About</h3>
+          <p>Our mission is to help rescue dogs find safe, loving homes through international adoption partnerships.</p>
+        </div>
+        <div class="info-box">
+          <h3>Adoption</h3>
+          <p>Browse profiles, review each dog’s background and health information, and contact the organization for next steps.</p>
+        </div>
+        <div class="info-box">
+          <h3>Connect</h3>
+          <p>Use this platform to access profile information, media, and updates for adoptable dogs.</p>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-content">
-      <p>International Dog Adoption Platform</p>
-      <p>Built for rescue partnerships.</p>
+  <footer id="site-footer" class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logo.png" alt="Kimcanko Silifke logo" />
+        <div>
+          <h3>KIMCANKO SILIFKE</h3>
+          <p>International Dog Adoption Platform</p>
+        </div>
+      </div>
+
+      <div>
+        <h4>About</h4>
+        <a href="#">Our Mission</a>
+        <a href="#">Contact Info</a>
+      </div>
+
+      <div>
+        <h4>Adoption</h4>
+        <a href="#dogs-grid">Adoptable Dogs</a>
+        <a href="#how-to-adopt">How to Adopt</a>
+      </div>
+
+      <div>
+        <h4>Connect</h4>
+        <a href="#">Instagram</a>
+        <a href="#">Email</a>
+      </div>
     </div>
   </footer>
 
