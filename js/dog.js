@@ -68,13 +68,15 @@ function createList(items) {
 }
 
 function renderDogProfile() {
+  if (!dogDetailsContainer || !Array.isArray(dogs)) return;
+
   const dogId = getDogIdFromUrl();
 
-  if (!dogId || !Array.isArray(dogs)) {
+  if (!dogId) {
     dogDetailsContainer.innerHTML = `
       <section class="not-found-box">
         <h1>Dog profile not found</h1>
-        <p>The requested profile could not be loaded.</p>
+        <p>No dog ID was provided in the URL.</p>
       </section>
     `;
     return;
@@ -101,7 +103,7 @@ function renderDogProfile() {
       <img class="dog-main-image" src="${coverImage}" alt="${dog.name}" />
 
       <div class="dog-info-panel">
-        <p class="eyebrow">Adoption Candidate</p>
+        <p class="eyebrow section-eyebrow">Adoption Candidate</p>
         <h1>${dog.name}</h1>
 
         <div class="info-grid">
@@ -146,106 +148,40 @@ function renderDogProfile() {
     <section class="detail-section">
       <h2>Health Information</h2>
       <div class="detail-grid">
-        <div class="detail-card">
-          <h3>Microchip Number</h3>
-          <p>${dog.microchip}</p>
-        </div>
-        <div class="detail-card">
-          <h3>Rabies Vaccination</h3>
-          <p>${dog.rabiesVaccination}</p>
-        </div>
-        <div class="detail-card">
-          <h3>Core Vaccinations</h3>
-          <p>${dog.coreVaccinations}</p>
-        </div>
-        <div class="detail-card">
-          <h3>Parasite Treatment</h3>
-          <p>${dog.parasiteTreatment}</p>
-        </div>
-        <div class="detail-card">
-          <h3>Neutered / Spayed</h3>
-          <p>${dog.neuteredSpayed}</p>
-        </div>
-        <div class="detail-card">
-          <h3>General Health Condition</h3>
-          <p>${dog.healthCondition}</p>
-        </div>
-        <div class="detail-card">
-          <h3>Known Medical Issues</h3>
-          <p>${dog.medicalIssues}</p>
-        </div>
-        <div class="detail-card">
-          <h3>Current Treatments</h3>
-          <p>${dog.currentTreatments}</p>
-        </div>
+        <div class="detail-card"><h3>Microchip Number</h3><p>${dog.microchip}</p></div>
+        <div class="detail-card"><h3>Rabies Vaccination</h3><p>${dog.rabiesVaccination}</p></div>
+        <div class="detail-card"><h3>Core Vaccinations</h3><p>${dog.coreVaccinations}</p></div>
+        <div class="detail-card"><h3>Parasite Treatment</h3><p>${dog.parasiteTreatment}</p></div>
+        <div class="detail-card"><h3>Neutered / Spayed</h3><p>${dog.neuteredSpayed}</p></div>
+        <div class="detail-card"><h3>General Health Condition</h3><p>${dog.healthCondition}</p></div>
+        <div class="detail-card"><h3>Known Medical Issues</h3><p>${dog.medicalIssues}</p></div>
+        <div class="detail-card"><h3>Current Treatments</h3><p>${dog.currentTreatments}</p></div>
       </div>
     </section>
 
     <section class="detail-section">
       <h2>Behavior Assessment</h2>
       <div class="detail-grid">
-        <div class="detail-card">
-          <h3>With Strangers</h3>
-          <p>${dog.strangers}</p>
-        </div>
-        <div class="detail-card">
-          <h3>With Children</h3>
-          <p>${dog.children}</p>
-        </div>
-        <div class="detail-card">
-          <h3>Men / Women Differences</h3>
-          <p>${dog.menWomenDifferences}</p>
-        </div>
-        <div class="detail-card">
-          <h3>With Dogs</h3>
-          <p>${dog.dogsCompatibility}</p>
-        </div>
-        <div class="detail-card">
-          <h3>With Cats</h3>
-          <p>${dog.catsCompatibility}</p>
-        </div>
-        <div class="detail-card">
-          <h3>Energy Level</h3>
-          <p>${dog.energyLevel}</p>
-        </div>
-        <div class="detail-card">
-          <h3>Personality</h3>
-          <p>${dog.personality}</p>
-        </div>
-        <div class="detail-card">
-          <h3>Suitable for Indoor Living</h3>
-          <p>${dog.indoorLiving}</p>
-        </div>
-        <div class="detail-card">
-          <h3>Separation Anxiety</h3>
-          <p>${dog.separationAnxiety}</p>
-        </div>
-        <div class="detail-card">
-          <h3>Barking Level</h3>
-          <p>${dog.barkingLevel}</p>
-        </div>
-        <div class="detail-card">
-          <h3>Escape Tendency</h3>
-          <p>${dog.escapeTendency}</p>
-        </div>
-        <div class="detail-card">
-          <h3>Aggression</h3>
-          <p>${dog.aggression}</p>
-        </div>
+        <div class="detail-card"><h3>With Strangers</h3><p>${dog.strangers}</p></div>
+        <div class="detail-card"><h3>With Children</h3><p>${dog.children}</p></div>
+        <div class="detail-card"><h3>Men / Women Differences</h3><p>${dog.menWomenDifferences}</p></div>
+        <div class="detail-card"><h3>With Dogs</h3><p>${dog.dogsCompatibility}</p></div>
+        <div class="detail-card"><h3>With Cats</h3><p>${dog.catsCompatibility}</p></div>
+        <div class="detail-card"><h3>Energy Level</h3><p>${dog.energyLevel}</p></div>
+        <div class="detail-card"><h3>Personality</h3><p>${dog.personality}</p></div>
+        <div class="detail-card"><h3>Suitable for Indoor Living</h3><p>${dog.indoorLiving}</p></div>
+        <div class="detail-card"><h3>Separation Anxiety</h3><p>${dog.separationAnxiety}</p></div>
+        <div class="detail-card"><h3>Barking Level</h3><p>${dog.barkingLevel}</p></div>
+        <div class="detail-card"><h3>Escape Tendency</h3><p>${dog.escapeTendency}</p></div>
+        <div class="detail-card"><h3>Aggression</h3><p>${dog.aggression}</p></div>
       </div>
     </section>
 
     <section class="detail-section">
       <h2>Background</h2>
       <div class="detail-grid">
-        <div class="detail-card">
-          <h3>Time in Care</h3>
-          <p>${dog.timeInCare}</p>
-        </div>
-        <div class="detail-card">
-          <h3>Previous Owner</h3>
-          <p>${dog.previousOwner}</p>
-        </div>
+        <div class="detail-card"><h3>Time in Care</h3><p>${dog.timeInCare}</p></div>
+        <div class="detail-card"><h3>Previous Owner</h3><p>${dog.previousOwner}</p></div>
       </div>
 
       <div class="text-block">
@@ -257,22 +193,10 @@ function renderDogProfile() {
     <section class="detail-section">
       <h2>Adoption Notes</h2>
       <div class="detail-grid">
-        <div class="detail-card">
-          <h3>Suitable Home Type</h3>
-          <p>${dog.suitableHome}</p>
-        </div>
-        <div class="detail-card">
-          <h3>Experience Required</h3>
-          <p>${dog.experienceRequired}</p>
-        </div>
-        <div class="detail-card">
-          <h3>Special Requirements</h3>
-          <p>${dog.specialRequirements}</p>
-        </div>
-        <div class="detail-card">
-          <h3>Additional Notes</h3>
-          <p>${dog.additionalNotes}</p>
-        </div>
+        <div class="detail-card"><h3>Suitable Home Type</h3><p>${dog.suitableHome}</p></div>
+        <div class="detail-card"><h3>Experience Required</h3><p>${dog.experienceRequired}</p></div>
+        <div class="detail-card"><h3>Special Requirements</h3><p>${dog.specialRequirements}</p></div>
+        <div class="detail-card"><h3>Additional Notes</h3><p>${dog.additionalNotes}</p></div>
       </div>
     </section>
 
