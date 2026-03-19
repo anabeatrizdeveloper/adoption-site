@@ -62,7 +62,7 @@ function createList(items) {
 
   return `
     <ul>
-      ${items.map((item) => `<li>• ${item}</li>`).join("")}
+      ${items.map((item) => `<li>${item}</li>`).join("")}
     </ul>
   `;
 }
