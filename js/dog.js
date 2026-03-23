@@ -26,8 +26,16 @@ function createGallery(dog) {
     <div class="gallery-grid">
       ${images
         .map(
-          (image, index) =>
-            `<img src="${image}" alt="${dog.name} photo ${index + 1}" />`
+          (image, index) => `
+            <button
+              class="gallery-item"
+              type="button"
+              data-image="${image}"
+              data-alt="${dog.name} photo ${index + 1}"
+            >
+              <img src="${image}" alt="${dog.name} photo ${index + 1}" />
+            </button>
+          `
         )
         .join("")}
     </div>
@@ -66,6 +74,69 @@ function createList(items) {
     </ul>
   `;
 }
+
+function openLightbox(imageSrc, imageAlt) {
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImage = document.getElementById("lightbox-image");
+
+  if (!lightbox || !lightboxImage) return;
+
+  lightboxImage.src = imageSrc;
+  lightboxImage.alt = imageAlt;
+  lightbox.classList.add("active");
+  document.body.style.overflow = "hidden";
+}
+
+function closeLightbox() {
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImage = document.getElementById("lightbox-image");
+
+  if (!lightbox || !lightboxImage) return;
+
+  lightbox.classList.remove("active");
+  lightboxImage.src = "";
+  lightboxImage.alt = "";
+  document.body.style.overflow = "";
+}
+
+function setupGalleryClicks() {
+  const galleryItems = document.querySelectorAll(".gallery-item");
+
+  galleryItems.forEach((item) => {
+    item.addEventListener("click", () => {
+      const imageSrc = item.dataset.image;
+      const imageAlt = item.dataset.alt || "Dog photo";
+      openLightbox(imageSrc, imageAlt);
+    });
+  });
+
+  const lightbox = document.getElementById("lightbox");
+  const lightboxClose = document.getElementById("lightbox-close");
+  const lightboxImage = document.getElementById("lightbox-image");
+
+  if (lightbox) {
+    lightbox.addEventListener("click", closeLightbox);
+  }
+
+  if (lightboxClose) {
+    lightboxClose.addEventListener("click", (event) => {
+      event.stopPropagation();
+      closeLightbox();
+    });
+  }
+
+  if (lightboxImage) {
+    lightboxImage.addEventListener("click", (event) => {
+      event.stopPropagation();
+    });
+  }
+}
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    closeLightbox();
+  }
+});
 
 function renderDogProfile() {
   if (!dogDetailsContainer || !Array.isArray(dogs)) return;
@@ -229,7 +300,14 @@ function renderDogProfile() {
       <h2>Videos</h2>
       ${createVideos(dog.videos)}
     </section>
+
+    <div id="lightbox" class="lightbox">
+      <button id="lightbox-close" class="lightbox-close" type="button">×</button>
+      <img id="lightbox-image" class="lightbox-image" src="" alt="" />
+    </div>
   `;
+
+  setupGalleryClicks();
 }
 
 renderDogProfile();

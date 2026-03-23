@@ -281,8 +281,21 @@ a {
 
 .dog-card-image {
   width: 100%;
-  height: 240px;
+  height: 260px;
   object-fit: cover;
+  object-position: center; 
+}
+
+img[src*="zeyna"] {
+  object-position: 50% 15%;
+}
+
+img[src*="sans"] {
+  object-position: 50% 35%;
+}
+
+img[src*="can"] {
+  object-position: 50% 35%;
 }
 
 .dog-card-content {
@@ -645,6 +658,87 @@ a {
   }
 }
 
+/* ===== FIX GALERIA / LIGHTBOX (FUNCIONA EM TODAS AS TELAS) ===== */
+
+.gallery-item {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.gallery-item img {
+  width: 100%;
+  display: block;
+  transition: transform 0.25s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.02);
+}
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.88);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  z-index: 9999;
+}
+
+.lightbox.active {
+  display: flex;
+}
+
+.lightbox-image {
+  max-width: min(1100px, 92vw);
+  max-height: 88vh;
+  object-fit: contain;
+  border-radius: 18px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 22px;
+  right: 28px;
+  width: 48px;
+  height: 48px;
+  border: none;
+  border-radius: 999px;
+  background: white;
+  color: #111;
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+/* RESPONSIVO DA LIGHTBOX (SEM QUEBRAR) */
+@media (max-width: 700px) {
+  .lightbox {
+    padding: 16px;
+  }
+
+  .lightbox-image {
+    max-width: 100%;
+    max-height: 80vh;
+  }
+
+  .lightbox-close {
+    top: 16px;
+    right: 16px;
+    width: 42px;
+    height: 42px;
+    font-size: 1.6rem;
+  }
+}
+
 @media (max-width: 700px) {
   .top-nav {
     flex-wrap: wrap;
@@ -693,4 +787,5 @@ a {
   .dog-card-image {
     height: 260px;
   }
+
 }
