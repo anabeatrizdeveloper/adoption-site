@@ -64,7 +64,7 @@ a {
     radial-gradient(circle at 75% 20%, rgba(255,255,255,0.1) 0 16%, transparent 17%),
     radial-gradient(circle at 85% 60%, rgba(255,255,255,0.08) 0 10%, transparent 11%),
     linear-gradient(135deg, #9d0000 0%, #b10b0b 35%, #d33d2e 100%);
-  border-radius: 0 0 0 0;
+  border-radius: 0;
   color: white;
 }
 
@@ -131,8 +131,8 @@ a {
   display: grid;
   grid-template-columns: 1.05fr 0.95fr;
   align-items: center;
-  gap: 20px;
-  min-height: 480px;
+  gap: 24px;
+  min-height: 560px;
   padding: 36px 0 40px;
   position: relative;
   z-index: 2;
@@ -180,50 +180,62 @@ a {
 
 .hero-visual {
   position: relative;
-  min-height: 580px;
+  min-height: 720px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  overflow: visible;
 }
 
 .hero-circle {
   position: absolute;
   border-radius: 50%;
   background: rgba(255, 230, 230, 0.12);
+  z-index: 1;
+  pointer-events: none;
 }
 
 .hero-circle-1 {
-  width: 420px;
-  height: 420px;
+  width: 520px;
+  height: 520px;
+  right: 20px;
   top: 10px;
-  right: 40px;
 }
 
 .hero-circle-2 {
-  width: 520px;
-  height: 520px;
-  right: -120px;
-  bottom: -90px;
+  width: 620px;
+  height: 620px;
+  right: -70px;
+  bottom: -40px;
   background: rgba(255, 235, 235, 0.16);
 }
 
-.hero-dog {
+.hero-dog,
+.hero-dog-main,
+.hero-dog-secondary {
   position: absolute;
-  object-fit: cover;
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+  display: block;
+  height: auto;
+  max-width: none;
+  object-fit: contain;
+  object-position: bottom;
+  border-radius: 0;
+  box-shadow: none;
+  background: transparent;
 }
 
 .hero-dog-main {
-  width: 410px;
-  height: 520px;
-  right: 0;
+  width: 430px;
+  right: 45px;
   bottom: 0;
-  border-radius: 220px 220px 34px 34px;
+  z-index: 3;
 }
 
 .hero-dog-secondary {
-  width: 250px;
-  height: 300px;
-  left: 30px;
-  bottom: 10px;
-  border-radius: 180px 180px 24px 24px;
+  width: 290px;
+  right: 345px;
+  bottom: 0;
+  z-index: 4;
 }
 
 /* DOG HOME SECTION */
@@ -283,7 +295,7 @@ a {
   width: 100%;
   height: 260px;
   object-fit: cover;
-  object-position: center; 
+  object-position: center;
 }
 
 img[src*="zeyna"] {
@@ -461,12 +473,6 @@ img[src*="can"] {
   margin-bottom: 20px;
 }
 
-.info-box {
-  background: var(--surface-alt);
-  border-radius: 16px;
-  padding: 14px;
-}
-
 .info-label {
   display: block;
   font-size: 0.8rem;
@@ -615,50 +621,27 @@ img[src*="can"] {
   margin-bottom: 10px;
 }
 
+.site-footer p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: rgba(255,255,255,0.88);
+}
+
+.site-footer strong {
+  font-weight: 700;
+  color: #fff;
+}
+
 .site-footer a {
-  display: block;
-  color: rgba(255,255,255,0.86);
-  margin-bottom: 8px;
+  color: rgba(255,255,255,0.92);
 }
 
-/* RESPONSIVE */
-
-@media (max-width: 1100px) {
-  .hero {
-    grid-template-columns: 1fr;
-  }
-
-  .hero-visual {
-    min-height: 460px;
-  }
-
-  .hero-dog-main {
-    right: 40px;
-  }
-
-  .hero-dog-secondary {
-    left: 0;
-  }
-
-  .info-strip-grid,
-  .footer-grid {
-    grid-template-columns: 1fr 1fr;
-  }
+.site-footer a:hover {
+  color: #ffffff;
+  text-decoration: underline;
 }
 
-@media (max-width: 900px) {
-  .nav-links {
-    display: none;
-  }
-
-  .dog-profile-layout,
-  .info-grid,
-  .detail-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* ===== FIX GALERIA / LIGHTBOX (FUNCIONA EM TODAS AS TELAS) ===== */
+/* LIGHTBOX */
 
 .gallery-item {
   display: block;
@@ -719,23 +702,77 @@ img[src*="can"] {
   cursor: pointer;
 }
 
-/* RESPONSIVO DA LIGHTBOX (SEM QUEBRAR) */
-@media (max-width: 700px) {
-  .lightbox {
-    padding: 16px;
+/* RESPONSIVE */
+
+@media (max-width: 1100px) {
+  .hero {
+    grid-template-columns: 1fr;
   }
 
-  .lightbox-image {
-    max-width: 100%;
-    max-height: 80vh;
+  .hero-visual {
+    min-height: 620px;
   }
 
-  .lightbox-close {
-    top: 16px;
-    right: 16px;
-    width: 42px;
-    height: 42px;
-    font-size: 1.6rem;
+  .hero-dog-main {
+    width: 360px;
+    right: 30px;
+  }
+
+  .hero-dog-secondary {
+    width: 240px;
+    right: 255px;
+  }
+
+  .info-strip-grid,
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .nav-links {
+    display: none;
+  }
+
+  .dog-profile-layout,
+  .info-grid,
+  .detail-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    padding-bottom: 20px;
+  }
+
+  .hero-visual {
+    min-height: 500px;
+    margin-top: 10px;
+  }
+
+  .hero-dog-main {
+    width: 260px;
+    right: 20px;
+  }
+
+  .hero-dog-secondary {
+    width: 180px;
+    right: 185px;
+  }
+
+  .hero-circle-1 {
+    width: 300px;
+    height: 300px;
+    right: 10px;
+    top: 20px;
+  }
+
+  .hero-circle-2 {
+    width: 380px;
+    height: 380px;
+    right: -30px;
+    bottom: -10px;
   }
 }
 
@@ -752,30 +789,26 @@ img[src*="can"] {
     font-size: 1rem;
   }
 
-  .hero {
-    min-height: auto;
-    padding-bottom: 10px;
-  }
-
   .hero h1 {
     font-size: 3.2rem;
   }
 
+  .hero-text {
+    font-size: 1.05rem;
+  }
+
   .hero-visual {
-    min-height: 360px;
+    min-height: 420px;
   }
 
   .hero-dog-main {
-    width: 250px;
-    height: 310px;
-    right: 0;
+    width: 210px;
+    right: 10px;
   }
 
   .hero-dog-secondary {
-    width: 170px;
-    height: 210px;
-    left: 0;
-    bottom: 0;
+    width: 150px;
+    right: 140px;
   }
 
   .dogs-grid,
@@ -788,4 +821,20 @@ img[src*="can"] {
     height: 260px;
   }
 
+  .lightbox {
+    padding: 16px;
+  }
+
+  .lightbox-image {
+    max-width: 100%;
+    max-height: 80vh;
+  }
+
+  .lightbox-close {
+    top: 16px;
+    right: 16px;
+    width: 42px;
+    height: 42px;
+    font-size: 1.6rem;
+  }
 }
