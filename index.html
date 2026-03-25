@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Basic page setup -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Browser tab title -->
   <title>Kimcanko Silifke | International Pet Adoption Platform</title>
 
-  <!-- Google font -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -16,285 +13,242 @@
     rel="stylesheet"
   />
 
-  <!-- Main stylesheet -->
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
 
-  <!-- ======================================================
-       HERO / HEADER SECTION
-  ======================================================= -->
-  <header class="hero-shell">
-    <div class="hero-card">
+<header class="hero-shell">
+  <div class="hero-card">
 
-      <!-- Background circles for hero -->
-      <div class="floating-circles" aria-hidden="true">
-        <span class="circle circle-1"></span>
-        <span class="circle circle-2"></span>
-        <span class="circle circle-3"></span>
-        <span class="circle circle-4"></span>
-        <span class="circle circle-5"></span>
-        <span class="circle circle-6"></span>
+    <div class="floating-circles" aria-hidden="true">
+      <span class="circle circle-1"></span>
+      <span class="circle circle-2"></span>
+      <span class="circle circle-3"></span>
+      <span class="circle circle-4"></span>
+      <span class="circle circle-5"></span>
+      <span class="circle circle-6"></span>
+    </div>
+
+    <nav class="top-nav container">
+      <a href="index.html" class="brand">
+        <img src="assets/logo.png" alt="Kimcanko logo" />
+        <div class="brand-text">
+          <span>KIMCANKO</span>
+          <span>SILIFKE</span>
+        </div>
+      </a>
+
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="#dogs-grid">Adoptable Pets</a>
+        <a href="#how-to-adopt">How to Adopt</a>
+        <a href="#contact-cta">Contact</a>
       </div>
 
-      <!-- Navigation -->
-      <nav class="top-nav container">
-        <a href="index.html" class="brand">
-          <img src="assets/logo.png" alt="Kimcanko logo" />
-          <div class="brand-text">
-            <span>KIMCANKO</span>
-            <span>SILIFKE</span>
-          </div>
+      <a href="#dogs-grid" class="nav-cta">View Pets</a>
+    </nav>
+
+    <section class="hero container">
+      <div class="hero-copy">
+        <p class="hero-eyebrow">International Pet Adoption Platform</p>
+
+        <h1>
+          Rescue a life.<br />
+          Find your companion.<br />
+          Give them home.
+        </h1>
+
+        <p class="hero-text">
+          Explore adoptable pets, view full profiles, and access carefully curated
+          photos and videos to support thoughtful international adoption.
+        </p>
+
+        <div class="hero-highlights">
+          <span class="hero-pill">Detailed pet profiles</span>
+          <span class="hero-pill">Photos & videos available</span>
+          <span class="hero-pill">Direct contact with the organization</span>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#dogs-grid" class="hero-button">Meet the Pets</a>
+          <a href="#how-to-adopt" class="hero-button hero-button-secondary">How Adoption Works</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-circle hero-circle-1"></div>
+        <div class="hero-circle hero-circle-2"></div>
+
+        <img src="assets/photos/browndogcover.png" class="hero-dog-extra hero-dog-brown" />
+        <img src="assets/photos/dogcover.png" class="hero-dog hero-dog-main" />
+
+        <img src="assets/photos/blackcatcover.png" class="hero-dog-extra hero-dog-black" />
+        <img src="assets/photos/catcover.png" class="hero-dog hero-dog-secondary" />
+      </div>
+    </section>
+  </div>
+</header>
+
+<main>
+
+<section class="dogs-home-section">
+  <div class="dogs-bg-circles">
+    <span class="bg-circle bg-circle-1"></span>
+    <span class="bg-circle bg-circle-2"></span>
+    <span class="bg-circle bg-circle-3"></span>
+    <span class="bg-circle bg-circle-4"></span>
+    <span class="bg-circle bg-circle-5"></span>
+  </div>
+
+  <div class="container">
+    <div class="dogs-home-heading">
+      <p class="section-kicker">Available Pets</p>
+      <h2>Meet Our Pets</h2>
+      <p>
+        Each profile includes essential information, personality notes, and media
+        to help you get to know the animal before reaching out.
+      </p>
+    </div>
+
+    <div id="dogs-grid" class="dogs-grid"></div>
+
+    <div class="all-dogs-wrap">
+      <a href="#dogs-grid" class="all-dogs-button">Browse All Pets</a>
+    </div>
+  </div>
+</section>
+
+<section id="how-to-adopt" class="info-strip">
+  <div class="container">
+    <div class="info-strip-heading">
+      <p class="section-kicker">Adoption Process</p>
+      <h2>How Adoption Works</h2>
+    </div>
+
+    <div class="info-strip-grid">
+      <div class="info-box">
+        <span class="info-step">01</span>
+        <h3>Browse Profiles</h3>
+        <p>Explore pets and review photos, videos, and details.</p>
+      </div>
+
+      <div class="info-box">
+        <span class="info-step">02</span>
+        <h3>Contact the Organization</h3>
+        <p>Reach out directly to ask questions and show interest.</p>
+      </div>
+
+      <div class="info-box">
+        <span class="info-step">03</span>
+        <h3>Adoption Process</h3>
+        <p>Follow guidance provided by the organization.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT CTA -->
+<section id="contact-cta" class="contact-cta-section">
+  <div class="container">
+    <div class="contact-cta-card">
+
+      <div class="contact-cta-copy">
+        <p class="section-kicker">Get in Touch</p>
+        <h2>Interested in a pet?</h2>
+        <p>
+          Contact KİMCANKO directly for availability, questions, and next steps.
+        </p>
+      </div>
+
+      <div class="contact-cta-actions">
+
+        <!-- EMAIL FUNCIONANDO -->
+        <a 
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=kimcanko@gmail.com&su=Adoption%20Inquiry"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="contact-cta-button"
+          >
+            Email the Organization
         </a>
 
-        <div class="nav-links">
-          <a href="index.html">Home</a>
-          <a href="#dogs-grid">Adoptable Pets</a>
-          <a href="#how-to-adopt">How to Adopt</a>
-          <a href="#contact-cta">Contact</a>
-        </div>
+        <!-- INSTAGRAM FUNCIONANDO -->
+        <a 
+          href="https://www.instagram.com/silifkekimcanko/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="contact-cta-button contact-cta-button-secondary"
+        >
+          Message on Instagram
+        </a>
 
-        <a href="#dogs-grid" class="nav-cta">View Pets</a>
-      </nav>
-
-      <!-- Hero -->
-      <section class="hero container">
-        <div class="hero-copy">
-          <p class="hero-eyebrow">International Pet Adoption Platform</p>
-
-          <h1>
-            Rescue a life.<br />
-            Find your companion.<br />
-            Give them home.
-          </h1>
-
-          <p class="hero-text">
-            Explore adoptable pets, view full profiles, and access carefully curated
-            photos and videos to support thoughtful international adoption.
-          </p>
-
-          <!-- Quick trust/value chips -->
-          <div class="hero-highlights" aria-label="Platform highlights">
-            <span class="hero-pill">Detailed pet profiles</span>
-            <span class="hero-pill">Photos & videos available</span>
-            <span class="hero-pill">Direct contact with the organization</span>
-          </div>
-
-          <div class="hero-actions">
-            <a href="#dogs-grid" class="hero-button">Meet the Pets</a>
-            <a href="#how-to-adopt" class="hero-button hero-button-secondary">How Adoption Works</a>
-          </div>
-        </div>
-
-        <!-- Hero image composition -->
-        <div class="hero-visual">
-          <div class="hero-circle hero-circle-1"></div>
-          <div class="hero-circle hero-circle-2"></div>
-
-          <!-- Dogs -->
-          <img
-            src="assets/photos/browndogcover.png"
-            alt="Brown dog"
-            class="hero-dog-extra hero-dog-brown"
-          />
-
-          <img
-            src="assets/photos/dogcover.png"
-            alt="Adoptable dog"
-            class="hero-dog hero-dog-main"
-          />
-
-          <!-- Cats -->
-          <img
-            src="assets/photos/blackcatcover.png"
-            alt="Black cat"
-            class="hero-dog-extra hero-dog-black"
-          />
-
-          <img
-            src="assets/photos/catcover.png"
-            alt="Adoptable cat"
-            class="hero-dog hero-dog-secondary"
-          />
-        </div>
-      </section>
+      </div>
     </div>
-  </header>
+  </div>
+</section>
 
-  <!-- ======================================================
-       MAIN
-  ======================================================= -->
-  <main>
+</main>
 
-    <!-- Pets Section -->
-    <section class="dogs-home-section">
+<footer id="site-footer" class="site-footer">
+  <div class="container footer-grid">
 
-      <!-- Background circles for white section -->
-      <div class="dogs-bg-circles" aria-hidden="true">
-        <span class="bg-circle bg-circle-1"></span>
-        <span class="bg-circle bg-circle-2"></span>
-        <span class="bg-circle bg-circle-3"></span>
-        <span class="bg-circle bg-circle-4"></span>
-        <span class="bg-circle bg-circle-5"></span>
-      </div>
-
-      <div class="container">
-        <div class="dogs-home-heading">
-          <p class="section-kicker">Available Pets</p>
-          <h2>Meet Our Pets</h2>
-          <p>
-            Each profile includes essential information, personality notes, and media
-            to help you get to know the animal before reaching out.
-          </p>
-        </div>
-
-        <!-- Cards rendered by JavaScript -->
-        <div id="dogs-grid" class="dogs-grid"></div>
-
-        <div class="all-dogs-wrap">
-          <a href="#dogs-grid" class="all-dogs-button">Browse All Pets</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- How adoption works -->
-    <section id="how-to-adopt" class="info-strip">
-      <div class="container">
-        <div class="info-strip-heading">
-          <p class="section-kicker">Adoption Process</p>
-          <h2>How Adoption Works</h2>
-          <p>
-            A simple overview of the process for discovering a pet, asking questions,
-            and connecting with the organization.
-          </p>
-        </div>
-
-        <div class="info-strip-grid">
-          <div class="info-box">
-            <span class="info-step">01</span>
-            <h3>Browse Profiles</h3>
-            <p>
-              Explore available pets, compare personalities, and review photos,
-              videos, and care details.
-            </p>
-          </div>
-
-          <div class="info-box">
-            <span class="info-step">02</span>
-            <h3>Contact the Organization</h3>
-            <p>
-              Reach out directly to ask questions, express interest, and receive
-              guidance on the next steps.
-            </p>
-          </div>
-
-          <div class="info-box">
-            <span class="info-step">03</span>
-            <h3>Follow the Adoption Process</h3>
-            <p>
-              The organization will guide you through availability, suitability,
-              and adoption arrangements.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Strong contact CTA -->
-    <section id="contact-cta" class="contact-cta-section">
-      <div class="container">
-        <div class="contact-cta-card">
-          <div class="contact-cta-copy">
-            <p class="section-kicker">Get in Touch</p>
-            <h2>Interested in a pet?</h2>
-            <p>
-              If you would like to know more about a specific animal, contact
-              KİMCANKO directly for availability, adoption questions, and next steps.
-            </p>
-          </div>
-
-          <div class="contact-cta-actions">
-            <a href="mailto:kimcanko@gmail.com" class="contact-cta-button">Email the Organization</a>
-            <a
-              href="https://www.instagram.com/silifkekimcanko/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="contact-cta-button contact-cta-button-secondary"
-            >
-              Message on Instagram
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- ======================================================
-       FOOTER
-  ======================================================= -->
-  <footer id="site-footer" class="site-footer">
-    <div class="container footer-grid">
-
-      <div class="footer-brand">
-        <img src="assets/logo.png" alt="Kimcanko logo" />
-        <div>
-          <h3>KIMCANKO SILIFKE</h3>
-          <p>International Pet Adoption Platform</p>
-        </div>
-      </div>
-
+    <div class="footer-brand">
+      <img src="assets/logo.png" />
       <div>
-        <h4>Location</h4>
-        <p>
-          KİMCANKO<br />
-          Taşucu Mah. İsmet İnönü Cad. No: 25/11<br />
-          Silifke / Mersin / Türkiye
-        </p>
+        <h3>KIMCANKO SILIFKE</h3>
+        <p>International Pet Adoption Platform</p>
       </div>
-
-      <div>
-        <h4>Contact</h4>
-        <p>
-          <strong>Email</strong><br />
-          <a href="mailto:kimcanko@gmail.com">kimcanko@gmail.com</a>
-        </p>
-        <p>
-          <strong>Phone</strong><br />
-          <a href="tel:+905373833638">+90 537 383 36 38</a>
-        </p>
-      </div>
-
-      <div>
-        <h4>Social</h4>
-        <p>
-          <strong>Instagram</strong><br />
-          <a
-            href="https://www.instagram.com/silifkekimcanko/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            @silifkekimcanko
-          </a>
-        </p>
-        <p>
-          <strong>Website</strong><br />
-          <a
-            href="https://www.kimcanko.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            kimcanko.org
-          </a>
-        </p>
-      </div>
-
     </div>
-  </footer>
 
-  <script src="js/data.js"></script>
-  <script src="js/main.js"></script>
+    <div>
+      <h4>Location</h4>
+      <p>Silifke / Türkiye</p>
+    </div>
+
+    <div>
+      <h4>Contact</h4>
+
+      <!-- EMAIL FUNCIONANDO -->
+      <p>
+        <strong>Email</strong><br />
+        <a href="mailto:kimcanko@gmail.com">kimcanko@gmail.com</a>
+      </p>
+
+      <p>
+        <strong>Phone</strong><br />
+        <a href="tel:+905373833638">+90 537 383 36 38</a>
+      </p>
+    </div>
+
+    <div>
+      <h4>Social</h4>
+
+      <!-- INSTAGRAM FUNCIONANDO -->
+      <p>
+        <strong>Instagram</strong><br />
+        <a 
+          href="https://www.instagram.com/silifkekimcanko/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          @silifkekimcanko
+        </a>
+      </p>
+
+      <p>
+        <strong>Website</strong><br />
+        <a href="https://www.kimcanko.org/" target="_blank">
+          kimcanko.org
+        </a>
+      </p>
+    </div>
+
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
 
 </body>
 </html>
