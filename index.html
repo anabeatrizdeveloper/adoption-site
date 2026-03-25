@@ -19,16 +19,26 @@
   <!-- Main stylesheet -->
   <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
 
   <!-- ======================================================
        HERO / HEADER SECTION
-       Includes navigation and the main hero content
   ======================================================= -->
   <header class="hero-shell">
     <div class="hero-card">
 
-      <!-- Top navigation -->
+      <!-- Background circles (hero) -->
+      <div class="floating-circles" aria-hidden="true">
+        <span class="circle circle-1"></span>
+        <span class="circle circle-2"></span>
+        <span class="circle circle-3"></span>
+        <span class="circle circle-4"></span>
+        <span class="circle circle-5"></span>
+        <span class="circle circle-6"></span>
+      </div>
+
+      <!-- Navigation -->
       <nav class="top-nav container">
         <a href="index.html" class="brand">
           <img src="assets/logo.png" alt="Kimcanko logo" />
@@ -48,10 +58,8 @@
         <a href="#dogs-grid" class="nav-cta">View Pets</a>
       </nav>
 
-      <!-- Main hero content -->
+      <!-- Hero -->
       <section class="hero container">
-
-        <!-- Left side: hero text -->
         <div class="hero-copy">
           <p class="hero-eyebrow">International Pet Adoption Platform</p>
 
@@ -69,49 +77,39 @@
           <a href="#dogs-grid" class="hero-button">Meet the Pets</a>
         </div>
 
-        <!-- Right side: hero image composition -->
         <div class="hero-visual">
-          <!-- Decorative circles -->
           <div class="hero-circle hero-circle-1"></div>
           <div class="hero-circle hero-circle-2"></div>
 
-          <!-- Back row: dogs -->
-          <img
-            src="assets/photos/browndogcover.png"
-            alt="Brown dog"
-            class="hero-dog-extra hero-dog-brown"
-          />
+          <!-- Dogs -->
+          <img src="assets/photos/browndogcover.png" class="hero-dog-extra hero-dog-brown" />
+          <img src="assets/photos/dogcover.png" class="hero-dog hero-dog-main" />
 
-          <img
-            src="assets/photos/dogcover.png"
-            alt="Adoptable dog"
-            class="hero-dog hero-dog-main"
-          />
-
-          <!-- Front row: cats -->
-          <img
-            src="assets/photos/blackcatcover.png"
-            alt="Black cat"
-            class="hero-dog-extra hero-dog-black"
-          />
-
-          <img
-            src="assets/photos/catcover.png"
-            alt="Adoptable cat"
-            class="hero-dog hero-dog-secondary"
-          />
+          <!-- Cats -->
+          <img src="assets/photos/blackcatcover.png" class="hero-dog-extra hero-dog-black" />
+          <img src="assets/photos/catcover.png" class="hero-dog hero-dog-secondary" />
         </div>
       </section>
     </div>
   </header>
 
   <!-- ======================================================
-       MAIN PAGE CONTENT
+       MAIN
   ======================================================= -->
   <main>
 
-    <!-- Pets grid section -->
+    <!-- Pets Section -->
     <section class="dogs-home-section">
+
+      <!-- 🔥 NEW: background circles for white section -->
+      <div class="dogs-bg-circles" aria-hidden="true">
+        <span class="bg-circle bg-circle-1"></span>
+        <span class="bg-circle bg-circle-2"></span>
+        <span class="bg-circle bg-circle-3"></span>
+        <span class="bg-circle bg-circle-4"></span>
+        <span class="bg-circle bg-circle-5"></span>
+      </div>
+
       <div class="container">
         <div class="dogs-home-heading">
           <p class="section-kicker">Meet Our Pets</p>
@@ -122,7 +120,6 @@
           </p>
         </div>
 
-        <!-- Cards get rendered here by JavaScript -->
         <div id="dogs-grid" class="dogs-grid"></div>
 
         <div class="all-dogs-wrap">
@@ -131,7 +128,7 @@
       </div>
     </section>
 
-    <!-- Informational strip -->
+    <!-- Info -->
     <section id="how-to-adopt" class="info-strip">
       <div class="container info-strip-grid">
         <div class="info-box">
@@ -150,6 +147,7 @@
         </div>
       </div>
     </section>
+
   </main>
 
   <!-- ======================================================
@@ -158,67 +156,36 @@
   <footer id="site-footer" class="site-footer">
     <div class="container footer-grid">
 
-      <!-- Footer brand -->
       <div class="footer-brand">
-        <img src="assets/logo.png" alt="Kimcanko logo" />
+        <img src="assets/logo.png" />
         <div>
           <h3>KIMCANKO SILIFKE</h3>
           <p>International Pet Adoption Platform</p>
         </div>
       </div>
 
-      <!-- Footer location -->
       <div>
         <h4>Location</h4>
-        <p>
-          KİMCANKO<br />
-          Taşucu Mah. İsmet İnönü Cad. No: 25/11<br />
-          Silifke / Mersin / Türkiye
-        </p>
+        <p>KİMCANKO<br>Silifke / Türkiye</p>
       </div>
 
-      <!-- Footer contact -->
       <div>
         <h4>Contact</h4>
-        <p>
-          <strong>Email</strong><br />
-          <a href="mailto:kimcanko@gmail.com">kimcanko@gmail.com</a>
-        </p>
-        <p>
-          <strong>Phone</strong><br />
-          <a href="tel:+905373833638">+90 537 383 36 38</a>
-        </p>
+        <p>Email: kimcanko@gmail.com</p>
+        <p>Phone: +90 537 383 36 38</p>
       </div>
 
-      <!-- Footer social links -->
       <div>
         <h4>Social</h4>
-        <p>
-          <strong>Instagram</strong><br />
-          <a
-            href="https://www.instagram.com/silifkekimcanko/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            @silifkekimcanko
-          </a>
-        </p>
-        <p>
-          <strong>Website</strong><br />
-          <a
-            href="https://www.kimcanko.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            kimcanko.org
-          </a>
-        </p>
+        <p>@silifkekimcanko</p>
+        <p>kimcanko.org</p>
       </div>
+
     </div>
   </footer>
 
-  <!-- JavaScript files -->
   <script src="js/data.js"></script>
   <script src="js/main.js"></script>
+
 </body>
 </html>
