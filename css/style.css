@@ -1,3 +1,8 @@
+/* =========================================================
+   ROOT VARIABLES
+   These variables define the main design system of the site
+   so colors, spacing, shadows, and radii stay consistent.
+========================================================= */
 :root {
   --primary: #980000;
   --primary-dark: #760000;
@@ -16,16 +21,22 @@
   --container: 1200px;
 }
 
+/* =========================================================
+   GLOBAL RESET
+   Removes default browser spacing and standardizes box sizing.
+========================================================= */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Smooth scrolling for anchor links */
 html {
   scroll-behavior: smooth;
 }
 
+/* Base page typography and colors */
 body {
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
   background: var(--background);
@@ -33,29 +44,36 @@ body {
   line-height: 1.6;
 }
 
+/* Make images and videos block-level and responsive */
 img,
 video {
   display: block;
   max-width: 100%;
 }
 
+/* Remove default underline and inherit color */
 a {
   text-decoration: none;
   color: inherit;
 }
 
+/* Main reusable content width */
 .container {
   width: min(var(--container), calc(100% - 40px));
   margin: 0 auto;
 }
 
-/* HERO */
+/* =========================================================
+   HERO SECTION
+========================================================= */
 
+/* Outer hero wrapper with small padding around the card */
 .hero-shell {
   padding: 6px 6px 0;
   background: var(--background);
 }
 
+/* Main hero card with gradient background and decorative light spots */
 .hero-card {
   position: relative;
   overflow: hidden;
@@ -68,6 +86,11 @@ a {
   color: white;
 }
 
+/* =========================================================
+   TOP NAVIGATION
+========================================================= */
+
+/* Navigation bar layout */
 .top-nav {
   display: flex;
   align-items: center;
@@ -78,46 +101,54 @@ a {
   z-index: 2;
 }
 
+/* Brand area containing logo + text */
 .brand {
   display: flex;
   align-items: center;
   gap: 14px;
 }
 
+/* Logo size */
 .brand img {
   width: 68px;
   object-fit: contain;
 }
 
+/* Two-line brand text */
 .brand-text {
   display: flex;
   flex-direction: column;
   line-height: 1;
 }
 
+/* Main brand line */
 .brand-text span:first-child {
   font-size: 2rem;
   font-weight: 800;
   letter-spacing: 0.03em;
 }
 
+/* Secondary brand line */
 .brand-text span:last-child {
   font-size: 1.3rem;
   font-weight: 600;
   letter-spacing: 0.15em;
 }
 
+/* Navigation links group */
 .nav-links {
   display: flex;
   gap: 34px;
   align-items: center;
 }
 
+/* Navigation link appearance */
 .nav-links a {
   color: rgba(255, 255, 255, 0.92);
   font-weight: 500;
 }
 
+/* CTA button in navbar */
 .nav-cta {
   background: white;
   color: var(--primary);
@@ -127,6 +158,11 @@ a {
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.14);
 }
 
+/* =========================================================
+   HERO MAIN CONTENT
+========================================================= */
+
+/* Two-column hero layout */
 .hero {
   display: grid;
   grid-template-columns: 1.05fr 0.95fr;
@@ -138,10 +174,12 @@ a {
   z-index: 2;
 }
 
+/* Left text column width limit */
 .hero-copy {
   max-width: 700px;
 }
 
+/* Small uppercase intro label */
 .hero-eyebrow {
   text-transform: uppercase;
   letter-spacing: 0.18em;
@@ -151,6 +189,7 @@ a {
   opacity: 0.92;
 }
 
+/* Main hero heading */
 .hero h1 {
   font-size: clamp(1.5rem, 7vw, 6.2rem);
   line-height: 0.97;
@@ -158,6 +197,7 @@ a {
   margin-bottom: 24px;
 }
 
+/* Supporting hero paragraph */
 .hero-text {
   max-width: 660px;
   font-size: 1.18rem;
@@ -165,6 +205,7 @@ a {
   margin-bottom: 30px;
 }
 
+/* Main hero CTA button */
 .hero-button {
   display: inline-flex;
   align-items: center;
@@ -178,6 +219,11 @@ a {
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.14);
 }
 
+/* =========================================================
+   HERO VISUAL AREA
+========================================================= */
+
+/* Right-side hero image composition wrapper */
 .hero-visual {
   position: relative;
   min-height: 720px;
@@ -187,6 +233,7 @@ a {
   overflow: visible;
 }
 
+/* Decorative background circles behind the pets */
 .hero-circle {
   position: absolute;
   border-radius: 50%;
@@ -195,6 +242,7 @@ a {
   pointer-events: none;
 }
 
+/* Smaller circle */
 .hero-circle-1 {
   width: 520px;
   height: 520px;
@@ -202,6 +250,7 @@ a {
   top: 10px;
 }
 
+/* Larger circle */
 .hero-circle-2 {
   width: 620px;
   height: 620px;
@@ -210,9 +259,11 @@ a {
   background: rgba(255, 235, 235, 0.16);
 }
 
+/* Base styles shared by all hero animal images */
 .hero-dog,
 .hero-dog-main,
-.hero-dog-secondary {
+.hero-dog-secondary,
+.hero-dog-extra {
   position: absolute;
   display: block;
   height: auto;
@@ -222,41 +273,74 @@ a {
   border-radius: 0;
   box-shadow: none;
   background: transparent;
+  pointer-events: none;
 }
 
+/* =========================================================
+   HERO PET COMPOSITION
+   Back row: 2 dogs
+   Front row: 2 cats
+========================================================= */
+
+/* Right dog in the back row */
 .hero-dog-main {
-  width: 430px;
-  right: 45px;
+  width: 500px;
+  right: 10px;
   bottom: 0;
   z-index: 3;
 }
 
-.hero-dog-secondary {
-  width: 290px;
-  right: 345px;
+/* Left dog in the back row */
+.hero-dog-brown {
+  width: 450px;
+  right: 290px;
   bottom: 0;
-  z-index: 4;
+  z-index: 2;
+  opacity: 0.98;
 }
 
-/* DOG HOME SECTION */
+/* Right cat in the front row */
+.hero-dog-secondary {
+  width: 300px;
+  right: -10px;
+  bottom: 0;
+  z-index: 5;
+}
 
+/* Left cat in the front row */
+.hero-dog-black {
+  width: 300px;
+  right: 180px;
+  bottom: 0;
+  z-index: 4;
+  opacity: 0.98;
+}
+
+/* =========================================================
+   DOG HOME SECTION
+========================================================= */
+
+/* Main section where adoptable pets cards appear */
 .dogs-home-section {
   position: relative;
   padding: 54px 0 84px;
   background: linear-gradient(to bottom, #f4efed 0%, #f8f4f2 100%);
 }
 
+/* Section heading wrapper */
 .dogs-home-heading {
   text-align: center;
   max-width: 760px;
   margin: 0 auto 42px;
 }
 
+/* Hidden visual kicker used only semantically */
 .section-kicker {
   color: transparent;
   font-size: 0.001px;
 }
 
+/* Section heading title */
 .dogs-home-heading h2 {
   font-size: clamp(2.8rem, 5vw, 4.2rem);
   color: var(--primary);
@@ -265,17 +349,20 @@ a {
   margin-bottom: 14px;
 }
 
+/* Section description */
 .dogs-home-heading p {
   color: var(--text-soft);
   font-size: 1.2rem;
 }
 
+/* Grid of pet cards */
 .dogs-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 18px;
 }
 
+/* Individual dog/pet card */
 .dog-card {
   background: rgba(255, 255, 255, 0.88);
   backdrop-filter: blur(6px);
@@ -286,11 +373,13 @@ a {
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
+/* Lift effect on hover */
 .dog-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 22px 38px rgba(0, 0, 0, 0.12);
 }
 
+/* Pet card image */
 .dog-card-image {
   width: 100%;
   height: 260px;
@@ -298,6 +387,7 @@ a {
   object-position: center;
 }
 
+/* Per-image framing adjustments */
 img[src*="zeyna"] {
   object-position: 50% 15%;
 }
@@ -310,15 +400,18 @@ img[src*="can"] {
   object-position: 50% 35%;
 }
 
+/* Card content container */
 .dog-card-content {
   padding: 18px 18px 16px;
 }
 
+/* Card title row */
 .dog-card-title-row {
   display: block;
   margin-bottom: 8px;
 }
 
+/* Pet name */
 .dog-card h3 {
   color: var(--primary);
   font-size: 2rem;
@@ -326,6 +419,7 @@ img[src*="can"] {
   margin-bottom: 6px;
 }
 
+/* Small breed/type label */
 .dog-badge {
   display: inline-block;
   font-size: 0.95rem;
@@ -333,11 +427,13 @@ img[src*="can"] {
   color: var(--text-soft);
 }
 
+/* Meta wrapper */
 .dog-meta {
   display: block;
   margin-bottom: 12px;
 }
 
+/* Small inline metadata pieces */
 .meta-pill {
   display: inline;
   background: none;
@@ -349,6 +445,7 @@ img[src*="can"] {
   margin-right: 10px;
 }
 
+/* Short summary text */
 .card-summary {
   color: var(--text-soft);
   font-size: 0.98rem;
@@ -357,6 +454,7 @@ img[src*="can"] {
   margin-bottom: 16px;
 }
 
+/* Card CTA button */
 .card-link {
   display: inline-flex;
   align-items: center;
@@ -371,12 +469,14 @@ img[src*="can"] {
   box-shadow: inset 0 1px 0 rgba(255,255,255,0.18);
 }
 
+/* Wrapper for "View All Pets" button */
 .all-dogs-wrap {
   display: flex;
   justify-content: center;
   margin-top: 30px;
 }
 
+/* "View All Pets" button */
 .all-dogs-button {
   background: linear-gradient(180deg, #d33232 0%, #a10000 100%);
   color: white;
@@ -387,19 +487,24 @@ img[src*="can"] {
   box-shadow: 0 14px 30px rgba(152, 0, 0, 0.2);
 }
 
-/* INFO STRIP */
+/* =========================================================
+   INFO STRIP
+========================================================= */
 
+/* Simple three-column information area */
 .info-strip {
   padding: 54px 0 60px;
   background: linear-gradient(180deg, #f8f4f2 0%, #f3ebea 100%);
 }
 
+/* Grid layout for info cards */
 .info-strip-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 22px;
 }
 
+/* Individual info card */
 .info-box {
   background: rgba(255,255,255,0.7);
   border: 1px solid rgba(152, 0, 0, 0.08);
@@ -407,33 +512,41 @@ img[src*="can"] {
   padding: 24px;
 }
 
+/* Info card title */
 .info-box h3 {
   color: var(--primary);
   margin-bottom: 8px;
   font-size: 1.35rem;
 }
 
+/* Info card paragraph */
 .info-box p {
   color: var(--text-soft);
 }
 
-/* DOG PROFILE PAGE */
+/* =========================================================
+   DOG PROFILE PAGE
+========================================================= */
 
+/* Top area of inner pet pages */
 .subpage-header {
   padding: 22px 0;
   background: var(--surface);
   border-bottom: 1px solid var(--border);
 }
 
+/* Back link styling */
 .back-link {
   color: var(--primary);
   font-weight: 700;
 }
 
+/* Main content area for profile page */
 .dog-page-main {
   padding: 34px 0 72px;
 }
 
+/* Two-column layout: image + info panel */
 .dog-profile-layout {
   display: grid;
   grid-template-columns: 1.08fr 1fr;
@@ -442,6 +555,7 @@ img[src*="can"] {
   margin-bottom: 36px;
 }
 
+/* Main hero image on profile page */
 .dog-main-image {
   width: 100%;
   border-radius: 28px;
@@ -451,6 +565,7 @@ img[src*="can"] {
   background: #ddd;
 }
 
+/* Right-side info panel */
 .dog-info-panel {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -459,6 +574,7 @@ img[src*="can"] {
   box-shadow: var(--shadow);
 }
 
+/* Pet page title */
 .dog-info-panel h1 {
   color: var(--primary);
   font-size: clamp(2rem, 4vw, 3rem);
@@ -466,6 +582,7 @@ img[src*="can"] {
   margin-bottom: 18px;
 }
 
+/* Grid of quick information items */
 .info-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -473,6 +590,7 @@ img[src*="can"] {
   margin-bottom: 20px;
 }
 
+/* Small info label */
 .info-label {
   display: block;
   font-size: 0.8rem;
@@ -483,25 +601,30 @@ img[src*="can"] {
   font-weight: 600;
 }
 
+/* Main value text */
 .info-value {
   font-weight: 700;
 }
 
+/* Text content blocks spacing */
 .text-block {
   margin-top: 18px;
 }
 
+/* Shared title color for sections */
 .text-block h2,
 .detail-section h2,
 .media-section h2 {
   color: var(--primary);
 }
 
+/* Small section titles */
 .text-block h2 {
   font-size: 1.15rem;
   margin-bottom: 8px;
 }
 
+/* Shared muted text */
 .text-muted,
 .text-block p,
 .text-block li,
@@ -509,6 +632,7 @@ img[src*="can"] {
   color: var(--text-soft);
 }
 
+/* Generic detail section card */
 .detail-section {
   margin-top: 28px;
   background: var(--surface);
@@ -518,38 +642,45 @@ img[src*="can"] {
   box-shadow: var(--shadow);
 }
 
+/* Detail section title */
 .detail-section h2 {
   margin-bottom: 12px;
   font-size: 1.45rem;
 }
 
+/* Grid for multiple detail cards */
 .detail-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 12px;
 }
 
+/* Small internal detail card */
 .detail-card {
   background: var(--surface-alt);
   border-radius: 16px;
   padding: 14px;
 }
 
+/* Detail card heading */
 .detail-card h3 {
   color: var(--primary);
   font-size: 1rem;
   margin-bottom: 4px;
 }
 
+/* Media section wrapper */
 .media-section {
   margin-top: 28px;
 }
 
+/* Media section title */
 .media-section h2 {
   margin-bottom: 14px;
   font-size: 1.5rem;
 }
 
+/* Gallery and videos grid */
 .gallery-grid,
 .video-grid {
   display: grid;
@@ -557,6 +688,7 @@ img[src*="can"] {
   gap: 18px;
 }
 
+/* Media cards */
 .gallery-grid img,
 .video-grid video {
   width: 100%;
@@ -565,6 +697,7 @@ img[src*="can"] {
   background: #ddd;
 }
 
+/* Fallback state when pet is not found */
 .not-found-box {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -573,13 +706,17 @@ img[src*="can"] {
   box-shadow: var(--shadow);
 }
 
+/* Fallback title */
 .not-found-box h1 {
   color: var(--primary);
   margin-bottom: 10px;
 }
 
-/* FOOTER */
+/* =========================================================
+   FOOTER
+========================================================= */
 
+/* Footer background and spacing */
 .site-footer {
   position: relative;
   overflow: hidden;
@@ -590,6 +727,7 @@ img[src*="can"] {
   padding: 46px 0 52px;
 }
 
+/* Footer grid columns */
 .footer-grid {
   display: grid;
   grid-template-columns: 1.3fr 1fr 1fr 1fr;
@@ -597,52 +735,65 @@ img[src*="can"] {
   align-items: start;
 }
 
+/* Footer brand block */
 .footer-brand {
   display: flex;
   gap: 16px;
   align-items: center;
 }
 
+/* Footer logo */
 .footer-brand img {
   width: 82px;
 }
 
+/* Footer brand title */
 .footer-brand h3 {
   font-size: 1.2rem;
   margin-bottom: 4px;
 }
 
+/* Footer brand small text */
 .footer-brand p {
   color: rgba(255,255,255,0.78);
 }
 
+/* Footer column title */
 .site-footer h4 {
   font-size: 1.35rem;
   margin-bottom: 10px;
 }
 
+/* Footer paragraph styling */
 .site-footer p {
   font-size: 0.95rem;
   line-height: 1.7;
   color: rgba(255,255,255,0.88);
 }
 
+/* Footer bold text */
 .site-footer strong {
   font-weight: 700;
   color: #fff;
 }
 
+/* Footer links */
 .site-footer a {
   color: rgba(255,255,255,0.92);
 }
 
+/* Footer links hover state */
 .site-footer a:hover {
   color: #ffffff;
   text-decoration: underline;
 }
 
-/* LIGHTBOX */
+/* =========================================================
+   LIGHTBOX
+   Used to open gallery images in larger view.
+========================================================= */
 
+/* Clickable gallery wrapper */
 .gallery-item {
   display: block;
   width: 100%;
@@ -654,16 +805,19 @@ img[src*="can"] {
   overflow: hidden;
 }
 
+/* Gallery image inside button */
 .gallery-item img {
   width: 100%;
   display: block;
   transition: transform 0.25s ease;
 }
 
+/* Hover zoom */
 .gallery-item:hover img {
   transform: scale(1.02);
 }
 
+/* Fullscreen lightbox overlay */
 .lightbox {
   position: fixed;
   inset: 0;
@@ -675,10 +829,12 @@ img[src*="can"] {
   z-index: 9999;
 }
 
+/* Visible lightbox state */
 .lightbox.active {
   display: flex;
 }
 
+/* Enlarged image inside lightbox */
 .lightbox-image {
   max-width: min(1100px, 92vw);
   max-height: 88vh;
@@ -687,6 +843,7 @@ img[src*="can"] {
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
 }
 
+/* Close button */
 .lightbox-close {
   position: absolute;
   top: 22px;
@@ -702,65 +859,101 @@ img[src*="can"] {
   cursor: pointer;
 }
 
-/* RESPONSIVE */
+/* =========================================================
+   RESPONSIVE STYLES
+========================================================= */
 
+/* ---------- Large tablets / small desktops ---------- */
 @media (max-width: 1100px) {
+  /* Stack hero columns */
   .hero {
     grid-template-columns: 1fr;
   }
 
+  /* Reduce hero visual height slightly */
   .hero-visual {
     min-height: 620px;
   }
 
+  /* Back row dogs */
   .hero-dog-main {
-    width: 360px;
+    width: 280px;
     right: 30px;
   }
 
-  .hero-dog-secondary {
-    width: 240px;
-    right: 255px;
+  .hero-dog-brown {
+    width: 280px;
+    right: 240px;
   }
 
+  /* Front row cats */
+  .hero-dog-secondary {
+    width: 160px;
+    right: 210px;
+  }
+
+  .hero-dog-black {
+    width: 160px;
+    right: 360px;
+  }
+
+  /* Collapse some footer and info strip columns */
   .info-strip-grid,
   .footer-grid {
     grid-template-columns: 1fr 1fr;
   }
 }
 
+/* ---------- Tablets ---------- */
 @media (max-width: 900px) {
+  /* Hide navigation links to simplify header */
   .nav-links {
     display: none;
   }
 
+  /* Stack profile layout and detail grids */
   .dog-profile-layout,
   .info-grid,
   .detail-grid {
     grid-template-columns: 1fr;
   }
 
+  /* Stack hero columns */
   .hero {
     grid-template-columns: 1fr;
     min-height: auto;
     padding-bottom: 20px;
   }
 
+  /* Smaller visual area */
   .hero-visual {
     min-height: 500px;
     margin-top: 10px;
   }
 
+  /* Back row dogs */
   .hero-dog-main {
-    width: 260px;
+    width: 220px;
     right: 20px;
   }
 
-  .hero-dog-secondary {
-    width: 180px;
-    right: 185px;
+  .hero-dog-brown {
+    width: 220px;
+    right: 170px;
   }
 
+  /* Front row cats */
+  .hero-dog-secondary {
+    width: 125px;
+    right: 150px;
+  }
+
+  .hero-dog-black {
+    width: 125px;
+    right: 270px;
+  }
+
+  /* Decorative circle resize */
   .hero-circle-1 {
     width: 300px;
     height: 300px;
@@ -776,11 +969,14 @@ img[src*="can"] {
   }
 }
 
+/* ---------- Phones ---------- */
 @media (max-width: 700px) {
+  /* Allow nav items to wrap if needed */
   .top-nav {
     flex-wrap: wrap;
   }
 
+  /* Smaller brand text */
   .brand-text span:first-child {
     font-size: 1.5rem;
   }
@@ -789,47 +985,69 @@ img[src*="can"] {
     font-size: 1rem;
   }
 
+  /* Smaller hero heading */
   .hero h1 {
     font-size: 3.2rem;
   }
 
+  /* Smaller hero paragraph */
   .hero-text {
     font-size: 1.05rem;
   }
 
+  /* Shorter visual area */
   .hero-visual {
     min-height: 420px;
   }
 
+  /* Back row dogs */
   .hero-dog-main {
-    width: 210px;
-    right: 10px;
+    width: 165px;
+    right: 5px;
   }
 
+  .hero-dog-brown {
+    width: 165px;
+    right: 105px;
+  }
+
+  /* Front row cats */
   .hero-dog-secondary {
-    width: 150px;
-    right: 140px;
+    width: 95px;
+    right: 95px;
+    bottom: 0;
   }
 
+  .hero-dog-black {
+    width: 95px;
+    right: 185px;
+    bottom: 0;
+  }
+
+  /* Stack these grids on one column */
   .dogs-grid,
   .info-strip-grid,
   .footer-grid {
     grid-template-columns: 1fr;
   }
 
+  /* Keep card image height consistent */
   .dog-card-image {
     height: 260px;
   }
 
+  /* Lightbox padding adjustment */
   .lightbox {
     padding: 16px;
   }
 
+  /* Limit lightbox image size */
   .lightbox-image {
     max-width: 100%;
     max-height: 80vh;
   }
 
+  /* Smaller close button */
   .lightbox-close {
     top: 16px;
     right: 16px;
