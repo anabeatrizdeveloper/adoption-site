@@ -65,7 +65,7 @@ const dogs = [
     imageFolder: "assets/dogs/can-dog",
     imagePrefix: "can",
     imageCount: 10,
-    videos: ["assets/videos/video1.mp4"]
+    videos: ["assets/dogs/videos/canvideo.mp4"]
   },
   {
     id: "kirli",
@@ -132,8 +132,8 @@ const dogs = [
       "Kirli is a loyal, gentle, and affectionate companion who has overcome adversity. All he needs now is a loving home where he will be safe, valued, and cherished forever.",
     imageFolder: "assets/dogs/kirli-dog",
     imagePrefix: "kirli",
-    imageCount: 3,
-    videos: ["assets/videos/video2.mp4"]
+    imageCount: 8,
+    videos: ["assets/dogs/videos/kirlivideo.mp4"]
   },
   {
     id: "luna",
@@ -201,8 +201,8 @@ const dogs = [
       "Luna is sweet, well-behaved, and affectionate—a perfect companion for a wide variety of households. She has already grown up without a home, and now all she needs is a family to choose her. In the right home, she will be a loving, loyal, and playful friend for years to come.",
     imageFolder: "assets/dogs/luna-dog",
     imagePrefix: "luna",
-    imageCount: 4,
-    videos: ["assets/videos/video3.mp4"]
+    imageCount: 7,
+    videos: ["assets/dogs/videos/lunavideo.mp4"]
   },
   {
     id: "sans",
@@ -269,8 +269,8 @@ const dogs = [
       "Sans is affectionate, calm indoors, and playful outside—a wonderful balance. He has survived so much and now deserves a loving family to call his own, where he can finally feel secure and happy every day.",
     imageFolder: "assets/dogs/sans-dog",
     imagePrefix: "sans",
-    imageCount: 3,
-    videos: ["assets/videos/video4.mp4"]
+    imageCount: 6,
+    videos: ["assets/dogs/videos/sansvideo.mp4"]
   },
   {
     id: "zeyna",
@@ -338,7 +338,7 @@ const dogs = [
       "Zeyna is a smart, energetic, and loyal companion who needs an owner who can keep up with her and provide structure. She is not suitable for everyone, but in the right home, she will be an incredibly devoted, playful, and loving partner.",
     imageFolder: "assets/dogs/zeyna-dog",
     imagePrefix: "zeyna",
-    imageCount: 7,
-    videos: []
+    imageCount: 14,
+  videos: ["assets/dogs/videos/zeynavideo.mp4"]
   }
 ];
