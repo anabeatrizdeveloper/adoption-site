@@ -14,6 +14,60 @@
   />
 
   <link rel="stylesheet" href="css/style.css" />
+
+  <style>
+    .pets-filter-wrap {
+      display: flex;
+      justify-content: center;
+      margin: 0 0 28px;
+    }
+
+    .pets-filter {
+      display: inline-flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.72);
+      border: 1px solid rgba(152, 0, 0, 0.08);
+      border-radius: 999px;
+      padding: 8px;
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.05);
+      backdrop-filter: blur(6px);
+    }
+
+    .filter-btn {
+      border: none;
+      background: transparent;
+      color: var(--primary);
+      font-weight: 700;
+      font-size: 0.98rem;
+      padding: 12px 18px;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .filter-btn:hover {
+      background: rgba(152, 0, 0, 0.08);
+    }
+
+    .filter-btn.active {
+      background: linear-gradient(180deg, #d33232 0%, #a10000 100%);
+      color: #fff;
+      box-shadow: 0 8px 18px rgba(152, 0, 0, 0.18);
+    }
+
+    @media (max-width: 700px) {
+      .pets-filter {
+        width: 100%;
+        border-radius: 24px;
+      }
+
+      .filter-btn {
+        flex: 1 1 auto;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -69,7 +123,7 @@
         </div>
 
         <div class="hero-actions">
-          <a class="hero-button white-button">How Adoption Works</a>
+          <a href="#how-to-adopt" class="hero-button white-button">How Adoption Works</a>
         </div>
       </div>
 
@@ -77,11 +131,11 @@
         <div class="hero-circle hero-circle-1"></div>
         <div class="hero-circle hero-circle-2"></div>
 
-        <img src="assets/photos/browndogcover.png" class="hero-dog-extra hero-dog-brown" />
-        <img src="assets/photos/dogcover.png" class="hero-dog hero-dog-main" />
+        <img src="assets/photos/browndogcover.png" alt="Brown dog" class="hero-dog-extra hero-dog-brown" />
+        <img src="assets/photos/dogcover.png" alt="Dog" class="hero-dog hero-dog-main" />
 
-        <img src="assets/photos/blackcatcover.png" class="hero-dog-extra hero-dog-black" />
-        <img src="assets/photos/catcover.png" class="hero-dog hero-dog-secondary" />
+        <img src="assets/photos/blackcatcover.png" alt="Black cat" class="hero-dog-extra hero-dog-black" />
+        <img src="assets/photos/catcover.png" alt="Cat" class="hero-dog hero-dog-secondary" />
       </div>
     </section>
   </div>
@@ -106,6 +160,14 @@
         Each profile includes essential information, personality notes, and media
         to help you get to know the animal before reaching out.
       </p>
+    </div>
+
+    <div class="pets-filter-wrap">
+      <div class="pets-filter" aria-label="Pet type filters">
+        <button class="filter-btn active" type="button" data-type="all">All Pets</button>
+        <button class="filter-btn" type="button" data-type="dog">Dogs</button>
+        <button class="filter-btn" type="button" data-type="cat">Cats</button>
+      </div>
     </div>
 
     <div id="dogs-grid" class="dogs-grid"></div>
@@ -145,7 +207,6 @@
   </div>
 </section>
 
-<!-- CONTACT CTA -->
 <section id="contact-cta" class="contact-cta-section">
   <div class="container">
     <div class="contact-cta-card">
@@ -159,18 +220,15 @@
       </div>
 
       <div class="contact-cta-actions">
-
-        <!-- EMAIL FUNCIONANDO -->
         <a 
           href="https://mail.google.com/mail/?view=cm&fs=1&to=kimcanko@gmail.com&su=Adoption%20Inquiry"
           target="_blank"
           rel="noopener noreferrer"
           class="contact-cta-button"
-          >
-            Email the Organization
+        >
+          Email the Organization
         </a>
 
-        <!-- INSTAGRAM FUNCIONANDO -->
         <a 
           href="https://www.instagram.com/silifkekimcanko/"
           target="_blank"
@@ -179,7 +237,6 @@
         >
           Message on Instagram
         </a>
-
       </div>
     </div>
   </div>
@@ -191,7 +248,7 @@
   <div class="container footer-grid">
 
     <div class="footer-brand">
-      <img src="assets/logofooter.png" />
+      <img src="assets/logofooter.png" alt="Kimcanko logo" />
       <div>
         <h3>KIMCANKO SILIFKE</h3>
         <p>International Pet Adoption Platform</p>
@@ -206,7 +263,6 @@
     <div>
       <h4>Contact</h4>
 
-      <!-- EMAIL FUNCIONANDO -->
       <p>
         <strong>Email</strong><br />
         <a href="mailto:kimcanko@gmail.com">kimcanko@gmail.com</a>
@@ -221,7 +277,6 @@
     <div>
       <h4>Social</h4>
 
-      <!-- INSTAGRAM FUNCIONANDO -->
       <p>
         <strong>Instagram</strong><br />
         <a 
@@ -235,7 +290,7 @@
 
       <p>
         <strong>Website</strong><br />
-        <a href="https://www.kimcanko.org/" target="_blank">
+        <a href="https://www.kimcanko.org/" target="_blank" rel="noopener noreferrer">
           kimcanko.org
         </a>
       </p>
@@ -245,7 +300,80 @@
 </footer>
 
 <script src="js/data.js"></script>
-<script src="js/main.js"></script>
+
+<script>
+  const dogsGrid = document.getElementById("dogs-grid");
+  const filterButtons = document.querySelectorAll(".filter-btn");
+
+  let selectedType = "all";
+
+  function getAnimalLabel(type) {
+    if (type === "cat") return "Cat";
+    return "Dog";
+  }
+
+  function renderPets() {
+    const filteredPets =
+      selectedType === "all"
+        ? dogs
+        : dogs.filter((pet) => pet.type === selectedType);
+
+    if (!filteredPets.length) {
+      dogsGrid.innerHTML = `
+        <div class="not-found-box">
+          <h1>No pets found</h1>
+          <p>There are no ${selectedType}s available right now.</p>
+        </div>
+      `;
+      return;
+    }
+
+    dogsGrid.innerHTML = filteredPets
+      .map((pet) => {
+        const coverImage = `${pet.imageFolder}/${pet.imagePrefix}1.jpg`;
+
+        return `
+          <article class="dog-card">
+            <img
+              src="${coverImage}"
+              alt="${pet.name}"
+              class="dog-card-image"
+            />
+
+            <div class="dog-card-content">
+              <div class="dog-card-title-row">
+                <h3>${pet.name}</h3>
+                <span class="dog-badge">${getAnimalLabel(pet.type)}</span>
+              </div>
+
+              <div class="dog-meta">
+                <span class="meta-pill">${pet.gender}</span>
+                <span class="meta-pill">${pet.breed}</span>
+              </div>
+
+              <p class="card-summary">${pet.shortDescription}</p>
+
+              <a href="dog.html?id=${pet.id}" class="card-link">Meet ${pet.name}</a>
+            </div>
+          </article>
+        `;
+      })
+      .join("");
+  }
+
+  filterButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      selectedType = button.dataset.type;
+
+      filterButtons.forEach((btn) => btn.classList.remove("active"));
+      button.classList.add("active");
+
+      renderPets();
+    });
+  });
+
+  renderPets();
+</script>
 
 </body>
 </html>

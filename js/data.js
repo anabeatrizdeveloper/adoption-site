@@ -1,6 +1,7 @@
 const dogs = [
   {
     id: "can",
+    type: "dog",
     name: "Can",
     breed: "Anatolian Shepherd mix",
     gender: "Female",
@@ -69,6 +70,7 @@ const dogs = [
   },
   {
     id: "kirli",
+    type: "dog",
     name: "Kirli",
     breed: "Barak",
     gender: "Male",
@@ -137,6 +139,7 @@ const dogs = [
   },
   {
     id: "luna",
+    type: "dog",
     name: "Luna",
     breed: "Labrador–Rottweiler mix",
     gender: "Female",
@@ -206,6 +209,7 @@ const dogs = [
   },
   {
     id: "sans",
+    type: "dog",
     name: "Sans",
     breed: "Anatolian Shepherd",
     gender: "Male",
@@ -274,6 +278,7 @@ const dogs = [
   },
   {
     id: "zeyna",
+    type: "dog",
     name: "Zeyna",
     breed: "German Shepherd",
     gender: "Female",
@@ -339,6 +344,6 @@ const dogs = [
     imageFolder: "assets/dogs/zeyna-dog",
     imagePrefix: "zeyna",
     imageCount: 14,
-  videos: ["assets/dogs/videos/zeynavideo.mp4"]
+    videos: ["assets/dogs/videos/zeynavideo.mp4"]
   }
 ];
