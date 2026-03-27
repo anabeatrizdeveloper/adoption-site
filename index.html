@@ -57,6 +57,34 @@
       box-shadow: 0 8px 18px rgba(152, 0, 0, 0.18);
     }
 
+    .dog-status {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      align-self: flex-start;
+      margin-bottom: 12px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-size: 0.82rem;
+      font-weight: 800;
+      letter-spacing: 0.02em;
+    }
+
+    .dog-status.available {
+      background: #e8f7ec;
+      color: #1c7c3d;
+    }
+
+    .dog-status.reserved {
+      background: #fff3d9;
+      color: #9a6a00;
+    }
+
+    .dog-status.adopted {
+      background: #ececec;
+      color: #666666;
+    }
+
     @media (max-width: 700px) {
       .pets-filter {
         width: 100%;
@@ -312,6 +340,15 @@
     return "Dog";
   }
 
+  function getStatusLabel(status) {
+    const labels = {
+      available: "Available",
+      reserved: "Reserved",
+      adopted: "Adopted"
+    };
+    return labels[status] || "Available";
+  }
+
   function renderPets() {
     const filteredPets =
       selectedType === "all"
@@ -341,6 +378,8 @@
             />
 
             <div class="dog-card-content">
+              <span class="dog-status ${pet.status}">${getStatusLabel(pet.status)}</span>
+
               <div class="dog-card-title-row">
                 <h3>${pet.name}</h3>
                 <span class="dog-badge">${getAnimalLabel(pet.type)}</span>

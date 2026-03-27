@@ -2,6 +2,7 @@ const dogs = [
   {
     id: "can",
     type: "dog",
+    status: "available",
     name: "Can",
     breed: "Anatolian Shepherd mix",
     gender: "Female",
@@ -71,6 +72,7 @@ const dogs = [
   {
     id: "kirli",
     type: "dog",
+    status: "available",
     name: "Kirli",
     breed: "Barak",
     gender: "Male",
@@ -140,6 +142,7 @@ const dogs = [
   {
     id: "luna",
     type: "dog",
+    status: "available",
     name: "Luna",
     breed: "Labrador–Rottweiler mix",
     gender: "Female",
@@ -210,6 +213,7 @@ const dogs = [
   {
     id: "sans",
     type: "dog",
+    status: "available",
     name: "Sans",
     breed: "Anatolian Shepherd",
     gender: "Male",
@@ -279,6 +283,7 @@ const dogs = [
   {
     id: "zeyna",
     type: "dog",
+    status: "available",
     name: "Zeyna",
     breed: "German Shepherd",
     gender: "Female",
