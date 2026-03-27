@@ -529,6 +529,7 @@ a {
 
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 .dog-card:hover {
@@ -559,7 +560,7 @@ img[src*="can"] {
   padding: 18px 18px 16px;
   display: flex;
   flex-direction: column;
-  height: 100%;
+  flex: 1;
 }
 
 .dog-card-title-row {
@@ -575,15 +576,24 @@ img[src*="can"] {
 }
 
 .dog-badge {
-  display: inline-block;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+
   font-size: 0.95rem;
   font-weight: 600;
   color: var(--text-soft);
 }
 
 .dog-meta {
-  display: block;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+
   margin-bottom: 12px;
+  min-height: 3.2em;
 }
 
 .meta-pill {
@@ -601,8 +611,14 @@ img[src*="can"] {
   color: var(--text-soft);
   font-size: 0.98rem;
   line-height: 1.5;
-  min-height: 88px;
   margin-bottom: 16px;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+
+  min-height: 6em;
 }
 
 .card-link {
@@ -618,6 +634,7 @@ img[src*="can"] {
   font-size: 1rem;
   box-shadow: inset 0 1px 0 rgba(255,255,255,0.18);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+
   margin-top: auto;
 }
 
