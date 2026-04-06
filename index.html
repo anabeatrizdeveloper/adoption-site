@@ -354,9 +354,9 @@
 
   function renderPets() {
     const filteredPets =
-      selectedType === "all"
-        ? dogs
-        : dogs.filter((pet) => pet.type === selectedType);
+  selectedType === "all"
+    ? pets
+    : pets.filter((pet) => pet.type === selectedType);
 
     if (!filteredPets.length) {
       dogsGrid.innerHTML = `

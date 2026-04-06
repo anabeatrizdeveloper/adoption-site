@@ -351,4 +351,648 @@ const dogs = [
     imageCount: 14,
     videos: ["assets/dogs/videos/zeynavideo.mp4"]
   }
+
+  ];
+
+  const cats = [
+  {
+    id: "caki-a101",
+    type: "cat",
+    status: "available",
+    name: "Caki (aka A101)",
+    breed: "—",
+    gender: "Male",
+    birthDate: "Approx. 2023",
+    weight: "approx. 4.5 kg",
+    height: "—",
+    color: "—",
+    microchip: "900233006240047",
+    rabiesVaccination: "March 18, 2026",
+    coreVaccinations: "—",
+    parasiteTreatment: "January 2026",
+    neuteredSpayed: "Yes",
+    healthCondition: "Excellent",
+    medicalIssues: "Previously had a ruptured diaphragm; fully recovered after surgery",
+    currentTreatments: "None",
+    strangers: "Excellent",
+    children: "Not tested",
+    menWomenDifferences: "None",
+    dogsCompatibility: "Not tested",
+    catsCompatibility: "Excellent, sometimes shy",
+    energyLevel: "Medium",
+    personality: "Affectionate, easygoing, playful; slightly shy around more dominant cats",
+    indoorLiving: "Yes",
+    separationAnxiety: "No",
+    barkingLevel: "Low",
+    escapeTendency: "Possibly cautious",
+    aggression: "None",
+    timeInCare: "6 months",
+    previousOwner: "—",
+    suitableHome: "Apartment or house; supervised outdoor access possible after full adjustment",
+    experienceRequired: "Not required",
+    specialRequirements: "None",
+    additionalNotes:
+      "Found in front of an A101 store in Silifke, which inspired his nickname. He was rescued in very poor condition with a ruptured diaphragm, underwent critical surgery, and recovered successfully.",
+    shortDescription:
+      "A brave survivor with a gentle heart—affectionate, playful, and ready for a loving home.",
+    introTitle:
+      "Meet Caki – A Brave Survivor with a Gentle Heart",
+    introText:
+      "Caki is a loving, easygoing cat who survived a life-threatening condition and now enjoys life with health, energy, and affection.",
+    story:
+      "Caki was rescued in very poor condition and diagnosed with a ruptured diaphragm. He underwent a serious and life-saving surgery, recovered fully, and is now healthy, strong, and ready for a loving home.",
+    personalityHighlights: [
+      "Affectionate and people-oriented",
+      "Playful and gentle",
+      "Easygoing and well-adjusted",
+      "Slightly shy around more dominant cats"
+    ],
+    idealHomeHighlights: [
+      "Suitable for apartments or houses",
+      "A calm and caring environment",
+      "Indoor-only at first, with gradual supervised exposure if desired",
+      "Patient adopters who will give him time to build confidence"
+    ],
+    healthHighlights: [
+      "Excellent overall health",
+      "Fully recovered from previous surgery",
+      "Neutered and parasite-treated"
+    ],
+    whyAdopt:
+      "Caki is a true survivor who overcame a life-threatening condition and is now ready to bond deeply with a family that gives him the stability he deserves.",
+    imageFolder: "assets/cats/caki-cat",
+    imagePrefix: "caki",
+    imageCount: 7,
+    videos: []
+  },
+
+  {
+    id: "duman",
+    type: "cat",
+    status: "available",
+    name: "Duman",
+    breed: "—",
+    gender: "Male",
+    birthDate: "Approx. 2018",
+    weight: "approx. 4.5 kg",
+    height: "—",
+    color: "—",
+    microchip: "900233002193687",
+    rabiesVaccination: "December 31, 2025",
+    coreVaccinations: "—",
+    parasiteTreatment: "January 2026",
+    neuteredSpayed: "Yes",
+    healthCondition: "Excellent",
+    medicalIssues: "None",
+    currentTreatments: "None",
+    strangers: "Friendly",
+    children: "Friendly",
+    menWomenDifferences: "None noted",
+    dogsCompatibility: "Not tested",
+    catsCompatibility: "Excellent, friendly, and loving",
+    energyLevel: "High",
+    personality: "Independent, playful, and friendly",
+    indoorLiving: "Yes, with occasional outdoor access after full adjustment",
+    separationAnxiety: "No",
+    barkingLevel: "High",
+    escapeTendency: "Yes",
+    aggression: "None",
+    timeInCare: "7.5 years",
+    previousOwner: "—",
+    suitableHome: "Apartment or house; supervised outdoor access possible after full adjustment",
+    experienceRequired: "Not required",
+    specialRequirements: "None",
+    additionalNotes:
+      "Duman was rescued as a kitten and has been in care since then. He has grown into a healthy, active, and social cat who enjoys interaction and play.",
+    shortDescription:
+      "An energetic and loving cat who brings warmth, activity, and companionship into a home.",
+    introTitle:
+      "Meet Duman – An Energetic and Loving Companion",
+    introText:
+      "Duman is a lively, social, and active cat who enjoys interaction, play, and a stable environment.",
+    story:
+      "Duman was rescued as a baby and has spent his life in care, growing into a healthy and active cat. He is now ready for a home where he can enjoy companionship, play, and security.",
+    personalityHighlights: [
+      "Friendly and social with people",
+      "Very active and playful",
+      "Independent but affectionate",
+      "Enjoys interaction and stimulation"
+    ],
+    idealHomeHighlights: [
+      "Suitable for apartments or houses",
+      "A home that can provide activity and engagement",
+      "Indoor living with occasional monitored outdoor access after adjustment",
+      "A family or individual who can match his energy level"
+    ],
+    healthHighlights: [
+      "Excellent overall health",
+      "Neutered and parasite-treated",
+      "No known medical issues"
+    ],
+    whyAdopt:
+      "Duman is a lively and friendly cat who brings energy and warmth into any home. He is healthy, social, and ready to bond with a family.",
+    imageFolder: "assets/cats/duman-cat",
+    imagePrefix: "duman",
+    imageCount: 9,
+    videos: []
+  },
+
+  {
+    id: "minnos",
+    type: "cat",
+    status: "available",
+    name: "Minnos",
+    breed: "—",
+    gender: "Male",
+    birthDate: "Approx. 2020",
+    weight: "approx. 6 kg",
+    height: "—",
+    color: "—",
+    microchip: "900233002193686",
+    rabiesVaccination: "December 31, 2025",
+    coreVaccinations: "—",
+    parasiteTreatment: "January 2026",
+    neuteredSpayed: "Yes",
+    healthCondition: "Excellent",
+    medicalIssues: "None",
+    currentTreatments: "None",
+    strangers: "Friendly",
+    children: "Friendly",
+    menWomenDifferences: "None noted",
+    dogsCompatibility: "Friendly, gets along well with many dogs",
+    catsCompatibility: "Great",
+    energyLevel: "Medium",
+    personality: "Playful and affectionate",
+    indoorLiving: "Yes",
+    separationAnxiety: "No",
+    barkingLevel: "Low",
+    escapeTendency: "No",
+    aggression: "None",
+    timeInCare: "5 years",
+    previousOwner: "—",
+    suitableHome: "Apartment or house; supervised outdoor access possible after full adjustment",
+    experienceRequired: "Not required",
+    specialRequirements: "None",
+    additionalNotes:
+      "Minnos was rescued as a kitten and has grown into a calm, easygoing, and well-adjusted cat.",
+    shortDescription:
+      "A balanced, friendly, and affectionate companion who adapts easily and gets along with others.",
+    introTitle:
+      "Meet Minnos – A Calm and Affectionate Companion",
+    introText:
+      "Minnos is a friendly and easygoing cat who is well-socialized and comfortable around both people and other animals.",
+    story:
+      "Minnos was rescued as a kitten and has spent his life in care, growing into a calm, affectionate, and adaptable cat.",
+    personalityHighlights: [
+      "Friendly and social",
+      "Affectionate and gentle",
+      "Playful but not overly demanding",
+      "Gets along well with cats and dogs"
+    ],
+    idealHomeHighlights: [
+      "Suitable for apartments or houses",
+      "Can live with families or individuals",
+      "A stable and caring environment",
+      "A home that allows supervised outdoor access after full adjustment"
+    ],
+    healthHighlights: [
+      "Excellent overall health",
+      "Neutered and parasite-treated",
+      "No known medical issues"
+    ],
+    whyAdopt:
+      "Minnos is a balanced, affectionate cat who enjoys both companionship and independence. He is an ideal companion for many types of homes.",
+    imageFolder: "assets/cats/minnos-cat",
+    imagePrefix: "minnos",
+    imageCount: 7,
+    videos: []
+  },
+
+  {
+    id: "pamuk",
+    type: "cat",
+    status: "available",
+    name: "Pamuk",
+    breed: "—",
+    gender: "Female",
+    birthDate: "Approx. 2022",
+    weight: "approx. 3.5 kg",
+    height: "—",
+    color: "—",
+    microchip: "900233002193714",
+    rabiesVaccination: "December 31, 2025",
+    coreVaccinations: "Done when kitten",
+    parasiteTreatment: "January 2026",
+    neuteredSpayed: "Yes",
+    healthCondition: "Excellent",
+    medicalIssues: "None",
+    currentTreatments: "None",
+    strangers: "Shy",
+    children: "Shy",
+    menWomenDifferences: "None noted",
+    dogsCompatibility: "Not tested",
+    catsCompatibility: "Good",
+    energyLevel: "Medium",
+    personality: "Shy and reserved",
+    indoorLiving: "Yes",
+    separationAnxiety: "No",
+    barkingLevel: "Low",
+    escapeTendency: "No",
+    aggression: "None",
+    timeInCare: "3.5 years",
+    previousOwner: "—",
+    suitableHome: "Apartment or house; indoor-only required",
+    experienceRequired: "Not required",
+    specialRequirements: "None",
+    additionalNotes:
+      "Pamuk was rescued as a kitten after growing up without a mother. She remains shy with unfamiliar people but is affectionate and trusting with her foster caregiver.",
+    shortDescription:
+      "A soft, shy, and gentle cat who forms deep bonds with the people she trusts.",
+    introTitle:
+      "Meet Pamuk – A Gentle and Shy Companion",
+    introText:
+      "Pamuk is a quiet and sensitive cat who forms close bonds with familiar people and thrives in calm environments.",
+    story:
+      "Pamuk was rescued as a kitten and raised in care without a mother. She has grown into a gentle and shy cat who needs patience and understanding.",
+    personalityHighlights: [
+      "Shy and cautious",
+      "Gentle and calm",
+      "Affectionate with trusted people",
+      "Comfortable in quiet, stable environments"
+    ],
+    idealHomeHighlights: [
+      "Calm and patient adopters",
+      "Indoor-only home",
+      "Apartment or house suitable",
+      "A home that allows her to build trust at her own pace"
+    ],
+    healthHighlights: [
+      "Excellent overall health",
+      "Spayed and parasite-treated",
+      "No known medical issues"
+    ],
+    whyAdopt:
+      "Pamuk forms deep bonds with those she trusts. In the right home, she will become a quiet and loving companion with meaningful affection.",
+    imageFolder: "assets/cats/pamuk-cat",
+    imagePrefix: "pamuk",
+    imageCount: 5,
+    videos: []
+  },
+
+  {
+    id: "peri",
+    type: "cat",
+    status: "available",
+    name: "Peri",
+    breed: "—",
+    gender: "Female",
+    birthDate: "Approx. 2021",
+    weight: "approx. 4 kg",
+    height: "—",
+    color: "—",
+    microchip: "900233002193691",
+    rabiesVaccination: "December 31, 2025",
+    coreVaccinations: "—",
+    parasiteTreatment: "January 2026",
+    neuteredSpayed: "Yes",
+    healthCondition: "Stable",
+    medicalIssues: "None",
+    currentTreatments: "None",
+    strangers: "Shy",
+    children: "Not tested",
+    menWomenDifferences: "None",
+    dogsCompatibility: "Not tested",
+    catsCompatibility: "Excellent",
+    energyLevel: "Low",
+    personality: "Shy, fearful, semi-feral",
+    indoorLiving: "Yes",
+    separationAnxiety: "None",
+    barkingLevel: "Low",
+    escapeTendency: "None",
+    aggression: "May bite or scratch if stressed or approached",
+    timeInCare: "5 years",
+    previousOwner: "—",
+    suitableHome: "Apartment or house; strictly indoor-only",
+    experienceRequired: "Experienced adopter required",
+    specialRequirements: "Calm, patient, and experienced home",
+    additionalNotes:
+      "Peri was rescued as a kitten after growing up without a mother and has never lived outdoors. She has remained shy and fearful throughout her life.",
+    shortDescription:
+      "A gentle soul who needs patience, respect, and a calm home to feel safe.",
+    introTitle:
+      "Meet Peri – A Gentle Soul in Need of Patience and Care",
+    introText:
+      "Peri is a shy and cautious cat who needs time, patience, and understanding to feel secure.",
+    story:
+      "Peri was rescued as a kitten and has spent her entire life indoors. She grew into a sensitive, semi-feral cat who needs a quiet and low-stress home.",
+    personalityHighlights: [
+      "Very shy and cautious",
+      "Semi-feral and easily stressed",
+      "Independent and low-energy",
+      "Bonds slowly and requires patience"
+    ],
+    idealHomeHighlights: [
+      "Experienced adopter familiar with semi-feral cats",
+      "Calm, quiet environment",
+      "Indoor-only home",
+      "A patient owner willing to let her adjust at her own pace"
+    ],
+    healthHighlights: [
+      "Spayed and parasite-treated",
+      "No known medical issues",
+      "Stable overall condition"
+    ],
+    whyAdopt:
+      "Peri needs understanding more than anything. For the right person, adopting her means giving a vulnerable cat dignity, security, and a respected life.",
+    imageFolder: "assets/cats/peri-cat",
+    imagePrefix: "peri",
+    imageCount: 5,
+    videos: []
+  },
+
+  {
+    id: "benek",
+    type: "cat",
+    status: "available",
+    name: "Benek",
+    breed: "—",
+    gender: "Female",
+    birthDate: "Approx. 2022",
+    weight: "approx. 4 kg",
+    height: "—",
+    color: "—",
+    microchip: "991001005524564",
+    rabiesVaccination: "Scheduled for April 2026",
+    coreVaccinations: "—",
+    parasiteTreatment: "January 2026",
+    neuteredSpayed: "Yes",
+    healthCondition: "Excellent",
+    medicalIssues: "None",
+    currentTreatments: "None",
+    strangers: "Excellent",
+    children: "Excellent",
+    menWomenDifferences: "None",
+    dogsCompatibility: "Not tested",
+    catsCompatibility: "Excellent",
+    energyLevel: "Medium",
+    personality: "Very affectionate, gentle, and loving",
+    indoorLiving: "Yes",
+    separationAnxiety: "No",
+    barkingLevel: "Medium",
+    escapeTendency: "No",
+    aggression: "None",
+    timeInCare: "3 years",
+    previousOwner: "—",
+    suitableHome: "Apartment or house; supervised outdoor access possible after full adjustment",
+    experienceRequired: "Not required",
+    specialRequirements: "None",
+    additionalNotes:
+      "Benek was rescued after trauma that caused internal bleeding. She fully recovered and is now a very gentle, affectionate, and well-adjusted cat.",
+    shortDescription:
+      "A loving and resilient cat who is gentle, affectionate, and easy to adore.",
+    introTitle:
+      "Meet Benek – A Loving and Gentle Companion",
+    introText:
+      "Benek is a sweet and affectionate cat who has fully recovered from a difficult past and is now ready for a stable, loving home.",
+    story:
+      "Benek was rescued after suffering trauma that caused internal bleeding. With care and time, she made a full recovery and grew into a calm and affectionate cat.",
+    personalityHighlights: [
+      "Very affectionate and people-oriented",
+      "Gentle and easy to handle",
+      "Gets along well with other cats",
+      "Comfortable with children"
+    ],
+    idealHomeHighlights: [
+      "Suitable for apartments and houses",
+      "Can live with families or individuals",
+      "A loving home where she can receive attention and care",
+      "Monitored outdoor access would be a plus"
+    ],
+    healthHighlights: [
+      "Good overall health",
+      "Spayed and parasite-treated",
+      "No ongoing medical issues"
+    ],
+    whyAdopt:
+      "Benek is a sweet, resilient, and rewarding companion who is ready to share her affection with a loving family.",
+    imageFolder: "assets/cats/benek-cat",
+    imagePrefix: "benek",
+    imageCount: 7,
+    videos: []
+  },
+
+  {
+    id: "cancan",
+    type: "cat",
+    status: "available",
+    name: "Cancan",
+    breed: "—",
+    gender: "Male",
+    birthDate: "Approx. 2023",
+    weight: "approx. 4.5 kg",
+    height: "—",
+    color: "—",
+    microchip: "900233002936388",
+    rabiesVaccination: "Scheduled for April 2026",
+    coreVaccinations: "—",
+    parasiteTreatment: "January 2026",
+    neuteredSpayed: "Yes",
+    healthCondition: "Excellent",
+    medicalIssues: "Slight leg curvature with no impact on mobility",
+    currentTreatments: "None",
+    strangers: "Excellent",
+    children: "Not tested",
+    menWomenDifferences: "None",
+    dogsCompatibility: "Not tested",
+    catsCompatibility: "Excellent",
+    energyLevel: "High",
+    personality: "Playful, affectionate, and friendly",
+    indoorLiving: "Yes",
+    separationAnxiety: "No",
+    barkingLevel: "Low",
+    escapeTendency: "No",
+    aggression: "None",
+    timeInCare: "1 year",
+    previousOwner: "—",
+    suitableHome: "Apartment or house; supervised outdoor access possible after full adjustment",
+    experienceRequired: "Not required",
+    specialRequirements: "None",
+    additionalNotes:
+      "Rescued as a stray with multiple wounds. It was later discovered that he had suffered a broken leg in the past, which healed on its own and left a slight curvature.",
+    shortDescription:
+      "A resilient and playful cat who adapted beautifully and moves comfortably despite his past injury.",
+    introTitle:
+      "Meet Cancan – A Resilient and Playful Companion",
+    introText:
+      "Cancan is an affectionate, energetic, and easygoing cat who has overcome a difficult past and is ready for a caring home.",
+    story:
+      "Cancan was found as a stray with visible wounds. During recovery, it was discovered that he had a previously broken leg that healed on its own, leaving a slight curve that does not affect his daily life.",
+    personalityHighlights: [
+      "Playful and energetic",
+      "Affectionate and friendly",
+      "Gentle and well-adjusted",
+      "Social and easygoing"
+    ],
+    idealHomeHighlights: [
+      "Suitable for apartments or houses",
+      "Can live with individuals or families",
+      "A caring home that appreciates his resilience",
+      "Monitored outdoor access would be a plus"
+    ],
+    healthHighlights: [
+      "Excellent overall health",
+      "Neutered and parasite-treated",
+      "Slight leg curvature with no impact on mobility"
+    ],
+    whyAdopt:
+      "Cancan is affectionate, playful, and wonderfully resilient. He is ready to bring warmth and companionship to a loving home.",
+    imageFolder: "assets/cats/cancan-cat",
+    imagePrefix: "cancan",
+    imageCount: 4,
+    videos: []
+  },
+
+  {
+    id: "prens",
+    type: "cat",
+    status: "available",
+    name: "Prens",
+    breed: "—",
+    gender: "Male",
+    birthDate: "Approx. 2021",
+    weight: "approx. 6 kg",
+    height: "—",
+    color: "—",
+    microchip: "991001005526915",
+    rabiesVaccination: "Scheduled for April 2026",
+    coreVaccinations: "—",
+    parasiteTreatment: "January 2026",
+    neuteredSpayed: "Yes",
+    healthCondition: "Excellent",
+    medicalIssues: "None",
+    currentTreatments: "None",
+    strangers: "Good",
+    children: "Not tested",
+    menWomenDifferences: "None",
+    dogsCompatibility: "Not tested",
+    catsCompatibility: "Good",
+    energyLevel: "High",
+    personality: "Playful, friendly",
+    indoorLiving: "Yes",
+    separationAnxiety: "No",
+    barkingLevel: "Medium",
+    escapeTendency: "No",
+    aggression: "None",
+    timeInCare: "3 years",
+    previousOwner: "—",
+    suitableHome: "Apartment or house; supervised outdoor access possible after full adjustment",
+    experienceRequired: "Not required",
+    specialRequirements: "None",
+    additionalNotes:
+      "Prens was found in very poor condition and close to death, but has since made a full recovery. He is also food-motivated, which can help with bonding and training.",
+    shortDescription:
+      "A playful survivor full of life, curiosity, and affection.",
+    introTitle:
+      "Meet Prens – A Playful Survivor Full of Life",
+    introText:
+      "Prens is a happy, energetic cat who has overcome a difficult beginning and is now ready for a loving home.",
+    story:
+      "Prens was rescued in critical condition and nursed back to health. Thanks to care and time, he made a full recovery and became a friendly, active cat.",
+    personalityHighlights: [
+      "Playful and energetic",
+      "Friendly and approachable",
+      "Gets along well with other cats",
+      "Food-motivated and responsive"
+    ],
+    idealHomeHighlights: [
+      "Suitable for apartments or houses",
+      "Can adapt to different households",
+      "Occasional supervised outdoor access would be a plus"
+    ],
+    healthHighlights: [
+      "Excellent overall health",
+      "Neutered and parasite-treated",
+      "No known medical issues"
+    ],
+    whyAdopt:
+      "Prens is full of curiosity and life. He is friendly, playful, and ready to bring joy to a home that will keep giving him the care he deserves.",
+    imageFolder: "assets/cats/prens-cat",
+    imagePrefix: "prens",
+    imageCount: 6,
+    videos: []
+  },
+
+  {
+    id: "sapsik",
+    type: "cat",
+    status: "available",
+    name: "Şapşik",
+    breed: "—",
+    gender: "Male",
+    birthDate: "Approx. 2024",
+    weight: "approx. 6 kg",
+    height: "—",
+    color: "—",
+    microchip: "990000012301189",
+    rabiesVaccination: "Scheduled for April 2026",
+    coreVaccinations: "Completed (approx. 1.5 years ago)",
+    parasiteTreatment: "January 2026",
+    neuteredSpayed: "Yes",
+    healthCondition: "Excellent",
+    medicalIssues: "None",
+    currentTreatments: "None",
+    strangers: "Very shy, not socialized",
+    children: "Not suitable",
+    menWomenDifferences: "None observed",
+    dogsCompatibility: "Unknown",
+    catsCompatibility: "Excellent",
+    energyLevel: "High",
+    personality: "Shy, independent, minimally socialized",
+    indoorLiving: "Yes",
+    separationAnxiety: "No",
+    barkingLevel: "Very low",
+    escapeTendency: "Yes",
+    aggression: "May react defensively if forced into interaction",
+    timeInCare: "1.5 years",
+    previousOwner: "—",
+    suitableHome: "Indoor home (apartment or house)",
+    experienceRequired: "Experienced adopter required",
+    specialRequirements: "Needs a patient, quiet home and time to adjust",
+    additionalNotes:
+      "Şapşik was rescued from inside a car engine as a kitten. He has had limited human socialization and remains very shy.",
+    shortDescription:
+      "A shy, sensitive soul looking for a calm and patient home.",
+    introTitle:
+      "Meet Şapşik – A Shy Soul Looking for a Patient Home",
+    introText:
+      "Şapşik is a very shy and observant cat who needs time, space, and patience to feel safe.",
+    story:
+      "Şapşik was rescued as a tiny kitten from inside a car engine. Since then, he has been safe in care but has had limited exposure to close human interaction.",
+    personalityHighlights: [
+      "Very shy and independent",
+      "Gets along very well with other cats",
+      "Prefers minimal handling",
+      "Quiet and observant"
+    ],
+    idealHomeHighlights: [
+      "Calm, quiet household",
+      "Experienced adopter",
+      "No children",
+      "A home that can give him time and space to adjust"
+    ],
+    healthHighlights: [
+      "Excellent overall health",
+      "Neutered and parasite-treated",
+      "Vaccinations up to date / scheduled"
+    ],
+    whyAdopt:
+      "Şapşik may not be an immediate lap cat, but for the right person, he offers the chance to build trust with a sensitive and gentle soul.",
+    imageFolder: "assets/cats/sapsik-cat",
+    imagePrefix: "sapsik",
+    imageCount: 6,
+    videos: []
+  }
+  
 ];
+
+const pets = [...dogs, ...cats];
