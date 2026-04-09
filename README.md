@@ -1,3 +1,7 @@
+🇺🇸 English | 🇧🇷 Português
+
+🇺🇸 English
+
 # 🐾 Kimcanko Adoption Platform
 
 A modern and responsive web platform designed to support international pet adoption for a Turkey-based animal rescue organization.
@@ -70,3 +74,70 @@ Developed a clean, user-friendly platform that:
 
 Ana Beatriz França  
 Software Developer & UI/UX Designer  
+
+🇧🇷 Português
+
+## ✨ Visão Geral
+
+Este projeto foi desenvolvido para melhorar a forma como animais resgatados são apresentados online, facilitando a navegação para possíveis adotantes internacionais.
+
+O foco foi em **clareza, usabilidade e escalabilidade**, garantindo que a plataforma possa ser facilmente mantida e expandida por equipes não técnicas.
+
+---
+
+## 🚀 Principais Funcionalidades
+
+- 🐶🐱 Sistema de filtros (Cães / Gatos)  
+- 🏷 Sistema dinâmico de status (Disponível, Reservado, Adotado)  
+- 📄 Páginas individuais para cada animal  
+- 🖼 Galeria interativa com visualização ampliada  
+- 🎥 Suporte a vídeos para cada animal  
+- 📱 Design totalmente responsivo  
+- 🔗 Integração direta de contato (Email e Instagram)  
+
+---
+
+## 🧠 Abordagem Técnica
+
+- Estruturei todos os dados em um único arquivo central (`data.js`)  
+- Desenvolvi um sistema dinâmico de renderização com JavaScript  
+- Criei componentes reutilizáveis pensando em escalabilidade  
+- Priorizei uma interface limpa e consistente entre dispositivos  
+
+---
+
+## 🎯 Problema & Solução
+
+**Problema:**  
+A organização não possuía uma forma estruturada e escalável de apresentar os animais para adoção internacional.
+
+**Solução:**  
+Desenvolvi uma plataforma clara e intuitiva que:
+- melhora a visibilidade de cada animal  
+- facilita a atualização de conteúdo  
+- permite uso contínuo por equipes externas  
+
+---
+
+## 🛠 Tecnologias
+
+- HTML5  
+- CSS3 (design system próprio)  
+- JavaScript (vanilla)  
+- GitHub Pages (deploy)  
+
+---
+
+## 💡 Foco do Projeto
+
+- Consistência de UI/UX  
+- Estrutura de fácil manutenção  
+- Aplicação em contexto real  
+- Hierarquia visual limpa  
+
+---
+
+## 👩‍💻 Sobre Mim
+
+Ana Beatriz França  
+Desenvolvedora de Software & UI/UX Designer
