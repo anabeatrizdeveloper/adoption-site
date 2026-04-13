@@ -20,539 +20,373 @@
 </head>
 
 <body>
+  <header class="hero-shell">
+    <div class="hero-card">
+      <div class="floating-circles" aria-hidden="true">
+        <span class="circle circle-1"></span>
+        <span class="circle circle-2"></span>
+        <span class="circle circle-3"></span>
+        <span class="circle circle-4"></span>
+        <span class="circle circle-5"></span>
+        <span class="circle circle-6"></span>
+      </div>
 
-<header class="hero-shell">
-  <div class="hero-card">
+      <nav class="top-nav container">
+        <a href="index.html" class="brand">
+          <img src="assets/logofooter.png" alt="Kimcanko logo" />
+          <div class="brand-text">
+            <span>KİMCANKO</span>
+            <span>SİLİFKE</span>
+          </div>
+        </a>
 
-    <div class="floating-circles" aria-hidden="true">
-      <span class="circle circle-1"></span>
-      <span class="circle circle-2"></span>
-      <span class="circle circle-3"></span>
-      <span class="circle circle-4"></span>
-      <span class="circle circle-5"></span>
-      <span class="circle circle-6"></span>
+        <div class="nav-links">
+          <a href="#dogs-grid">Browse Animals</a>
+          <a href="#adoption-process">Adoption Process</a>
+          <a href="#contact-cta">Contact Us</a>
+        </div>
+
+        <a href="#dogs-grid" class="nav-cta">View Pets</a>
+      </nav>
+
+      <section class="hero container">
+        <div class="hero-copy">
+          <p class="hero-eyebrow">International Pet Adoption Platform</p>
+
+          <h1>
+            Rescue a life.<br />
+            Find your companion.<br />
+            Give them home.
+          </h1>
+
+          <p class="hero-text">
+            Browse adoptable pets, explore international adoption options,
+            and contact our organization directly for the next steps.
+          </p>
+
+          <div class="hero-highlights">
+            <span class="hero-pill">Detailed pet profiles</span>
+            <span class="hero-pill">Photos & videos available</span>
+            <span class="hero-pill">Direct contact with the organization</span>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#adoption-process" class="hero-button">Adoption Process</a>
+            <a href="#contact-cta" class="hero-button">Contact Us</a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-circle hero-circle-1"></div>
+          <div class="hero-circle hero-circle-2"></div>
+
+          <img src="assets/photos/browndogcover.png" alt="Brown dog" class="hero-dog-extra hero-dog-brown" />
+          <img src="assets/photos/dogcover.png" alt="Dog" class="hero-dog hero-dog-main" />
+
+          <img src="assets/photos/blackcatcover.png" alt="Black cat" class="hero-dog-extra hero-dog-black" />
+          <img src="assets/photos/catcover.png" alt="Cat" class="hero-dog hero-dog-secondary" />
+        </div>
+      </section>
     </div>
+  </header>
 
-    <nav class="top-nav container">
-      <a href="index.html" class="brand">
-        <img src="assets/logofooter.png" alt="Kimcanko logo" />
-        <div class="brand-text">
-          <span>KİMCANKO</span>
-          <span>SİLİFKE</span>
-        </div>
-      </a>
-
-      <div class="nav-links">
-        <a href="#how-to-adopt">How to Adopt</a>
-        <a href="#rescue-retreat">Rescue Retreat</a>
-        <a href="#contact-cta">Contact</a>
+  <main>
+    <section class="dogs-home-section">
+      <div class="dogs-bg-circles">
+        <span class="bg-circle bg-circle-1"></span>
+        <span class="bg-circle bg-circle-2"></span>
+        <span class="bg-circle bg-circle-3"></span>
+        <span class="bg-circle bg-circle-4"></span>
+        <span class="bg-circle bg-circle-5"></span>
       </div>
 
-      <a href="#dogs-grid" class="nav-cta">View Pets</a>
-    </nav>
-
-    <section class="hero container">
-      <div class="hero-copy">
-        <p class="hero-eyebrow">International Pet Adoption Platform</p>
-
-        <h1>
-          Rescue a life.<br />
-          Find your companion.<br />
-          Give them home.
-        </h1>
-
-        <p class="hero-text">
-          Explore adoptable pets, view full profiles, and access carefully curated
-          photos and videos to support thoughtful international adoption.
-        </p>
-
-        <div class="hero-highlights">
-          <span class="hero-pill">Detailed pet profiles</span>
-          <span class="hero-pill">Photos & videos available</span>
-          <span class="hero-pill">Direct contact with the organization</span>
+      <div class="container">
+        <div class="dogs-home-heading">
+          <p class="section-kicker">Browse Animals</p>
+          <h2>Meet Our Pets</h2>
+          <p>
+            Browse cats and dogs available for adoption. Each profile includes
+            important information, personality notes, and media to help you
+            get to know the animal before reaching out.
+          </p>
         </div>
 
-        <div class="hero-actions">
-          <a href="#how-to-adopt" class="hero-button white-button">How Adoption Works</a>
-          <a href="#rescue-retreat" class="hero-button white-button">Explore the Rescue Retreat</a>
+        <div class="pets-filter-wrap">
+          <div class="pets-filter" aria-label="Pet type filters">
+            <button class="filter-btn active" type="button" data-type="all">All Pets</button>
+            <button class="filter-btn" type="button" data-type="dog">Dogs</button>
+            <button class="filter-btn" type="button" data-type="cat">Cats</button>
+          </div>
         </div>
-      </div>
 
-      <div class="hero-visual">
-        <div class="hero-circle hero-circle-1"></div>
-        <div class="hero-circle hero-circle-2"></div>
+        <div id="dogs-grid" class="dogs-grid"></div>
+        
+    </section>
 
-        <img src="assets/photos/browndogcover.png" alt="Brown dog" class="hero-dog-extra hero-dog-brown" />
-        <img src="assets/photos/dogcover.png" alt="Dog" class="hero-dog hero-dog-main" />
+    <section id="adoption-process" class="retreat-section">
+      <div class="container">
+        <div class="retreat-heading">
+          <p class="section-kicker">Adoption Process</p>
+          <h2>Adoption & Travel Options</h2>
+          <p>
+            We offer two adoption paths depending on your situation:
+            traveling to meet your pet in person, or arranging safe international delivery.
+          </p>
+        </div>
 
-        <img src="assets/photos/blackcatcover.png" alt="Black cat" class="hero-dog-extra hero-dog-black" />
-        <img src="assets/photos/catcover.png" alt="Cat" class="hero-dog hero-dog-secondary" />
+        <div class="adoption-options-simple">
+          <article class="adoption-option-card">
+            <p class="retreat-eyebrow">Option A</p>
+            <h3>The Rescue Retreat (Pick-up)</h3>
+            <p>
+              Travel to Silifke, meet your pet in person, and return home together.
+            </p>
+
+            <div class="option-card-actions">
+              <a href="rescue-retreat.html" class="contact-cta-button contact-cta-button-secondary">Learn More</a>
+              <a href="#contact-cta" class="contact-cta-button">Inquire</a>
+            </div>
+          </article>
+
+          <article class="adoption-option-card">
+            <p class="retreat-eyebrow">Option B</p>
+            <h3>Home Delivery</h3>
+            <p>
+              We arrange safe transportation for your pet to your nearest major airport.
+            </p>
+
+            <div class="option-card-actions">
+              <a href="home-delivery.html" class="contact-cta-button contact-cta-button-secondary">Learn More</a>
+              <a href="#contact-cta" class="contact-cta-button">Inquire</a>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
-  </div>
-</header>
 
-<main>
+    <section id="contact-cta" class="contact-cta-section">
+      <div class="container">
+        <div class="contact-cta-card form-layout">
+          <div class="contact-cta-copy">
+            <p class="section-kicker">Contact Us</p>
+            <h2>Interested in a pet?</h2>
+            <p>
+              Contact KİMCANKO directly for availability, adoption questions,
+              Rescue Retreat inquiries, and next steps.
+            </p>
 
-<section class="dogs-home-section">
-  <div class="dogs-bg-circles">
-    <span class="bg-circle bg-circle-1"></span>
-    <span class="bg-circle bg-circle-2"></span>
-    <span class="bg-circle bg-circle-3"></span>
-    <span class="bg-circle bg-circle-4"></span>
-    <span class="bg-circle bg-circle-5"></span>
-  </div>
+            <div class="contact-direct-links">
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=kimcanko@gmail.com&su=Adoption%20Inquiry"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="contact-cta-button"
+              >
+                Email the Organization
+              </a>
 
-  <div class="container">
-    <div class="dogs-home-heading">
-      <p class="section-kicker">Available Pets</p>
-      <h2>Meet Our Pets</h2>
-      <p>
-        Each profile includes essential information, personality notes, and media
-        to help you get to know the animal before reaching out.
-      </p>
-    </div>
-
-    <div class="pets-filter-wrap">
-      <div class="pets-filter" aria-label="Pet type filters">
-        <button class="filter-btn active" type="button" data-type="all">All Pets</button>
-        <button class="filter-btn" type="button" data-type="dog">Dogs</button>
-        <button class="filter-btn" type="button" data-type="cat">Cats</button>
-      </div>
-    </div>
-
-    <div id="dogs-grid" class="dogs-grid"></div>
-
-    <div class="all-dogs-wrap">
-      <a href="#dogs-grid" class="all-dogs-button">Browse All Pets</a>
-    </div>
-  </div>
-</section>
-
-<section id="how-to-adopt" class="info-strip">
-  <div class="container">
-    <div class="info-strip-heading">
-      <p class="section-kicker">Adoption Process</p>
-      <h2>How Adoption Works</h2>
-      <p>
-        We aim to make international adoption thoughtful, transparent, and supportive
-        from first contact to travel preparation.
-      </p>
-    </div>
-
-    <div class="info-strip-grid">
-      <div class="info-box">
-        <span class="info-step">01</span>
-        <h3>Browse Profiles</h3>
-        <p>Explore pets and review photos, videos, and details.</p>
-      </div>
-
-      <div class="info-box">
-        <span class="info-step">02</span>
-        <h3>Contact the Organization</h3>
-        <p>Reach out directly to ask questions, express interest, and discuss the best option for adoption and travel.</p>
-      </div>
-
-      <div class="info-box">
-        <span class="info-step">03</span>
-        <h3>Adoption & Travel Planning</h3>
-        <p>Follow the team’s guidance for approvals, preparation, documents, and transport arrangements.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="rescue-retreat" class="retreat-section">
-  <div class="container">
-    <div class="retreat-heading">
-      <p class="section-kicker">Adoption & Travel Options</p>
-      <h2>The Rescue Retreat</h2>
-      <p>
-        To make international adoption more flexible, we offer two options depending
-        on your schedule, comfort, and budget.
-      </p>
-    </div>
-
-    <div class="retreat-hero">
-      <div class="retreat-hero-copy">
-        <p class="retreat-eyebrow">A Vacation with a Purpose</p>
-        <h3>Meet your new companion where the Mediterranean meets history.</h3>
-        <p>
-          When you adopt internationally from KİMCANKO Silifke, you may travel to
-          Silifke, meet your pet in person, and stay as our guest for up to one week
-          while you bond before traveling home together.
-        </p>
-        <p>
-          Spend your days exploring the coast, relaxing by the sea, and getting to
-          know your new best friend with support from our team.
-        </p>
-
-        <div class="retreat-actions">
-          <a href="#contact-cta" class="hero-button">Inquire About the Rescue Retreat</a>
-        </div>
-      </div>
-
-      <div class="retreat-hero-media">
-        <div class="retreat-image-card large">
-          <img src="assets/photos/rescue-retreat-beach.jpg" alt="Beach near Silifke" />
-        </div>
-
-        <div class="retreat-image-grid">
-          <div class="retreat-image-card">
-            <img src="assets/photos/rescue-retreat-house-1.jpg" alt="Guest house terrace" />
+              <a
+                href="https://www.instagram.com/silifkekimcanko/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="contact-cta-button contact-cta-button-secondary"
+              >
+                Message on Instagram
+              </a>
+            </div>
           </div>
 
-          <div class="retreat-image-card">
-            <img src="assets/photos/rescue-retreat-house-2.jpg" alt="Seaside guest house" />
-          </div>
+          <div class="contact-form-card">
+            <form id="contact-form" class="contact-form">
+              <div class="form-field">
+                <label for="full-name">Full Name</label>
+                <input id="full-name" name="full-name" type="text" placeholder="Your name" required />
+              </div>
 
-          <div class="retreat-image-card full">
-            <img src="assets/photos/rescue-retreat-pet-person.jpg" alt="Person spending time with a rescue pet" />
+              <div class="form-field">
+                <label for="email-address">Email Address</label>
+                <input id="email-address" name="email-address" type="email" placeholder="you@example.com" required />
+              </div>
+
+              <div class="form-field">
+                <label for="inquiry-type">Inquiry Type</label>
+                <select id="inquiry-type" name="inquiry-type" required>
+                  <option value="General Inquiry">General Inquiry</option>
+                  <option value="Adoption">Adoption</option>
+                  <option value="Rescue Retreat">Rescue Retreat</option>
+                </select>
+              </div>
+
+              <div class="form-field">
+                <label for="pet-name">Pet Name (optional)</label>
+                <input id="pet-name" name="pet-name" type="text" placeholder="Example: Luna" />
+              </div>
+
+              <div class="form-field">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+              </div>
+
+              <button type="submit" class="contact-cta-button form-submit-button">
+                Send Inquiry
+              </button>
+
+              <p id="form-success-message" class="form-success-message" aria-live="polite"></p>
+            </form>
           </div>
         </div>
       </div>
-    </div>
+    </section>
+  </main>
 
-    <div class="travel-options-grid">
-      <article class="travel-option featured">
-        <span class="option-label">Option A</span>
-        <h3>The Rescue Retreat (Pick-up)</h3>
-        <p>
-          Travel to Silifke to meet and collect your pet in person.
-        </p>
-
-        <div class="option-split">
-          <div>
-            <h4>What’s included</h4>
-            <ul>
-              <li>Complimentary accommodation at our seaside guest house for up to 7 days</li>
-              <li>Guidance and support throughout your stay</li>
-              <li>Assistance with airport pickup and drop-off</li>
-              <li>Full preparation of your pet for international travel</li>
-            </ul>
-          </div>
-
-          <div>
-            <h4>What’s not included</h4>
-            <ul>
-              <li>Airfare</li>
-              <li>Meals</li>
-              <li>Personal or local expenses</li>
-            </ul>
-          </div>
+  <footer id="site-footer" class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logofooter.png" alt="Kimcanko logo" />
+        <div>
+          <h3>KİMCANKO SİLİFKE</h3>
+          <p>International Pet Adoption Platform</p>
         </div>
-
-        <div class="option-highlight">
-          <strong>The benefit:</strong>
-          No transport fees, time to bond with your pet, and a unique travel experience on the Mediterranean coast.
-        </div>
-      </article>
-
-      <article class="travel-option">
-        <span class="option-label">Option B</span>
-        <h3>Home Delivery (Courier / Flight Volunteer)</h3>
-        <p>
-          We arrange for your pet to be transported to your nearest major airport.
-        </p>
-
-        <h4>How it works</h4>
-        <ul>
-          <li>Via a flight volunteer</li>
-          <li>Or through a professional animal courier</li>
-        </ul>
-
-        <h4>Cost</h4>
-        <ul>
-          <li>Adopter covers the flight volunteer’s fee or courier service</li>
-          <li>Plus standard adoption preparation costs</li>
-        </ul>
-      </article>
-    </div>
-
-    <div class="retreat-info-grid">
-      <article class="retreat-info-card">
-        <h3>What’s Included</h3>
-        <ul>
-          <li>Private guest room for up to 7 days</li>
-          <li>Guidance and support throughout your stay</li>
-          <li>Help with airport pickup / drop-off</li>
-          <li>Full preparation of your pet for international travel</li>
-        </ul>
-      </article>
-
-      <article class="retreat-info-card">
-        <h3>Adoption Costs & Logistics</h3>
-        <p>
-          The adoption fee strictly covers your pet’s preparation and export process.
-        </p>
-        <ul>
-          <li><strong>Health & Safety:</strong> Rabies titre testing, vaccinations, microchipping</li>
-          <li><strong>Travel Gear:</strong> IATA-approved travel crate</li>
-          <li><strong>Documentation:</strong> Official government export certificates</li>
-        </ul>
-      </article>
-
-      <article class="retreat-info-card">
-        <h3>How It Works</h3>
-        <ul>
-          <li><strong>Where is it located?</strong> Silifke, approximately 1.5 hours from the nearest major airport.</li>
-          <li><strong>Do you help with transport?</strong> Yes, we assist with airport pickup and drop-off.</li>
-          <li><strong>What about travel documents?</strong> We handle the required veterinary certifications and paperwork.</li>
-        </ul>
-      </article>
-    </div>
-
-    <div class="local-experience-card">
-      <div class="local-experience-copy">
-        <p class="section-kicker">Local Experience</p>
-        <h3>Make the most of your trip</h3>
-        <p>
-          Your stay can be more than a pickup. It can also be a meaningful visit
-          to one of the most beautiful coastal areas in Türkiye.
-        </p>
-
-        <ul class="local-experience-list">
-          <li>Visit Taşucu’s beaches</li>
-          <li>Enjoy breakfast in Narlıkuyu</li>
-          <li>Explore the ancient ruins of Olba</li>
-        </ul>
       </div>
 
-      <div class="local-experience-badge">
-        <span>A meaningful journey for you and your pet</span>
+      <div>
+        <h4>Location</h4>
+        <p>Silifke / Türkiye</p>
       </div>
-    </div>
-  </div>
-</section>
 
-<section id="contact-cta" class="contact-cta-section">
-  <div class="container">
-    <div class="contact-cta-card form-layout">
+      <div>
+        <h4>Contact</h4>
 
-      <div class="contact-cta-copy">
-        <p class="section-kicker">Get in Touch</p>
-        <h2>Interested in a pet?</h2>
         <p>
-          Contact KİMCANKO directly for availability, adoption questions,
-          Rescue Retreat inquiries, and next steps.
+          <strong>Email</strong><br />
+          <a href="mailto:kimcanko@gmail.com">kimcanko@gmail.com</a>
         </p>
 
-        <div class="contact-direct-links">
-          <a
-            href="https://mail.google.com/mail/?view=cm&fs=1&to=kimcanko@gmail.com&su=Adoption%20Inquiry"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="contact-cta-button"
-          >
-            Email the Organization
-          </a>
+        <p>
+          <strong>Phone</strong><br />
+          <a href="tel:+905373833674">+90 537 383 36 74</a>
+        </p>
+      </div>
 
+      <div>
+        <h4>Social</h4>
+
+        <p>
+          <strong>Instagram</strong><br />
           <a
             href="https://www.instagram.com/silifkekimcanko/"
             target="_blank"
             rel="noopener noreferrer"
-            class="contact-cta-button contact-cta-button-secondary"
           >
-            Message on Instagram
+            @silifkekimcanko
           </a>
-        </div>
-      </div>
+        </p>
 
-      <div class="contact-form-card">
-        <form id="contact-form" class="contact-form">
-          <div class="form-field">
-            <label for="full-name">Full Name</label>
-            <input id="full-name" name="full-name" type="text" placeholder="Your name" required />
-          </div>
-
-          <div class="form-field">
-            <label for="email-address">Email Address</label>
-            <input id="email-address" name="email-address" type="email" placeholder="you@example.com" required />
-          </div>
-
-          <div class="form-field">
-            <label for="inquiry-type">Inquiry Type</label>
-            <select id="inquiry-type" name="inquiry-type" required>
-              <option value="General Inquiry">General Inquiry</option>
-              <option value="Adoption">Adoption</option>
-              <option value="Rescue Retreat">Rescue Retreat</option>
-            </select>
-          </div>
-
-          <div class="form-field">
-            <label for="pet-name">Pet Name (optional)</label>
-            <input id="pet-name" name="pet-name" type="text" placeholder="Example: Luna" />
-          </div>
-
-          <div class="form-field">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
-          </div>
-
-          <button type="submit" class="contact-cta-button form-submit-button">
-            Send Inquiry
-          </button>
-
-          <p id="form-success-message" class="form-success-message" aria-live="polite"></p>
-        </form>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-</main>
-
-<footer id="site-footer" class="site-footer">
-  <div class="container footer-grid">
-
-    <div class="footer-brand">
-      <img src="assets/logofooter.png" alt="Kimcanko logo" />
-      <div>
-        <h3>KİMCANKO SİLİFKE</h3>
-        <p>International Pet Adoption Platform</p>
+        <p>
+          <strong>Website</strong><br />
+          <a href="https://www.kimcanko.org/" target="_blank" rel="noopener noreferrer">
+            kimcanko.org
+          </a>
+        </p>
       </div>
     </div>
+  </footer>
 
-    <div>
-      <h4>Location</h4>
-      <p>Silifke / Türkiye</p>
-    </div>
+  <script src="js/data.js"></script>
 
-    <div>
-      <h4>Contact</h4>
+  <script>
+    const dogsGrid = document.getElementById("dogs-grid");
+    const filterButtons = document.querySelectorAll(".filter-btn");
 
-      <p>
-        <strong>Email</strong><br />
-        <a href="mailto:kimcanko@gmail.com">kimcanko@gmail.com</a>
-      </p>
+    let selectedType = "all";
 
-      <p>
-        <strong>Phone</strong><br />
-        <a href="tel:+905373833674">+90 537 383 36 74</a>
-      </p>
-    </div>
-
-    <div>
-      <h4>Social</h4>
-
-      <p>
-        <strong>Instagram</strong><br />
-        <a
-          href="https://www.instagram.com/silifkekimcanko/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          @silifkekimcanko
-        </a>
-      </p>
-
-      <p>
-        <strong>Website</strong><br />
-        <a href="https://www.kimcanko.org/" target="_blank" rel="noopener noreferrer">
-          kimcanko.org
-        </a>
-      </p>
-    </div>
-
-  </div>
-</footer>
-
-<script src="js/data.js"></script>
-
-<script>
-  const dogsGrid = document.getElementById("dogs-grid");
-  const filterButtons = document.querySelectorAll(".filter-btn");
-
-  let selectedType = "all";
-
-  function getStatusLabel(status) {
-    const labels = {
-      available: "Available",
-      reserved: "Reserved",
-      adopted: "Adopted"
-    };
-    return labels[status] || "Available";
-  }
-
-  function renderPets() {
-    const filteredPets =
-      selectedType === "all"
-        ? pets
-        : pets.filter((pet) => pet.type === selectedType);
-
-    if (!filteredPets.length) {
-      dogsGrid.innerHTML = `
-        <div class="not-found-box">
-          <h1>No pets found</h1>
-          <p>There are no ${selectedType}s available right now.</p>
-        </div>
-      `;
-      return;
+    function getStatusLabel(status) {
+      const labels = {
+        available: "Available",
+        reserved: "Reserved",
+        adopted: "Adopted"
+      };
+      return labels[status] || "Available";
     }
 
-    dogsGrid.innerHTML = filteredPets
-      .map((pet) => {
-        const coverImage = `${pet.imageFolder}/${pet.imagePrefix}1.jpg`;
+    function renderPets() {
+      const filteredPets =
+        selectedType === "all"
+          ? pets
+          : pets.filter((pet) => pet.type === selectedType);
 
-        return `
-          <article class="dog-card">
-            <img
-              src="${coverImage}"
-              alt="${pet.name}"
-              class="dog-card-image"
-            />
-
-            <div class="dog-card-content">
-              <span class="dog-status ${pet.status}">${getStatusLabel(pet.status)}</span>
-
-              <div class="dog-card-title-row">
-                <h3>${pet.name}</h3>
-              </div>
-
-              <div class="dog-meta">
-                <span class="meta-pill">${pet.gender}</span>
-                <span class="meta-pill">${pet.breed}</span>
-              </div>
-
-              <p class="card-summary">${pet.shortDescription}</p>
-
-              <a href="dog.html?id=${pet.id}" class="card-link">Meet ${pet.name}</a>
-            </div>
-          </article>
+      if (!filteredPets.length) {
+        dogsGrid.innerHTML = `
+          <div class="not-found-box">
+            <h1>No pets found</h1>
+            <p>There are no ${selectedType}s available right now.</p>
+          </div>
         `;
-      })
-      .join("");
-  }
+        return;
+      }
 
-  filterButtons.forEach((button) => {
-    button.addEventListener("click", () => {
-      selectedType = button.dataset.type;
+      dogsGrid.innerHTML = filteredPets
+        .map((pet) => {
+          const coverImage = `${pet.imageFolder}/${pet.imagePrefix}1.jpg`;
 
-      filterButtons.forEach((btn) => btn.classList.remove("active"));
-      button.classList.add("active");
+          return `
+            <article class="dog-card">
+              <img
+                src="${coverImage}"
+                alt="${pet.name}"
+                class="dog-card-image"
+              />
 
-      renderPets();
+              <div class="dog-card-content">
+                <span class="dog-status ${pet.status}">${getStatusLabel(pet.status)}</span>
+
+                <div class="dog-card-title-row">
+                  <h3>${pet.name}</h3>
+                </div>
+
+                <div class="dog-meta">
+                  <span class="meta-pill">${pet.gender}</span>
+                  <span class="meta-pill">${pet.breed}</span>
+                </div>
+
+                <p class="card-summary">${pet.shortDescription}</p>
+
+                <a href="dog.html?id=${pet.id}" class="card-link">Meet ${pet.name}</a>
+              </div>
+            </article>
+          `;
+        })
+        .join("");
+    }
+
+    filterButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        selectedType = button.dataset.type;
+
+        filterButtons.forEach((btn) => btn.classList.remove("active"));
+        button.classList.add("active");
+
+        renderPets();
+      });
     });
-  });
 
-  renderPets();
+    renderPets();
 
-  const contactForm = document.getElementById("contact-form");
-  const successMessage = document.getElementById("form-success-message");
+    const contactForm = document.getElementById("contact-form");
+    const successMessage = document.getElementById("form-success-message");
 
-  if (contactForm) {
-    contactForm.addEventListener("submit", (event) => {
-      event.preventDefault();
+    if (contactForm) {
+      contactForm.addEventListener("submit", (event) => {
+        event.preventDefault();
 
-      const fullName = document.getElementById("full-name").value.trim();
-      const email = document.getElementById("email-address").value.trim();
-      const inquiryType = document.getElementById("inquiry-type").value;
-      const petName = document.getElementById("pet-name").value.trim();
-      const message = document.getElementById("message").value.trim();
+        const fullName = document.getElementById("full-name").value.trim();
+        const email = document.getElementById("email-address").value.trim();
+        const inquiryType = document.getElementById("inquiry-type").value;
+        const petName = document.getElementById("pet-name").value.trim();
+        const message = document.getElementById("message").value.trim();
 
-      const subject = encodeURIComponent(inquiryType);
-      const body = encodeURIComponent(
+        const subject = encodeURIComponent(inquiryType);
+        const body = encodeURIComponent(
 `Name: ${fullName}
 Email: ${email}
 Inquiry Type: ${inquiryType}
@@ -560,18 +394,17 @@ Pet Name: ${petName || "Not specified"}
 
 Message:
 ${message}`
-      );
+        );
 
-      window.open(
-        `https://mail.google.com/mail/?view=cm&fs=1&to=kimcanko@gmail.com&su=${subject}&body=${body}`,
-        "_blank"
-      );
+        window.open(
+          `https://mail.google.com/mail/?view=cm&fs=1&to=kimcanko@gmail.com&su=${subject}&body=${body}`,
+          "_blank"
+        );
 
-      successMessage.textContent = "We look forward to potentially welcoming you to Silifke!";
-      contactForm.reset();
-    });
-  }
-</script>
-
+        successMessage.textContent = "We look forward to potentially welcoming you to Silifke!";
+        contactForm.reset();
+      });
+    }
+  </script>
 </body>
 </html>
