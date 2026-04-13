@@ -17,88 +17,6 @@
   />
 
   <link rel="stylesheet" href="css/style.css" />
-
-  <style>
-    .pets-filter-wrap {
-      display: flex;
-      justify-content: center;
-      margin: 0 0 28px;
-    }
-
-    .pets-filter {
-      display: inline-flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      justify-content: center;
-      background: rgba(255, 255, 255, 0.72);
-      border: 1px solid rgba(152, 0, 0, 0.08);
-      border-radius: 999px;
-      padding: 8px;
-      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.05);
-      backdrop-filter: blur(6px);
-    }
-
-    .filter-btn {
-      border: none;
-      background: transparent;
-      color: var(--primary);
-      font-weight: 700;
-      font-size: 0.98rem;
-      padding: 12px 18px;
-      border-radius: 999px;
-      cursor: pointer;
-      transition: all 0.2s ease;
-    }
-
-    .filter-btn:hover {
-      background: rgba(152, 0, 0, 0.08);
-    }
-
-    .filter-btn.active {
-      background: linear-gradient(180deg, #d33232 0%, #a10000 100%);
-      color: #fff;
-      box-shadow: 0 8px 18px rgba(152, 0, 0, 0.18);
-    }
-
-    .dog-status {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      align-self: flex-start;
-      margin-bottom: 12px;
-      padding: 8px 14px;
-      border-radius: 999px;
-      font-size: 0.82rem;
-      font-weight: 800;
-      letter-spacing: 0.02em;
-    }
-
-    .dog-status.available {
-      background: #e8f7ec;
-      color: #1c7c3d;
-    }
-
-    .dog-status.reserved {
-      background: #fff3d9;
-      color: #9a6a00;
-    }
-
-    .dog-status.adopted {
-      background: #ececec;
-      color: #666666;
-    }
-
-    @media (max-width: 700px) {
-      .pets-filter {
-        width: 100%;
-        border-radius: 24px;
-      }
-
-      .filter-btn {
-        flex: 1 1 auto;
-      }
-    }
-  </style>
 </head>
 
 <body>
@@ -126,6 +44,7 @@
 
       <div class="nav-links">
         <a href="#how-to-adopt">How to Adopt</a>
+        <a href="#rescue-retreat">Rescue Retreat</a>
         <a href="#contact-cta">Contact</a>
       </div>
 
@@ -155,6 +74,7 @@
 
         <div class="hero-actions">
           <a href="#how-to-adopt" class="hero-button white-button">How Adoption Works</a>
+          <a href="#rescue-retreat" class="hero-button hero-button-secondary">Explore the Rescue Retreat</a>
         </div>
       </div>
 
@@ -214,6 +134,10 @@
     <div class="info-strip-heading">
       <p class="section-kicker">Adoption Process</p>
       <h2>How Adoption Works</h2>
+      <p>
+        We aim to make international adoption thoughtful, transparent, and supportive
+        from first contact to travel preparation.
+      </p>
     </div>
 
     <div class="info-strip-grid">
@@ -226,13 +150,176 @@
       <div class="info-box">
         <span class="info-step">02</span>
         <h3>Contact the Organization</h3>
-        <p>Reach out directly to ask questions and show interest.</p>
+        <p>Reach out directly to ask questions, express interest, and discuss the best option for adoption and travel.</p>
       </div>
 
       <div class="info-box">
         <span class="info-step">03</span>
-        <h3>Adoption Process</h3>
-        <p>Follow guidance provided by the organization.</p>
+        <h3>Adoption & Travel Planning</h3>
+        <p>Follow the team’s guidance for approvals, preparation, documents, and transport arrangements.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="rescue-retreat" class="retreat-section">
+  <div class="container">
+    <div class="retreat-heading">
+      <p class="section-kicker">Adoption & Travel Options</p>
+      <h2>The Rescue Retreat</h2>
+      <p>
+        To make international adoption more flexible, we offer two options depending
+        on your schedule, comfort, and budget.
+      </p>
+    </div>
+
+    <div class="retreat-hero">
+      <div class="retreat-hero-copy">
+        <p class="retreat-eyebrow">A Vacation with a Purpose</p>
+        <h3>Meet your new companion where the Mediterranean meets history.</h3>
+        <p>
+          When you adopt internationally from KİMCANKO Silifke, you may travel to
+          Silifke, meet your pet in person, and stay as our guest for up to one week
+          while you bond before traveling home together.
+        </p>
+        <p>
+          Spend your days exploring the coast, relaxing by the sea, and getting to
+          know your new best friend with support from our team.
+        </p>
+
+        <div class="retreat-actions">
+          <a href="#contact-cta" class="hero-button">Inquire About the Rescue Retreat</a>
+        </div>
+      </div>
+
+      <div class="retreat-hero-media">
+        <div class="retreat-image-card large">
+          <img src="assets/photos/rescue-retreat-beach.jpg" alt="Beach near Silifke" />
+        </div>
+
+        <div class="retreat-image-grid">
+          <div class="retreat-image-card">
+            <img src="assets/photos/rescue-retreat-house-1.jpg" alt="Guest house terrace" />
+          </div>
+
+          <div class="retreat-image-card">
+            <img src="assets/photos/rescue-retreat-house-2.jpg" alt="Seaside guest house" />
+          </div>
+
+          <div class="retreat-image-card full">
+            <img src="assets/photos/rescue-retreat-pet-person.jpg" alt="Person spending time with a rescue pet" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="travel-options-grid">
+      <article class="travel-option featured">
+        <span class="option-label">Option A</span>
+        <h3>The Rescue Retreat (Pick-up)</h3>
+        <p>
+          Travel to Silifke to meet and collect your pet in person.
+        </p>
+
+        <div class="option-split">
+          <div>
+            <h4>What’s included</h4>
+            <ul>
+              <li>Complimentary accommodation at our seaside guest house for up to 7 days</li>
+              <li>Guidance and support throughout your stay</li>
+              <li>Assistance with airport pickup and drop-off</li>
+              <li>Full preparation of your pet for international travel</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>What’s not included</h4>
+            <ul>
+              <li>Airfare</li>
+              <li>Meals</li>
+              <li>Personal or local expenses</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="option-highlight">
+          <strong>The benefit:</strong>
+          No transport fees, time to bond with your pet, and a unique travel experience on the Mediterranean coast.
+        </div>
+      </article>
+
+      <article class="travel-option">
+        <span class="option-label">Option B</span>
+        <h3>Home Delivery (Courier / Flight Volunteer)</h3>
+        <p>
+          We arrange for your pet to be transported to your nearest major airport.
+        </p>
+
+        <h4>How it works</h4>
+        <ul>
+          <li>Via a flight volunteer</li>
+          <li>Or through a professional animal courier</li>
+        </ul>
+
+        <h4>Cost</h4>
+        <ul>
+          <li>Adopter covers the flight volunteer’s fee or courier service</li>
+          <li>Plus standard adoption preparation costs</li>
+        </ul>
+      </article>
+    </div>
+
+    <div class="retreat-info-grid">
+      <article class="retreat-info-card">
+        <h3>What’s Included</h3>
+        <ul>
+          <li>Private guest room for up to 7 days</li>
+          <li>Guidance and support throughout your stay</li>
+          <li>Help with airport pickup / drop-off</li>
+          <li>Full preparation of your pet for international travel</li>
+        </ul>
+      </article>
+
+      <article class="retreat-info-card">
+        <h3>Adoption Costs & Logistics</h3>
+        <p>
+          The adoption fee strictly covers your pet’s preparation and export process.
+        </p>
+        <ul>
+          <li><strong>Health & Safety:</strong> Rabies titre testing, vaccinations, microchipping</li>
+          <li><strong>Travel Gear:</strong> IATA-approved travel crate</li>
+          <li><strong>Documentation:</strong> Official government export certificates</li>
+        </ul>
+      </article>
+
+      <article class="retreat-info-card">
+        <h3>How It Works</h3>
+        <ul>
+          <li><strong>Where is it located?</strong> Silifke, approximately 1.5 hours from the nearest major airport.</li>
+          <li><strong>Do you help with transport?</strong> Yes, we assist with airport pickup and drop-off.</li>
+          <li><strong>What about travel documents?</strong> We handle the required veterinary certifications and paperwork.</li>
+        </ul>
+      </article>
+    </div>
+
+    <div class="local-experience-card">
+      <div class="local-experience-copy">
+        <p class="section-kicker">Local Experience</p>
+        <h3>Make the most of your trip</h3>
+        <p>
+          Your stay can be more than a pickup. It can also be a meaningful visit
+          to one of the most beautiful coastal areas in Türkiye.
+        </p>
+
+        <ul class="local-experience-list">
+          <li>Visit Taşucu’s beaches</li>
+          <li>Enjoy breakfast in Narlıkuyu</li>
+          <li>Explore the ancient ruins of Olba</li>
+        </ul>
+      </div>
+
+      <div class="local-experience-badge">
+        <span>A meaningful journey for you and your pet</span>
       </div>
     </div>
   </div>
@@ -240,35 +327,76 @@
 
 <section id="contact-cta" class="contact-cta-section">
   <div class="container">
-    <div class="contact-cta-card">
+    <div class="contact-cta-card form-layout">
 
       <div class="contact-cta-copy">
         <p class="section-kicker">Get in Touch</p>
         <h2>Interested in a pet?</h2>
         <p>
-          Contact KİMCANKO directly for availability, questions, and next steps.
+          Contact KİMCANKO directly for availability, adoption questions,
+          Rescue Retreat inquiries, and next steps.
         </p>
+
+        <div class="contact-direct-links">
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=kimcanko@gmail.com&su=Adoption%20Inquiry"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-cta-button"
+          >
+            Email the Organization
+          </a>
+
+          <a
+            href="https://www.instagram.com/silifkekimcanko/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-cta-button contact-cta-button-secondary"
+          >
+            Message on Instagram
+          </a>
+        </div>
       </div>
 
-      <div class="contact-cta-actions">
-        <a 
-          href="https://mail.google.com/mail/?view=cm&fs=1&to=kimcanko@gmail.com&su=Adoption%20Inquiry"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="contact-cta-button"
-        >
-          Email the Organization
-        </a>
+      <div class="contact-form-card">
+        <form id="contact-form" class="contact-form">
+          <div class="form-field">
+            <label for="full-name">Full Name</label>
+            <input id="full-name" name="full-name" type="text" placeholder="Your name" required />
+          </div>
 
-        <a 
-          href="https://www.instagram.com/silifkekimcanko/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="contact-cta-button contact-cta-button-secondary"
-        >
-          Message on Instagram
-        </a>
+          <div class="form-field">
+            <label for="email-address">Email Address</label>
+            <input id="email-address" name="email-address" type="email" placeholder="you@example.com" required />
+          </div>
+
+          <div class="form-field">
+            <label for="inquiry-type">Inquiry Type</label>
+            <select id="inquiry-type" name="inquiry-type" required>
+              <option value="General Inquiry">General Inquiry</option>
+              <option value="Adoption">Adoption</option>
+              <option value="Rescue Retreat">Rescue Retreat</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label for="pet-name">Pet Name (optional)</label>
+            <input id="pet-name" name="pet-name" type="text" placeholder="Example: Luna" />
+          </div>
+
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+          </div>
+
+          <button type="submit" class="contact-cta-button form-submit-button">
+            Send Inquiry
+          </button>
+
+          <p id="form-success-message" class="form-success-message" aria-live="polite"></p>
+        </form>
       </div>
+
     </div>
   </div>
 </section>
@@ -301,7 +429,7 @@
 
       <p>
         <strong>Phone</strong><br />
-        <a href="tel:+905373833638">+90 537 383 36 74</a>
+        <a href="tel:+905373833674">+90 537 383 36 74</a>
       </p>
     </div>
 
@@ -310,7 +438,7 @@
 
       <p>
         <strong>Instagram</strong><br />
-        <a 
+        <a
           href="https://www.instagram.com/silifkekimcanko/"
           target="_blank"
           rel="noopener noreferrer"
@@ -338,11 +466,6 @@
 
   let selectedType = "all";
 
-  function getAnimalLabel(type) {
-    if (type === "cat") return "Cat";
-    return "Dog";
-  }
-
   function getStatusLabel(status) {
     const labels = {
       available: "Available",
@@ -354,9 +477,9 @@
 
   function renderPets() {
     const filteredPets =
-  selectedType === "all"
-    ? pets
-    : pets.filter((pet) => pet.type === selectedType);
+      selectedType === "all"
+        ? pets
+        : pets.filter((pet) => pet.type === selectedType);
 
     if (!filteredPets.length) {
       dogsGrid.innerHTML = `
@@ -414,6 +537,40 @@
   });
 
   renderPets();
+
+  const contactForm = document.getElementById("contact-form");
+  const successMessage = document.getElementById("form-success-message");
+
+  if (contactForm) {
+    contactForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      const fullName = document.getElementById("full-name").value.trim();
+      const email = document.getElementById("email-address").value.trim();
+      const inquiryType = document.getElementById("inquiry-type").value;
+      const petName = document.getElementById("pet-name").value.trim();
+      const message = document.getElementById("message").value.trim();
+
+      const subject = encodeURIComponent(inquiryType);
+      const body = encodeURIComponent(
+`Name: ${fullName}
+Email: ${email}
+Inquiry Type: ${inquiryType}
+Pet Name: ${petName || "Not specified"}
+
+Message:
+${message}`
+      );
+
+      window.open(
+        `https://mail.google.com/mail/?view=cm&fs=1&to=kimcanko@gmail.com&su=${subject}&body=${body}`,
+        "_blank"
+      );
+
+      successMessage.textContent = "We look forward to potentially welcoming you to Silifke!";
+      contactForm.reset();
+    });
+  }
 </script>
 
 </body>
