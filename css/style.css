@@ -772,7 +772,7 @@ img[src*="can"] {
 }
 
 .form-layout {
-  grid-template-columns: 1.05fr 0.95fr;
+  grid-template-columns: 1fr;
 }
 
 .contact-direct-links {
