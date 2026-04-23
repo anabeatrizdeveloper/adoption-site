@@ -3,353 +3,669 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>Why Adopt With KİMCANKO? | KİMCANKO SİLİFKE</title>
 
   <link rel="icon" href="assets/logokimcanko.png" type="image/png" />
+  <link rel="shortcut icon" href="assets/logokimcanko.png" type="image/png" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
 
   <style>
     :root {
-      --brand: #980000;
-      --brand-dark: #760000;
-      --bg-soft: #fff8f6;
-      --bg-card: #ffffff;
-      --text-main: #1f1f1f;
-      --text-muted: #666666;
-      --border-soft: rgba(152, 0, 0, 0.12);
-      --shadow-soft: 0 16px 40px rgba(0, 0, 0, 0.08);
-      --radius-xl: 28px;
+      --primary: #980000;
+      --primary-dark: #760000;
+      --primary-soft: #b81d1d;
+      --background: #f4efed;
+      --surface: #ffffff;
+      --surface-alt: #f8f3f1;
+      --text: #1e1e1e;
+      --text-soft: #5d5d5d;
+      --border: #ead9d5;
+      --shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+      --radius-xl: 34px;
+      --radius-lg: 28px;
+      --radius-md: 18px;
+      --radius-sm: 12px;
+      --container: 1500px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
     }
 
     body {
-      margin: 0;
-      font-family: "Inter", sans-serif;
-      background: #fffdfc;
-      color: var(--text-main);
+      font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background: var(--background);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
     }
 
     .container {
-      width: min(1120px, calc(100% - 40px));
+      width: min(var(--container), calc(100% - 80px));
       margin: 0 auto;
     }
 
     .why-page {
-      padding: 30px 0 80px;
+      padding: 28px 0 0;
     }
 
-    /* NAV */
+    /* FLOATING NAV */
+    .why-nav-wrap {
+      position: sticky;
+      top: 18px;
+      z-index: 1000;
+      padding-bottom: 26px;
+    }
 
     .why-nav {
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      padding: 18px 24px;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 22px 42px;
+      background: rgba(255, 255, 255, 0.78);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(152, 0, 0, 0.08);
       border-radius: 999px;
-      background: #fff;
-      border: 1px solid rgba(152,0,0,0.08);
-      margin-bottom: 40px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
     }
 
     .brand {
       display: flex;
       align-items: center;
-      gap: 10px;
-      text-decoration: none;
-      color: inherit;
+      gap: 16px;
+      min-width: 0;
+      flex-shrink: 0;
     }
 
     .brand img {
-      width: 48px;
+      width: 58px;
+      height: 58px;
+      object-fit: contain;
+    }
+
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+      line-height: 1;
+    }
+
+    .brand-text span:first-child {
+      font-size: 1.05rem;
+      font-weight: 800;
+      letter-spacing: 0.02em;
+    }
+
+    .brand-text span:last-child {
+      margin-top: 4px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--primary);
+      letter-spacing: 0.12em;
     }
 
     .nav-links {
       display: flex;
-      gap: 18px;
+      align-items: center;
+      gap: 38px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
     }
 
     .nav-links a {
-      text-decoration: none;
+      font-size: 1rem;
       font-weight: 600;
-      color: var(--text-main);
+      color: var(--text);
+      transition: color 0.2s ease, transform 0.2s ease;
+      white-space: nowrap;
+    }
+
+    .nav-links a:hover {
+      color: var(--primary);
+      transform: translateY(-1px);
     }
 
     .nav-links a.active {
-      color: var(--brand);
+      color: var(--primary);
+      font-weight: 700;
     }
 
     /* HERO */
-
-    .hero {
-      background: linear-gradient(135deg,#fff4f1,#fff);
-      padding: 50px;
-      border-radius: 30px;
-      margin-bottom: 30px;
+    .hero-card {
+      background: linear-gradient(135deg, #f5ece9 0%, #f8f1ef 100%);
+      border: 1px solid rgba(152, 0, 0, 0.08);
+      border-radius: 42px;
+      padding: 90px 72px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.03);
     }
 
-    .hero h1 {
-      font-size: 2.6rem;
-      margin-bottom: 15px;
+    .hero-content {
+      max-width: 1320px;
     }
 
-    .hero p {
-      color: var(--text-muted);
-      line-height: 1.8;
+    .hero-content h1 {
+      font-size: clamp(3.2rem, 5vw, 6rem);
+      line-height: 1.05;
+      letter-spacing: -0.05em;
+      margin-bottom: 24px;
+      font-weight: 800;
+      max-width: 1400px;
+    }
+
+    .hero-content p {
+      font-size: 1.12rem;
+      line-height: 1.75;
+      color: var(--text-soft);
+      max-width: 1450px;
     }
 
     /* GRID */
+    .section-block {
+      padding: 42px 0 0;
+    }
 
-    .grid {
+    .why-grid {
       display: grid;
-      grid-template-columns: repeat(2,1fr);
-      gap: 25px;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 34px;
+      align-items: start;
     }
 
-    .card {
-      background: var(--bg-card);
-      padding: 28px;
-      border-radius: var(--radius-xl);
-      border: 1px solid var(--border-soft);
+    .why-card {
+      background: rgba(255, 255, 255, 0.78);
+      border: 1px solid rgba(152, 0, 0, 0.12);
+      border-radius: 32px;
+      padding: 40px;
+      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.03);
+      min-height: 100%;
     }
 
-    .card h2 {
-      margin-top: 0;
-      font-size: 1.4rem;
+    .why-card h2 {
+      font-size: clamp(1.8rem, 2.1vw, 2.4rem);
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+      margin-bottom: 22px;
+      font-weight: 800;
     }
 
-    .card p {
-      color: var(--text-muted);
-      line-height: 1.7;
+    .why-card > p {
+      font-size: 1rem;
+      color: var(--text-soft);
+      line-height: 1.85;
+      margin-bottom: 26px;
     }
 
-    .list {
-      margin-top: 15px;
-    }
-
-    .list div {
-      background: var(--bg-soft);
-      padding: 12px;
-      border-radius: 14px;
-      margin-bottom: 10px;
-    }
-
-    .stats {
+    .stats-row {
       display: grid;
-      grid-template-columns: repeat(3,1fr);
-      gap: 10px;
-      margin-top: 15px;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin-bottom: 22px;
     }
 
-    .stat {
-      background: #fff4f1;
-      padding: 14px;
+    .stat-box {
+      background: #f7edeb;
+      border-radius: 18px;
+      padding: 20px 16px;
       text-align: center;
-      border-radius: 14px;
     }
 
-    .stat strong {
+    .stat-number {
       display: block;
-      color: var(--brand-dark);
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: var(--primary);
+      line-height: 1.1;
+      margin-bottom: 4px;
     }
 
-    .timeline {
-      margin-top: 15px;
-      padding: 12px;
-      background: #fff4f1;
-      border-radius: 14px;
+    .stat-label {
+      display: block;
+      font-size: 0.9rem;
+      color: var(--text);
+      line-height: 1.3;
     }
 
-    /* CLOSING */
+    .why-list {
+      display: grid;
+      gap: 16px;
+    }
 
-    .closing {
-      margin-top: 30px;
-      background: var(--brand);
-      color: white;
-      padding: 30px;
-      border-radius: 24px;
-      text-align: center;
+    .why-list-item {
+      background: #f7edeb;
+      border-radius: 18px;
+      padding: 18px 18px 16px;
+      line-height: 1.55;
+    }
+
+    .why-list-item strong {
+      display: block;
+      font-size: 0.98rem;
+      font-weight: 800;
+      margin-bottom: 4px;
+      color: var(--text);
+    }
+
+    .why-list-item span,
+    .why-list-item {
+      color: var(--text);
+      font-size: 0.98rem;
+    }
+
+    .timeline-box {
+      margin-top: 18px;
+      background: #f7edeb;
+      border-radius: 18px;
+      padding: 18px 18px 16px;
+      line-height: 1.55;
+      color: var(--text);
+    }
+
+    .timeline-box strong {
+      display: block;
+      font-weight: 800;
+      margin-bottom: 4px;
+      color: var(--text);
+    }
+
+    /* RED BAR */
+    .closing-note {
+      margin-top: 34px;
+      background: linear-gradient(135deg, #b30000 0%, #980000 45%, #8b0000 100%);
+      color: #fff;
+      border-radius: 30px;
+      padding: 28px 34px;
+      box-shadow: 0 14px 28px rgba(118, 0, 0, 0.14);
+    }
+
+    .closing-note p {
+      margin: 0;
+      font-size: 1.08rem;
+      line-height: 1.6;
+      font-weight: 700;
     }
 
     /* FOOTER */
-
     .site-footer {
-      margin-top: 60px;
-      background: #160f0f;
-      color: rgba(255,255,255,0.85);
-      padding: 40px 0;
+      margin-top: 90px;
+      background:
+        radial-gradient(circle at 90% 20%, rgba(255,255,255,0.05) 0 18%, transparent 19%),
+        linear-gradient(135deg, #1a0606 0%, #130505 100%);
+      color: #f6f1ef;
+      padding: 54px 0 58px;
     }
 
     .footer-grid {
       display: grid;
-      grid-template-columns: repeat(4,1fr);
-      gap: 25px;
+      grid-template-columns: 1.35fr 1fr 1fr 1fr;
+      gap: 28px;
+      align-items: start;
     }
 
     .footer-brand {
       display: flex;
-      gap: 10px;
+      gap: 18px;
       align-items: center;
     }
 
     .footer-brand img {
-      width: 55px;
+      width: 84px;
+      height: 84px;
+      object-fit: contain;
+      flex-shrink: 0;
     }
 
-    .site-footer h3,
+    .footer-brand h3 {
+      font-size: 1.28rem;
+      line-height: 1.15;
+      margin-bottom: 10px;
+      font-weight: 800;
+    }
+
+    .footer-brand p {
+      font-size: 0.98rem;
+      line-height: 1.4;
+      color: rgba(255,255,255,0.88);
+    }
+
     .site-footer h4 {
-      color: white;
-      margin: 0 0 8px;
+      font-size: 1.12rem;
+      margin-bottom: 18px;
+      font-weight: 800;
+      color: #fff;
+    }
+
+    .site-footer p {
+      font-size: 0.98rem;
+      line-height: 1.65;
+      color: rgba(255,255,255,0.88);
+      margin-bottom: 14px;
+    }
+
+    .site-footer strong {
+      color: #fff;
+      font-weight: 700;
     }
 
     .site-footer a {
-      color: rgba(255,255,255,0.8);
-      text-decoration: none;
+      color: rgba(255,255,255,0.92);
+      transition: color 0.2s ease, opacity 0.2s ease;
     }
 
     .site-footer a:hover {
-      color: white;
+      color: #ffffff;
+      opacity: 1;
+      text-decoration: underline;
     }
 
-    @media (max-width: 800px){
-      .grid, .footer-grid {
+    /* RESPONSIVE */
+    @media (max-width: 1200px) {
+      .why-nav {
+        padding: 18px 26px;
+      }
+
+      .nav-links {
+        gap: 24px;
+      }
+
+      .hero-card {
+        padding: 70px 48px;
+      }
+    }
+
+    @media (max-width: 980px) {
+      .why-grid,
+      .footer-grid {
         grid-template-columns: 1fr;
+      }
+
+      .why-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        border-radius: 30px;
+      }
+
+      .nav-links {
+        justify-content: flex-start;
+      }
+
+      .hero-card {
+        padding: 56px 30px;
+      }
+
+      .hero-content h1 {
+        font-size: clamp(2.4rem, 8vw, 4.2rem);
+      }
+    }
+
+    @media (max-width: 700px) {
+      .container {
+        width: min(var(--container), calc(100% - 28px));
+      }
+
+      .why-page {
+        padding-top: 14px;
+      }
+
+      .why-nav-wrap {
+        top: 10px;
+      }
+
+      .why-nav {
+        padding: 18px 20px;
+        gap: 18px;
+      }
+
+      .brand img {
+        width: 48px;
+        height: 48px;
+      }
+
+      .brand-text span:first-child {
+        font-size: 0.98rem;
+      }
+
+      .brand-text span:last-child {
+        font-size: 0.76rem;
+      }
+
+      .nav-links {
+        gap: 14px 18px;
+      }
+
+      .nav-links a {
+        font-size: 0.96rem;
+      }
+
+      .hero-card {
+        border-radius: 28px;
+        padding: 42px 22px;
+      }
+
+      .why-card {
+        padding: 26px 22px;
+        border-radius: 24px;
+      }
+
+      .stats-row {
+        grid-template-columns: 1fr;
+      }
+
+      .closing-note {
+        padding: 22px 20px;
+      }
+
+      .footer-brand {
+        align-items: flex-start;
+      }
+
+      .footer-brand img {
+        width: 68px;
+        height: 68px;
       }
     }
   </style>
 </head>
 
 <body>
+  <div class="why-page">
+    <div class="container why-nav-wrap">
+      <nav class="why-nav">
+        <a href="index.html" class="brand">
+          <img src="assets/logokimcanko.png" alt="Kimcanko logo" />
+          <div class="brand-text">
+            <span>KİMCANKO</span>
+            <span>SİLİFKE</span>
+          </div>
+        </a>
 
-<div class="why-page container">
-
-  <nav class="why-nav">
-    <a href="index.html" class="brand">
-      <img src="assets/logokimcanko.png"/>
-      <strong>KİMCANKO</strong>
-    </a>
-
-    <div class="nav-links">
-      <a href="index.html#dogs-grid">Browse Animals</a>
-      <a href="why-adopt.html" class="active">Why Adopt</a>
-      <a href="index.html#contact-cta">Contact</a>
-    </div>
-  </nav>
-
-  <section class="hero">
-    <h1>Trusted rescue and international adoption, built on experience, care, and transparency.</h1>
-    <p>
-      At KİMCANKO Silifke, we combine hands-on rescue work with responsible adoption practices.
-      Our goal is not only to find homes for animals, but to ensure each adoption is thoughtful,
-      safe, and well-supported.
-    </p>
-  </section>
-
-  <section class="grid">
-
-    <div class="card">
-      <h2>Experience & Local Impact</h2>
-      <p>
-        We are a registered NGO based in Silifke, Türkiye, with over six years of hands-on experience in animal rescue and rehabilitation.
-      </p>
-
-      <div class="stats">
-        <div class="stat"><strong>3,100+</strong>Sterilizations</div>
-        <div class="stat"><strong>2,600</strong>Cats</div>
-        <div class="stat"><strong>500</strong>Dogs</div>
-      </div>
-
-      <div class="list">
-        <div><strong>Extensive Medical Care</strong><br/>Life-saving surgeries and rehabilitation</div>
-        <div><strong>Established Local Presence</strong><br/>Active rescue work in Silifke</div>
-      </div>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="index.html#dogs-grid">Browse Animals</a>
+          <a href="index.html#adoption-process">Adoption Options</a>
+          <a href="why-adopt.html" class="active">Why Adopt</a>
+          <a href="index.html#contact-cta">Contact</a>
+        </div>
+      </nav>
     </div>
 
-    <div class="card">
-      <h2>Animal Care & Medical Standards</h2>
-      <p>
-        Every animal in our care receives consistent veterinary attention and is prepared according to international health requirements before adoption.
-      </p>
+    <section class="container">
+      <div class="hero-card">
+        <div class="hero-content">
+          <h1>Trusted rescue and international adoption, built on experience, care, and transparency.</h1>
+          <p>
+            At KİMCANKO Silifke, we combine hands-on rescue work with responsible adoption practices.
+            Our goal is not only to find homes for animals, but to ensure each adoption is thoughtful,
+            safe, and well-supported.
+          </p>
+        </div>
+      </div>
+    </section>
 
-      <div class="list">
-        <div><strong>Sterilized & Rabies Vaccinated</strong></div>
-        <div><strong>Routine Parasite Prevention</strong></div>
-        <div><strong>Ongoing Veterinary Supervision</strong></div>
+    <section class="container section-block">
+      <div class="why-grid">
+        <article class="why-card">
+          <h2>Experience &amp; Local Impact</h2>
+          <p>
+            We are a registered NGO based in Silifke, Türkiye, with over six years of hands-on
+            experience in animal rescue and rehabilitation.
+          </p>
+
+          <div class="stats-row">
+            <div class="stat-box">
+              <span class="stat-number">3,100+</span>
+              <span class="stat-label">Sterilizations</span>
+            </div>
+
+            <div class="stat-box">
+              <span class="stat-number">2,600</span>
+              <span class="stat-label">Cats</span>
+            </div>
+
+            <div class="stat-box">
+              <span class="stat-number">500</span>
+              <span class="stat-label">Dogs</span>
+            </div>
+          </div>
+
+          <div class="why-list">
+            <div class="why-list-item">
+              <strong>Extensive Medical Care</strong>
+              Life-saving surgeries and rehabilitation
+            </div>
+
+            <div class="why-list-item">
+              <strong>Established Local Presence</strong>
+              Active rescue work in Silifke
+            </div>
+          </div>
+        </article>
+
+        <article class="why-card">
+          <h2>Animal Care &amp; Medical Standards</h2>
+          <p>
+            Every animal in our care receives consistent veterinary attention and is prepared according
+            to international health requirements before adoption.
+          </p>
+
+          <div class="why-list">
+            <div class="why-list-item">
+              <strong>Sterilized &amp; Rabies Vaccinated</strong>
+            </div>
+
+            <div class="why-list-item">
+              <strong>Routine Parasite Prevention</strong>
+            </div>
+
+            <div class="why-list-item">
+              <strong>Ongoing Veterinary Supervision</strong>
+            </div>
+          </div>
+
+          <div class="timeline-box">
+            All medical care is carried out by trusted veterinary partners.
+          </div>
+        </article>
+
+        <article class="why-card">
+          <h2>Adoption Process &amp; International Support</h2>
+          <p>
+            We work in coordination with trusted partner organizations to support responsible
+            international adoptions, ensuring a structured and transparent process.
+          </p>
+
+          <div class="why-list">
+            <div class="why-list-item">
+              <strong>Partner-Based Adoption</strong>
+            </div>
+
+            <div class="why-list-item">
+              <strong>Preparation &amp; Compliance</strong>
+            </div>
+          </div>
+
+          <div class="timeline-box">
+            <strong>3-Month Timeline</strong>
+            Due to international titre regulations, a mandatory 3 month waiting period applies.
+            We care for and prepare your pet throughout this time.
+          </div>
+        </article>
       </div>
 
-      <div class="timeline">
-        All medical care is carried out by trusted veterinary partners.
+      <div class="closing-note">
+        <p>
+          We remain available throughout the process, from initial inquiry to your pet’s arrival.
+        </p>
       </div>
-    </div>
-
-    <div class="card">
-      <h2>Adoption Process & International Support</h2>
-      <p>
-        We work in coordination with trusted partner organizations to support responsible international adoptions.
-      </p>
-
-      <div class="list">
-        <div><strong>Partner-Based Adoption</strong></div>
-        <div><strong>Preparation & Compliance</strong></div>
-      </div>
-
-      <div class="timeline">
-        <strong>3-Month Timeline</strong><br/>
-        Mandatory waiting period for international regulations.
-      </div>
-    </div>
-
-    <div class="card">
-      <h2>Support Throughout the Journey</h2>
-      <p>
-        We remain available throughout the process, from initial inquiry to your pet’s arrival.
-      </p>
-
-      <div class="list">
-        <div><strong>Clear Communication</strong></div>
-        <div><strong>Thoughtful Matching</strong></div>
-        <div><strong>Continuous Support</strong></div>
-      </div>
-    </div>
-
-  </section>
-
-  <div class="closing">
-    We remain available throughout the process, from initial inquiry to your pet’s arrival.
+    </section>
   </div>
 
-</div>
+  <footer id="site-footer" class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logofooter.png" alt="Kimcanko logo" />
+        <div class="footer-content">
+          <h3>KİMCANKO SİLİFKE</h3>
+          <p>International Pet Adoption Platform</p>
+        </div>
+      </div>
 
-<footer class="site-footer">
-  <div class="container footer-grid">
-    <div class="footer-brand">
-      <img src="assets/logofooter.png"/>
       <div>
-        <h3>KİMCANKO SİLİFKE</h3>
-        <p>International Pet Adoption Platform</p>
+        <h4>Location</h4>
+        <p>Silifke / Türkiye</p>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+        <p>
+          <strong>Email</strong><br />
+          <a href="mailto:kimcanko@gmail.com">kimcanko@gmail.com</a>
+        </p>
+
+        <p>
+          <strong>Phone</strong><br />
+          <a href="tel:+905373833674">+90 537 383 36 74</a>
+        </p>
+      </div>
+
+      <div>
+        <h4>Social</h4>
+        <p>
+          <strong>Instagram</strong><br />
+          <a href="https://www.instagram.com/silifkekimcanko/" target="_blank" rel="noopener noreferrer">
+            @silifkekimcanko
+          </a>
+        </p>
+
+        <p>
+          <strong>Website</strong><br />
+          <a href="https://www.kimcanko.org/" target="_blank" rel="noopener noreferrer">
+            kimcanko.org
+          </a>
+        </p>
       </div>
     </div>
-
-    <div>
-      <h4>Location</h4>
-      <p>Silifke / Türkiye</p>
-    </div>
-
-    <div>
-      <h4>Contact</h4>
-      <p>Email<br/>kimcanko@gmail.com</p>
-      <p>Phone<br/>+90 537 383 36 74</p>
-    </div>
-
-    <div>
-      <h4>Social</h4>
-      <p>Instagram<br/>@silifkekimcanko</p>
-      <p>Website<br/>kimcanko.org</p>
-    </div>
-  </div>
-</footer>
-
+  </footer>
 </body>
 </html>
