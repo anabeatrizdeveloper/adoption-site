@@ -1435,4 +1435,469 @@ img[src*="can"] {
   .option-card-actions {
     flex-direction: column;
   }
+
+}
+
+
+/* ============================= */
+/* FINAL FIX: STICKY NAV + HORIZONTAL CARDS */
+/* ============================= */
+
+.hero-shell {
+  padding-top: 0;
+}
+
+.hero-card {
+  padding-top: 104px;
+}
+
+.hero-trust-line {
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 1.08rem;
+  margin: 0 0 18px;
+}
+
+/* Sticky header */
+.sticky-main-nav {
+  position: fixed;
+  top: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(var(--container), calc(100% - 40px));
+  z-index: 9999;
+  padding: 14px 28px;
+  margin-top: 0;
+  border-radius: 999px;
+  background: rgba(152, 0, 0, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 18px 38px rgba(0, 0, 0, 0.16);
+}
+
+.sticky-main-nav .brand img {
+  width: 54px;
+}
+
+.sticky-main-nav .brand-text span:first-child {
+  font-size: 1.45rem;
+}
+
+.sticky-main-nav .brand-text span:last-child {
+  font-size: 0.9rem;
+}
+
+.sticky-main-nav .nav-links {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.sticky-main-nav .nav-links a {
+  color: #fff;
+  font-weight: 700;
+}
+
+.nav-cta-fixed {
+  background: #fff;
+  color: var(--primary) !important;
+  padding: 12px 22px;
+  border-radius: 999px;
+  font-weight: 800 !important;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.16);
+}
+
+/* Hide any old empty CTA */
+.nav-links .nav-cta:empty {
+  display: none;
+}
+
+/* Horizontal card carousel */
+.horizontal-info-section {
+  padding: 96px 0;
+  background:
+    radial-gradient(circle at 8% 15%, rgba(152, 0, 0, 0.07), transparent 28%),
+    linear-gradient(180deg, #f4efed 0%, #fffaf9 100%);
+  overflow: hidden;
+}
+
+.horizontal-info-heading {
+  max-width: 780px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.horizontal-info-heading h2 {
+  color: var(--primary);
+  font-size: clamp(2.35rem, 5vw, 4rem);
+  line-height: 1;
+  letter-spacing: -0.04em;
+  margin-bottom: 14px;
+}
+
+.horizontal-info-heading p {
+  color: var(--text-soft);
+  font-size: 1.05rem;
+}
+
+.horizontal-carousel {
+  position: relative;
+}
+
+.horizontal-card-track {
+  display: flex;
+  flex-direction: row;
+  gap: 26px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding: 12px 10px 38px;
+  scrollbar-width: none;
+}
+
+.horizontal-card-track::-webkit-scrollbar {
+  display: none;
+}
+
+.horizontal-info-card {
+  flex: 0 0 560px;
+  min-width: 560px;
+  min-height: 460px;
+  scroll-snap-align: center;
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid rgba(152, 0, 0, 0.12);
+  border-radius: 34px;
+  padding: 36px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.horizontal-info-card h3 {
+  color: #4a0000;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.02;
+  letter-spacing: -0.04em;
+  margin-bottom: 18px;
+}
+
+.horizontal-info-card p {
+  color: var(--text-soft);
+  font-size: 1.05rem;
+}
+
+.info-tags,
+.timeline-tags {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.info-tags span,
+.timeline-tags span {
+  background: #f8efed;
+  color: var(--primary);
+  font-weight: 800;
+  border-radius: 18px;
+  padding: 14px;
+}
+
+.info-boxes {
+  display: grid;
+  gap: 14px;
+  margin-top: 26px;
+}
+
+.info-boxes div {
+  background: #f8efed;
+  border-radius: 22px;
+  padding: 18px;
+}
+
+.info-boxes strong {
+  display: block;
+  color: var(--primary);
+  margin-bottom: 6px;
+}
+
+.info-boxes p {
+  margin: 0;
+}
+
+.card-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 24px;
+  display: grid;
+  gap: 12px;
+}
+
+.card-list li {
+  background: #f8efed;
+  border-radius: 16px;
+  padding: 13px 16px;
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.featured-card {
+  border: 2px solid rgba(152, 0, 0, 0.24);
+  background: linear-gradient(135deg, #fff 0%, #fff0ed 100%);
+}
+
+.red-card {
+  background:
+    radial-gradient(circle at top right, rgba(255,255,255,0.14), transparent 35%),
+    linear-gradient(135deg, #b30000 0%, #980000 55%, #760000 100%);
+}
+
+.red-card h3,
+.red-card p,
+.red-card .retreat-eyebrow {
+  color: white;
+}
+
+.white-card-button {
+  display: inline-flex;
+  width: fit-content;
+  background: white;
+  color: var(--primary);
+  padding: 15px 26px;
+  border-radius: 999px;
+  font-weight: 800;
+  margin-top: 24px;
+}
+
+/* Arrows */
+.horizontal-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 56px;
+  height: 56px;
+  border: none;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #d33232 0%, #a10000 100%);
+  color: white;
+  font-size: 1.7rem;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 14px 28px rgba(152, 0, 0, 0.22);
+}
+
+.horizontal-arrow.left {
+  left: -18px;
+}
+
+.horizontal-arrow.right {
+  right: -18px;
+}
+
+.horizontal-arrow:hover {
+  transform: translateY(-50%) scale(1.04);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .sticky-main-nav {
+    border-radius: 28px;
+  }
+
+  .sticky-main-nav .nav-links a:not(.nav-cta-fixed) {
+    display: none;
+  }
+
+  .horizontal-arrow {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .hero-card {
+    padding-top: 86px;
+  }
+
+  .sticky-main-nav {
+    width: calc(100% - 24px);
+    top: 12px;
+    padding: 12px 16px;
+  }
+
+  .sticky-main-nav .brand img {
+    width: 44px;
+  }
+
+  .sticky-main-nav .brand-text span:first-child {
+    font-size: 1.05rem;
+  }
+
+  .sticky-main-nav .brand-text span:last-child {
+    font-size: 0.72rem;
+  }
+
+  .nav-cta-fixed {
+    padding: 10px 14px;
+    font-size: 0.85rem;
+  }
+
+  .horizontal-info-section {
+    padding: 70px 0;
+  }
+
+  .horizontal-info-card {
+    flex: 0 0 88vw;
+    min-width: 88vw;
+    min-height: auto;
+    padding: 26px;
+  }
+
+  .info-tags,
+  .timeline-tags {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* ============================= */
+/* COMPACT HORIZONTAL CARDS OVERRIDE */
+/* Paste-ready final tuning: smaller cards + cleaner spacing */
+/* ============================= */
+
+.horizontal-info-section {
+  padding: 76px 0 84px;
+}
+
+.horizontal-info-heading {
+  max-width: 720px;
+  margin: 0 auto 28px;
+}
+
+.horizontal-info-heading h2 {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  margin-bottom: 12px;
+}
+
+.horizontal-info-heading p {
+  font-size: 0.98rem;
+}
+
+.horizontal-card-track {
+  gap: 18px;
+  padding: 10px 8px 28px;
+}
+
+.horizontal-info-card {
+  flex: 0 0 420px;
+  min-width: 420px;
+  min-height: 350px;
+  border-radius: 26px;
+  padding: 24px;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.06);
+}
+
+.horizontal-info-card h3 {
+  font-size: 1.65rem;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  margin-bottom: 12px;
+}
+
+.horizontal-info-card p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.horizontal-info-card .retreat-eyebrow {
+  font-size: 0.78rem;
+  margin-bottom: 10px;
+}
+
+.info-tags,
+.timeline-tags {
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.info-tags span,
+.timeline-tags span {
+  padding: 10px;
+  border-radius: 12px;
+  font-size: 0.83rem;
+}
+
+.info-boxes {
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.info-boxes div {
+  border-radius: 16px;
+  padding: 13px;
+}
+
+.info-boxes strong {
+  font-size: 0.92rem;
+  margin-bottom: 4px;
+}
+
+.card-list {
+  gap: 9px;
+  margin-top: 16px;
+}
+
+.card-list li {
+  border-radius: 12px;
+  padding: 10px 12px;
+  font-size: 0.9rem;
+}
+
+.white-card-button,
+.cta-slide .contact-cta-button {
+  padding: 12px 18px;
+  font-size: 0.9rem;
+  margin-top: 18px;
+}
+
+.horizontal-arrow {
+  width: 46px;
+  height: 46px;
+  font-size: 1.25rem;
+}
+
+.horizontal-arrow.left {
+  left: -8px;
+}
+
+.horizontal-arrow.right {
+  right: -8px;
+}
+
+@media (max-width: 900px) {
+  .horizontal-info-card {
+    flex: 0 0 390px;
+    min-width: 390px;
+    min-height: 330px;
+  }
+}
+
+@media (max-width: 700px) {
+  .horizontal-info-section {
+    padding: 58px 0 66px;
+  }
+
+  .horizontal-info-card {
+    flex: 0 0 78vw;
+    min-width: 78vw;
+    min-height: auto;
+    padding: 22px;
+  }
+
+  .horizontal-info-card h3 {
+    font-size: 1.45rem;
+  }
 }

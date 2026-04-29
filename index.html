@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>KİMCANKO SİLİFKE | International Pet Adoption Platform</title>
+  <title>KİMCANKO SİLİFKE | International Rescue Partnership Platform</title>
 
   <link rel="icon" href="assets/logofooter.png" type="image/png" />
   <link rel="shortcut icon" href="assets/logofooter.png" type="image/png" />
@@ -31,7 +31,7 @@
         <span class="circle circle-6"></span>
       </div>
 
-      <nav class="top-nav container">
+      <nav class="top-nav container sticky-main-nav">
         <a href="index.html" class="brand">
           <img src="assets/logofooter.png" alt="Kimcanko logo" />
           <div class="brand-text">
@@ -41,33 +41,40 @@
         </a>
 
         <div class="nav-links">
-          <a href="#dogs-grid">Browse Animals</a>
-          <a href="#adoption-process">Adoption Options</a>
-          <a href="why-adopt.html">Why Adopt With KİMCANKO?</a>
-          <a href="#contact-cta">Contact Us</a>
+          <a href="#partnership-cards">Overview</a>
+           <a href="home-delivery.html">Home Delivery</a>
+          <a href="rescue-retreat.html">Rescue Retreat</a>
+          <a href="why-adopt.html">Why Adopt With KİMCANKO</a>
+          <a href="#rescues">Our Rescues</a>
+          <a href="#contact-cta" class="nav-cta-fixed">Start Inquiry</a>
         </div>
       </nav>
 
       <section class="hero container">
         <div class="hero-copy">
-          <p class="hero-eyebrow">International Pet Adoption Platform</p>
+          <p class="hero-eyebrow">International Partnership Platform</p>
 
           <h1>
-            Bridging the distance<br />
-            between resilient rescues and<br />
-            loving forever homes.
+            From Silifke to the EU:<br />
+            trusted rescue rehoming.
           </h1>
 
           <p class="hero-text">
-            Rescue a life.
-            Find your companion.
-            Give them home.
+            KİMCANKO prepares temperament-assessed rescues for European NGO partners,
+            managing medical preparation, export documentation, and responsible transport
+            coordination from Türkiye.
           </p>
 
+          <p class="hero-trust-line">3,100+ sterilizations completed since 2018</p>
+
           <div class="hero-highlights">
-            <span class="hero-pill">Detailed Profiles</span>
-            <span class="hero-pill">Global Logistics</span>
-            <span class="hero-pill">The Rescue Retreat</span>
+            <span class="hero-pill">Small-scale</span>
+            <span class="hero-pill">EU-compliant</span>
+            <span class="hero-pill">Transparent</span>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#contact-cta" class="hero-button">Start a Partnership Inquiry</a>
           </div>
         </div>
 
@@ -77,7 +84,6 @@
 
           <img src="assets/photos/browndogcover.png" alt="Brown dog" class="hero-dog-extra hero-dog-brown" />
           <img src="assets/photos/dogcover.png" alt="Dog" class="hero-dog hero-dog-main" />
-
           <img src="assets/photos/blackcatcover.png" alt="Black cat" class="hero-dog-extra hero-dog-black" />
           <img src="assets/photos/catcover.png" alt="Cat" class="hero-dog hero-dog-secondary" />
         </div>
@@ -86,7 +92,122 @@
   </header>
 
   <main>
-    <section class="dogs-home-section">
+    <section id="partnership-cards" class="horizontal-info-section">
+      <div class="container">
+        <div class="horizontal-info-heading">
+          <p class="section-kicker">Partnership Overview</p>
+          <h2>How our international rescue partnership works</h2>
+          <p>Use the arrows to explore each part of the process.</p>
+        </div>
+
+        <div class="horizontal-carousel">
+          <button class="horizontal-arrow left" type="button" onclick="scrollPartnershipCards(-1)">←</button>
+
+          <div class="horizontal-card-track" id="horizontal-card-track">
+            <article class="horizontal-info-card">
+              <p class="retreat-eyebrow">About KİMCANKO</p>
+              <h3>Trusted rescue work since 2018</h3>
+              <p>
+                KİMCANKO is a registered volunteer-run NGO in Türkiye focused on careful,
+                small-scale international rescue partnerships.
+              </p>
+
+              <div class="info-tags">
+                <span>Registered NGO</span>
+                <span>Volunteer-run</span>
+                <span>3,100+ sterilizations</span>
+                <span>EU-compliant</span>
+              </div>
+            </article>
+
+            <article class="horizontal-info-card">
+              <p class="retreat-eyebrow">Logistics</p>
+              <h3>Two transport options</h3>
+              <p>
+                We offer two pathways depending on the rescue, route, and partner needs.
+              </p>
+
+              <div class="info-boxes">
+                <div>
+                  <strong>Standard Transport</strong>
+                  <p>Flight volunteer or cargo with structured EU handover.</p>
+                </div>
+
+                <div>
+                  <strong>Rescue Retreat</strong>
+                  <p>In-person collection in Taşucu with up to 7 days stay.</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="horizontal-info-card">
+              <p class="retreat-eyebrow">Medical Protocol</p>
+              <h3>Prepared before travel</h3>
+
+              <ul class="card-list">
+                <li>Microchip and passport</li>
+                <li>Rabies vaccination</li>
+                <li>Rabies titre test</li>
+                <li>Parasite treatment</li>
+                <li>Travel documentation</li>
+                <li>90-day care and monitoring</li>
+              </ul>
+            </article>
+
+            <article class="horizontal-info-card">
+              <p class="retreat-eyebrow">Costs</p>
+              <h3>Direct-cost model</h3>
+              <p>
+                No adoption fees are charged. Costs are estimated per rescue in advance.
+              </p>
+
+              <div class="info-boxes">
+                <div>
+                  <strong>Required</strong>
+                  <p>Microchip, passport, rabies, titre test, health certificate, carrier, transport.</p>
+                </div>
+
+                <div>
+                  <strong>Optional</strong>
+                  <p>Core vaccines, airport transport, route-specific support.</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="horizontal-info-card featured-card">
+              <p class="retreat-eyebrow">Timeline</p>
+              <h3>90-day waiting period</h3>
+              <p>
+                After the rabies titre blood draw, travel can only happen after the mandatory
+                90-day waiting period is complete.
+              </p>
+
+              <div class="timeline-tags">
+                <span>1. Match & Titre</span>
+                <span>2. 90-Day Wait</span>
+                <span>3. Final Vet Prep</span>
+                <span>4. Handover</span>
+              </div>
+            </article>
+
+            <article class="horizontal-info-card red-card">
+              <p class="retreat-eyebrow">Partner With Us</p>
+              <h3>Start a partnership inquiry</h3>
+              <p>
+                We focus on quality-driven partnerships built on welfare, transparency,
+                and long-term responsibility.
+              </p>
+
+              <a href="#contact-cta" class="white-card-button">Start Inquiry</a>
+            </article>
+          </div>
+
+          <button class="horizontal-arrow right" type="button" onclick="scrollPartnershipCards(1)">→</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="rescues" class="dogs-home-section">
       <div class="dogs-bg-circles">
         <span class="bg-circle bg-circle-1"></span>
         <span class="bg-circle bg-circle-2"></span>
@@ -97,13 +218,11 @@
 
       <div class="container">
         <div class="dogs-home-heading">
-          <p class="section-kicker">Browse Animals</p>
+          <p class="section-kicker">Our Rescues</p>
           <h2>Meet Our Rescues</h2>
           <p>
-            Every animal at KİMCANKO Silifke has a story of resilience.
-            Explore the profiles of our residents currently seeking forever homes.
-            We provide detailed temperament notes and media to help you find a companion 
-            that truly fits your life.
+            Explore rescues currently prepared for international placement, with temperament notes,
+            medical details, and media.
           </p>
         </div>
 
@@ -123,64 +242,23 @@
       </div>
     </section>
 
-    <section id="adoption-process" class="retreat-section">
-      <div class="container">
-        <div class="retreat-heading">
-          <p class="section-kicker">Adoption Process</p>
-          <h2>Adoption Options</h2>
-          <p>
-            We offer two adoption paths depending on your situation:
-            safe international delivery, or traveling to meet your pet in person.
-          </p>
-        </div>
-
-        <div class="adoption-options-simple">
-          <article class="adoption-option-card">
-            <p class="retreat-eyebrow">Option A</p>
-            <h3>Standard / Home Delivery</h3>
-            <p>
-              We arrange safe transportation for your pet to your nearest major airport.
-            </p>
-
-            <div class="option-card-actions">
-              <a href="home-delivery.html" class="contact-cta-button contact-cta-button-secondary">Learn More</a>
-              <a href="#contact-cta" class="contact-cta-button">Inquire</a>
-            </div>
-          </article>
-
-          <article class="adoption-option-card">
-            <p class="retreat-eyebrow">Option B</p>
-            <h3>Pick-up / Rescue Retreat</h3>
-            <p>
-              Travel to Silifke, meet your pet in person, and return home together.
-            </p>
-
-            <div class="option-card-actions">
-              <a href="rescue-retreat.html" class="contact-cta-button contact-cta-button-secondary">Learn More</a>
-              <a href="#contact-cta" class="contact-cta-button">Inquire</a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
     <section id="contact-cta" class="contact-cta-section">
       <div class="container">
         <div class="contact-cta-card form-layout">
           <div class="contact-cta-copy">
-            <p class="section-kicker">Contact Us</p>
-            <h2>Interested in a pet?</h2>
+            <p class="section-kicker">Partner With Us</p>
+            <h2>Start a Partnership Inquiry</h2>
             <p>
-              Contact KİMCANKO directly for availability, adoption questions,
-              Rescue Retreat inquiries, and next steps.
+              We focus on carefully managed, small-scale collaboration built on shared standards
+              of welfare, transparency, and long-term responsibility.
             </p>
           </div>
 
           <div class="contact-form-card">
             <form id="contact-form" class="contact-form">
               <div class="form-field">
-                <label for="full-name">Full Name</label>
-                <input id="full-name" name="full-name" type="text" placeholder="Your name" required />
+                <label for="full-name">Organization / Contact Name</label>
+                <input id="full-name" name="full-name" type="text" placeholder="Organization or contact name" required />
               </div>
 
               <div class="form-field">
@@ -189,26 +267,38 @@
               </div>
 
               <div class="form-field">
+                <label for="location">Location</label>
+                <input id="location" name="location" type="text" placeholder="City / Country" />
+              </div>
+
+              <div class="form-field">
+                <label for="website-social">Website / Social Media</label>
+                <input id="website-social" name="website-social" type="text" placeholder="Website, Instagram, Facebook..." />
+              </div>
+
+              <div class="form-field">
                 <label for="inquiry-type">Inquiry Type</label>
                 <select id="inquiry-type" name="inquiry-type" required>
-                  <option value="General Inquiry">General Inquiry</option>
-                  <option value="Adoption">Adoption</option>
+                  <option value="Partnership Inquiry">Partnership Inquiry</option>
+                  <option value="Standard International Transport">Standard International Transport</option>
                   <option value="Rescue Retreat">Rescue Retreat</option>
+                  <option value="Rescue Profile Question">Rescue Profile Question</option>
+                  <option value="General Inquiry">General Inquiry</option>
                 </select>
               </div>
 
               <div class="form-field">
-                <label for="pet-name">Pet Name (optional)</label>
+                <label for="pet-name">Rescue Name (optional)</label>
                 <input id="pet-name" name="pet-name" type="text" placeholder="Example: Luna" />
               </div>
 
               <div class="form-field">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                <label for="message">How do you see a potential collaboration working?</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tell us about your organization, the types of rescues you rehome, and how you see a possible partnership..." required></textarea>
               </div>
 
               <button type="submit" class="contact-cta-button form-submit-button">
-                Send Inquiry
+                Start a Partnership Inquiry
               </button>
 
               <p id="form-success-message" class="form-success-message" aria-live="polite"></p>
@@ -225,7 +315,7 @@
         <img src="assets/logofooter.png" alt="Kimcanko logo" />
         <div>
           <h3>KİMCANKO SİLİFKE</h3>
-          <p>International Pet Adoption Platform</p>
+          <p>International Rescue Partnership Platform</p>
         </div>
       </div>
 
@@ -251,11 +341,7 @@
         <h4>Social</h4>
         <p>
           <strong>Instagram</strong><br />
-          <a
-            href="https://www.instagram.com/silifkekimcanko/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://www.instagram.com/silifkekimcanko/" target="_blank" rel="noopener noreferrer">
             @silifkekimcanko
           </a>
         </p>
@@ -309,11 +395,7 @@
 
           return `
             <article class="dog-card">
-              <img
-                src="${coverImage}"
-                alt="${pet.name}"
-                class="dog-card-image"
-              />
+              <img src="${coverImage}" alt="${pet.name}" class="dog-card-image" />
 
               <div class="dog-card-content">
                 <span class="dog-status ${pet.status}">${getStatusLabel(pet.status)}</span>
@@ -340,15 +422,24 @@
     filterButtons.forEach((button) => {
       button.addEventListener("click", () => {
         selectedType = button.dataset.type;
-
         filterButtons.forEach((btn) => btn.classList.remove("active"));
         button.classList.add("active");
-
         renderPets();
       });
     });
 
     renderPets();
+
+    function scrollPartnershipCards(direction) {
+      const track = document.getElementById("horizontal-card-track");
+
+      if (!track) return;
+
+      track.scrollBy({
+        left: direction * 620,
+        behavior: "smooth"
+      });
+    }
 
     const contactForm = document.getElementById("contact-form");
     const successMessage = document.getElementById("form-success-message");
@@ -359,16 +450,20 @@
 
         const fullName = document.getElementById("full-name").value.trim();
         const email = document.getElementById("email-address").value.trim();
+        const location = document.getElementById("location").value.trim();
+        const websiteSocial = document.getElementById("website-social").value.trim();
         const inquiryType = document.getElementById("inquiry-type").value;
         const petName = document.getElementById("pet-name").value.trim();
         const message = document.getElementById("message").value.trim();
 
         const subject = encodeURIComponent(inquiryType);
         const body = encodeURIComponent(
-`Name: ${fullName}
+`Organization / Contact Name: ${fullName}
 Email: ${email}
+Location: ${location || "Not specified"}
+Website / Social Media: ${websiteSocial || "Not specified"}
 Inquiry Type: ${inquiryType}
-Pet Name: ${petName || "Not specified"}
+Rescue Name: ${petName || "Not specified"}
 
 Message:
 ${message}`
@@ -379,7 +474,7 @@ ${message}`
           "_blank"
         );
 
-        successMessage.textContent = "We look forward to potentially welcoming you to Silifke!";
+        successMessage.textContent = "Thank you. We look forward to discussing a possible partnership with you.";
         contactForm.reset();
       });
     }

@@ -991,6 +991,155 @@ const dogs = [
     imagePrefix: "sapsik",
     imageCount: 6,
     videos: []
+  },
+
+   {
+    id: "leo",
+    type: "cat",
+    status: "available",
+    name: "Leo",
+    breed: "—",
+    gender: "Male",
+    birthDate: "April 2025",
+    weight: "approx. 3.5 kg",
+    height: "—",
+    color: "—",
+    microchip: "991001011302101",
+    rabiesVaccination: "April 13, 2026",
+    coreVaccinations: "—",
+    parasiteTreatment: "March 2026",
+    neuteredSpayed: "Yes",
+    healthCondition: "Excellent",
+    medicalIssues: "One eye removed; partial vision in remaining eye",
+    currentTreatments: "None",
+    strangers: "Excellent",
+    children: "Not tested",
+    menWomenDifferences: "None",
+    dogsCompatibility: "Not tested",
+    catsCompatibility: "Excellent",
+    energyLevel: "Medium",
+    personality: "Sweet, affectionate, easygoing",
+    indoorLiving: "Yes",
+    separationAnxiety: "No",
+    barkingLevel: "Low, with a distinctive adorable roar-like meow",
+    escapeTendency: "Possibly",
+    aggression: "None",
+    timeInCare: "2 months",
+    previousOwner: "—",
+    suitableHome:
+      "Apartment or house; supervised outdoor access possible only after full adjustment. Due to his limited vision, unsupervised outdoor access is not recommended.",
+    experienceRequired: "Not required",
+    specialRequirements: "None",
+    additionalNotes:
+      "Leo was found hiding under a motorbike cover in the rain. One eye had to be surgically removed, and several molar teeth were extracted due to poor condition. His remaining eye has slight opacity, but his vision is functional. He prefers wet food due to his dental history, though he can also eat high-quality kibble. He loves being brushed, has a soft, luxurious coat, and enjoys long, calm cuddle sessions.",
+    shortDescription:
+      "A tiny lion with a gentle heart—sweet, affectionate, resilient, and full of quiet charm.",
+    introTitle:
+      "Meet Leo – A Tiny Lion with a Gentle Heart",
+    introText:
+      "Leo is a sweet, calm, and affectionate cat with the spirit of a tiny lion. Despite losing one eye and going through dental treatment, he recovered beautifully and became a gentle, cuddly companion.",
+    story:
+      "Leo was found seeking shelter under a motorbike cover in the rain, in need of urgent care. One of his eyes had to be surgically removed, and he also underwent dental treatment. During recovery, he stayed gentle, patient, and easy to care for. Over time, he blossomed into a cuddly and affectionate cat.",
+    personalityHighlights: [
+      "Sweet, calm, and affectionate",
+      "Loves being brushed and pampered",
+      "Enjoys quiet cuddle time and gentle companionship",
+      "Has a soft, luxurious coat and a uniquely adorable meow",
+      "A tiny lion at heart with a big personality"
+    ],
+    idealHomeHighlights: [
+      "A calm and caring home environment",
+      "Suitable for apartments or houses",
+      "Indoor living preferred",
+      "Only supervised outdoor access after full adjustment",
+      "A family that understands his visual limitations and provides a safe space"
+    ],
+    healthHighlights: [
+      "Excellent overall health",
+      "Fully recovered from eye surgery and dental procedures",
+      "Partial vision in one eye; adapts well",
+      "Neutered and parasite-treated"
+    ],
+    whyAdopt:
+      "Leo may be small, but he carries the spirit of a lion. His journey shows resilience, and his personality is full of quiet affection and trust. He is a gentle, loving companion who will reward patience and care with deep connection and warmth.",
+    imageFolder: "assets/cats/leo-cat",
+    imagePrefix: "leo",
+    imageCount: 6,
+    videos: []
+  },
+
+  {
+    id: "romeo",
+    type: "cat",
+    status: "available",
+    name: "Romeo",
+    breed: "—",
+    gender: "Male",
+    birthDate: "April 2025",
+    weight: "approx. 4.5 kg",
+    height: "—",
+    color: "—",
+    microchip: "991001011288662",
+    rabiesVaccination: "April 13, 2026",
+    coreVaccinations: "—",
+    parasiteTreatment: "March 2026",
+    neuteredSpayed: "Yes",
+    healthCondition: "Excellent",
+    medicalIssues: "None",
+    currentTreatments: "None",
+    strangers: "Excellent",
+    children: "Not tested",
+    menWomenDifferences: "None",
+    dogsCompatibility: "Not tested",
+    catsCompatibility: "Good",
+    energyLevel: "Medium",
+    personality: "Very affectionate and cuddly",
+    indoorLiving: "Yes",
+    separationAnxiety: "No",
+    barkingLevel: "Low, can be gently vocal for attention",
+    escapeTendency: "Possibly",
+    aggression: "None",
+    timeInCare: "2 months",
+    previousOwner: "—",
+    suitableHome:
+      "House with a secure garden. Outdoor access should only be provided with a GPS collar and after full adjustment to the home and new environment.",
+    experienceRequired: "Not required",
+    specialRequirements: "None",
+    additionalNotes:
+      "Romeo was found roaming in our garden and immediately stood out with his sweet, vocal, and affectionate nature. He had a significant upper respiratory infection and was taken in for treatment. He recovered very well and was extremely easy to care for. During his time indoors, he constantly sought human companionship and clearly enjoyed being close to people.",
+    shortDescription:
+      "A deeply affectionate and cuddly cat who loves closeness, attention, and gentle companionship.",
+    introTitle:
+      "Meet Romeo – A Loving Companion Who Just Wants to Be Close",
+    introText:
+      "Romeo is a very affectionate, trusting, and people-oriented cat who thrives on closeness. He loves cuddles, attention, and gentle companionship.",
+    story:
+      "Romeo appeared in our garden seeking attention and connection. When we realized he was unwell with a respiratory infection, we brought him in for treatment. He recovered quickly and, throughout his time indoors, showed just how much he enjoys being around people.",
+    personalityHighlights: [
+      "Very affectionate and deeply people-oriented",
+      "Loves being close, cuddled, and held",
+      "Enjoys long tummy time sessions",
+      "Gives gentle kisses and returns affection sweetly",
+      "Gentle, easygoing, and trusting"
+    ],
+    idealHomeHighlights: [
+      "A home where he can spend plenty of time with his people",
+      "A house with a secure garden is ideal",
+      "Outdoor access only after full adjustment and with safety precautions",
+      "A family or individual who enjoys a close, affectionate companion"
+    ],
+    healthHighlights: [
+      "Excellent overall health",
+      "Fully recovered from URI",
+      "Neutered and parasite-treated",
+      "No known medical issues"
+    ],
+    whyAdopt:
+      "Romeo is a cat made for loving — and that is exactly how he got his name. He thrives on human connection, soaking up affection and giving it right back in the sweetest ways, even with kisses. If you are looking for a deeply bonded, affectionate companion, Romeo is a rare and special match.",
+    imageFolder: "assets/cats/romeo-cat",
+    imagePrefix: "romeo",
+    imageCount: 8,
+    videos: []
   }
   
 ];
