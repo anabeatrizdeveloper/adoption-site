@@ -1877,6 +1877,132 @@ img[src*="can"] {
   right: -8px;
 }
 
+/* ============================= */
+/* LOGISTICS BLOCK */
+/* ============================= */
+
+.transport-standalone-section {
+  padding: 0 0 84px;
+  background: linear-gradient(180deg, #fffaf9 0%, #f4efed 100%);
+}
+
+.transport-standalone-card {
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  min-height: unset;
+}
+
+.transport-intro {
+  margin-bottom: 28px;
+}
+
+/* ============================= */
+/* ACCORDION */
+/* ============================= */
+
+.transport-accordion {
+  border: 1px solid rgba(152, 0, 0, 0.08);
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 18px;
+  background: #fcf7f6;
+}
+
+.accordion-trigger {
+  width: 100%;
+  border: none;
+  background: transparent;
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  color: #4a0000;
+  font-size: 1.05rem;
+  font-weight: 800;
+}
+
+.accordion-icon {
+  font-size: 1.4rem;
+  line-height: 1;
+  transition: transform 0.25s ease;
+}
+
+.transport-accordion.active .accordion-icon {
+  transform: rotate(45deg);
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+}
+
+.transport-accordion.active .accordion-content {
+  max-height: 400px;
+}
+
+.accordion-inner {
+  padding: 0 24px 24px;
+}
+
+.accordion-inner p {
+  color: var(--text-soft);
+  margin-bottom: 14px;
+}
+
+.accordion-inner ul {
+  padding-left: 18px;
+  color: var(--text-soft);
+  display: grid;
+  gap: 10px;
+}
+
+/* ============================= */
+/* CONTACT LAYOUT */
+/* ============================= */
+
+.contact-title-block {
+  width: 100%;
+  margin-bottom: 42px;
+}
+
+.contact-bottom-layout {
+  display: grid;
+  grid-template-columns: 0.72fr 1.28fr;
+  gap: 55px;
+  align-items: start;
+}
+
+.side-text-block {
+  padding-top: 12px;
+}
+
+.side-text-block p {
+  font-size: 1.08rem;
+  line-height: 1.95;
+  color: #5a5a5a;
+  margin-bottom: 22px;
+}
+
+.side-form-block {
+  width: 100%;
+}
+
+.side-form-block .contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+@media (max-width: 900px) {
+  .contact-bottom-layout {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+}
+
 @media (max-width: 900px) {
   .horizontal-info-card {
     flex: 0 0 390px;
@@ -1900,4 +2026,7 @@ img[src*="can"] {
   .horizontal-info-card h3 {
     font-size: 1.45rem;
   }
+
+
+
 }

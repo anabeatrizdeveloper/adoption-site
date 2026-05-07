@@ -41,12 +41,10 @@
         </a>
 
         <div class="nav-links">
-          <a href="#partnership-cards">Overview</a>
-           <a href="home-delivery.html">Home Delivery</a>
-          <a href="rescue-retreat.html">Rescue Retreat</a>
-          <a href="why-adopt.html">Why Adopt With KİMCANKO</a>
-          <a href="#rescues">Our Rescues</a>
-          <a href="#contact-cta" class="nav-cta-fixed">Start Inquiry</a>
+        <a href="#partnership-cards">Why Adopt With KİMCANKO</a>
+        <a href="#transport-logistics">Logistics</a>
+        <a href="#rescues">Our Rescues</a>
+        <a href="#contact-cta" class="nav-cta-fixed">Start Inquiry</a>
         </div>
       </nav>
 
@@ -121,26 +119,6 @@
             </article>
 
             <article class="horizontal-info-card">
-              <p class="retreat-eyebrow">Logistics</p>
-              <h3>Two transport options</h3>
-              <p>
-                We offer two pathways depending on the rescue, route, and partner needs.
-              </p>
-
-              <div class="info-boxes">
-                <div>
-                  <strong>Standard Transport</strong>
-                  <p>Flight volunteer or cargo with structured EU handover.</p>
-                </div>
-
-                <div>
-                  <strong>Rescue Retreat</strong>
-                  <p>In-person collection in Taşucu with up to 7 days stay.</p>
-                </div>
-              </div>
-            </article>
-
-            <article class="horizontal-info-card">
               <p class="retreat-eyebrow">Medical Protocol</p>
               <h3>Prepared before travel</h3>
 
@@ -207,6 +185,77 @@
       </div>
     </section>
 
+   <section id="transport-logistics" class="transport-standalone-section">
+  <div class="container">
+
+    <article class="horizontal-info-card transport-standalone-card">
+      <p class="retreat-eyebrow">Logistics</p>
+
+      <h3>Transport Options</h3>
+
+      <p class="transport-intro">
+        We offer two international transport pathways depending on your location,
+        travel flexibility, and preferred adoption experience.
+      </p>
+
+      <!-- ACCORDION 1 -->
+      <div class="transport-accordion">
+
+        <button class="accordion-trigger" type="button">
+          <span>Standard Transport</span>
+          <span class="accordion-icon">+</span>
+        </button>
+
+        <div class="accordion-content">
+          <div class="accordion-inner">
+
+            <p>
+              Structured international delivery coordinated through flight volunteers
+              or professional pet transport services.
+            </p>
+
+            <ul>
+              <li>Airport handover coordination</li>
+              <li>Travel crate + export preparation</li>
+              <li>Ideal for adopters unable to travel</li>
+            </ul>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ACCORDION 2 -->
+      <div class="transport-accordion">
+
+        <button class="accordion-trigger" type="button">
+          <span>Rescue Retreat</span>
+          <span class="accordion-icon">+</span>
+        </button>
+
+        <div class="accordion-content">
+          <div class="accordion-inner">
+
+            <p>
+              Travel to Silifke to meet your rescue in person and return home together.
+            </p>
+
+            <ul>
+              <li>Up to 7 days accommodation support</li>
+              <li>Airport pickup guidance</li>
+              <li>More personal adoption experience</li>
+            </ul>
+
+          </div>
+        </div>
+
+      </div>
+
+    </article>
+
+  </div>
+</section>
+
     <section id="rescues" class="dogs-home-section">
       <div class="dogs-bg-circles">
         <span class="bg-circle bg-circle-1"></span>
@@ -237,76 +286,117 @@
         <div id="dogs-grid" class="dogs-grid"></div>
 
         <div class="all-dogs-wrap">
-          <a href="#dogs-grid" class="all-dogs-button">Browse All Pets</a>
+          <a href="#dogs-grid" class="all-dogs-button">Browse All Rescues</a>
         </div>
       </div>
     </section>
 
     <section id="contact-cta" class="contact-cta-section">
-      <div class="container">
-        <div class="contact-cta-card form-layout">
-          <div class="contact-cta-copy">
-            <p class="section-kicker">Partner With Us</p>
-            <h2>Start a Partnership Inquiry</h2>
-            <p>
-              We focus on carefully managed, small-scale collaboration built on shared standards
-              of welfare, transparency, and long-term responsibility.
-            </p>
-          </div>
+  <div class="container">
+    <div class="contact-cta-card contact-two-blocks-layout">
 
-          <div class="contact-form-card">
-            <form id="contact-form" class="contact-form">
-              <div class="form-field">
-                <label for="full-name">Organization / Contact Name</label>
-                <input id="full-name" name="full-name" type="text" placeholder="Organization or contact name" required />
-              </div>
-
-              <div class="form-field">
-                <label for="email-address">Email Address</label>
-                <input id="email-address" name="email-address" type="email" placeholder="you@example.com" required />
-              </div>
-
-              <div class="form-field">
-                <label for="location">Location</label>
-                <input id="location" name="location" type="text" placeholder="City / Country" />
-              </div>
-
-              <div class="form-field">
-                <label for="website-social">Website / Social Media</label>
-                <input id="website-social" name="website-social" type="text" placeholder="Website, Instagram, Facebook..." />
-              </div>
-
-              <div class="form-field">
-                <label for="inquiry-type">Inquiry Type</label>
-                <select id="inquiry-type" name="inquiry-type" required>
-                  <option value="Partnership Inquiry">Partnership Inquiry</option>
-                  <option value="Standard International Transport">Standard International Transport</option>
-                  <option value="Rescue Retreat">Rescue Retreat</option>
-                  <option value="Rescue Profile Question">Rescue Profile Question</option>
-                  <option value="General Inquiry">General Inquiry</option>
-                </select>
-              </div>
-
-              <div class="form-field">
-                <label for="pet-name">Rescue Name (optional)</label>
-                <input id="pet-name" name="pet-name" type="text" placeholder="Example: Luna" />
-              </div>
-
-              <div class="form-field">
-                <label for="message">How do you see a potential collaboration working?</label>
-                <textarea id="message" name="message" rows="5" placeholder="Tell us about your organization, the types of rescues you rehome, and how you see a possible partnership..." required></textarea>
-              </div>
-
-              <button type="submit" class="contact-cta-button form-submit-button">
-                Start a Partnership Inquiry
-              </button>
-
-              <p id="form-success-message" class="form-success-message" aria-live="polite"></p>
-            </form>
-          </div>
-        </div>
+      <!-- TITLE -->
+      <div class="contact-title-block">
+        <p class="section-kicker">Partner With Us</p>
+        <h2>Start a Partnership Inquiry</h2>
       </div>
-    </section>
+
+      <!-- TEXT + FORM -->
+      <div class="contact-bottom-layout">
+
+        <!-- LEFT TEXT -->
+        <div class="contact-cta-copy side-text-block">
+          <p>
+            We focus on carefully managed, small-scale collaboration built on shared standards
+            of welfare, transparency, and long-term responsibility.
+          </p>
+
+          <p>
+            Our goal is to create ethical, transparent, and sustainable international rescue
+            partnerships focused on animal welfare and responsible placement.
+          </p>
+        </div>
+
+        <!-- RIGHT FORM -->
+        <div class="contact-form-card side-form-block">
+          <form id="contact-form" class="contact-form">
+
+            <div class="form-field">
+              <label for="full-name">Organization / Contact Name</label>
+              <input
+                id="full-name"
+                name="full-name"
+                type="text"
+                placeholder="Organization or contact name"
+                required
+              />
+            </div>
+
+            <div class="form-field">
+              <label for="email-address">Email Address</label>
+              <input
+                id="email-address"
+                name="email-address"
+                type="email"
+                placeholder="you@example.com"
+                required
+              />
+            </div>
+
+            <div class="form-field">
+              <label for="location">Location</label>
+              <input
+                id="location"
+                name="location"
+                type="text"
+                placeholder="City / Country"
+              />
+            </div>
+
+            <div class="form-field">
+              <label for="website-social">Website / Social Media</label>
+              <input
+                id="website-social"
+                name="website-social"
+                type="text"
+                placeholder="Website, Instagram, Facebook..."
+              />
+            </div>
+
+            <div class="form-field">
+              <label for="message">
+                How do you see a potential collaboration working?
+              </label>
+
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Tell us about your organization, the types of rescues you rehome, and how you see a possible partnership..."
+                required
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              class="contact-cta-button form-submit-button"
+            >
+              Start a Partnership Inquiry
+            </button>
+
+            <p
+              id="form-success-message"
+              class="form-success-message"
+              aria-live="polite"
+            ></p>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
   </main>
 
   <footer id="site-footer" class="site-footer">
@@ -356,6 +446,8 @@
     </div>
   </footer>
 
+  
+
   <script src="js/data.js"></script>
 
   <script>
@@ -370,6 +462,7 @@
         reserved: "Reserved",
         adopted: "Adopted"
       };
+
       return labels[status] || "Available";
     }
 
@@ -452,18 +545,15 @@
         const email = document.getElementById("email-address").value.trim();
         const location = document.getElementById("location").value.trim();
         const websiteSocial = document.getElementById("website-social").value.trim();
-        const inquiryType = document.getElementById("inquiry-type").value;
-        const petName = document.getElementById("pet-name").value.trim();
         const message = document.getElementById("message").value.trim();
 
-        const subject = encodeURIComponent(inquiryType);
+        const subject = encodeURIComponent("Partnership Inquiry");
+
         const body = encodeURIComponent(
 `Organization / Contact Name: ${fullName}
 Email: ${email}
 Location: ${location || "Not specified"}
 Website / Social Media: ${websiteSocial || "Not specified"}
-Inquiry Type: ${inquiryType}
-Rescue Name: ${petName || "Not specified"}
 
 Message:
 ${message}`
@@ -478,6 +568,21 @@ ${message}`
         contactForm.reset();
       });
     }
+
+    /* ============================= */
+/* ACCORDION */
+/* ============================= */
+
+const accordions = document.querySelectorAll(".transport-accordion");
+
+accordions.forEach((accordion) => {
+  const trigger = accordion.querySelector(".accordion-trigger");
+
+  trigger.addEventListener("click", () => {
+    accordion.classList.toggle("active");
+  });
+});
+
   </script>
 </body>
 </html>
