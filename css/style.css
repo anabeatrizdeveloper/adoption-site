@@ -567,6 +567,10 @@ img[src*="can"] {
   object-position: 50% 35%;
 }
 
+img[src*="leo"] {
+  object-position: center top;
+}
+
 .dog-card-content {
   padding: 18px 18px 16px;
   display: flex;
