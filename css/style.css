@@ -2062,10 +2062,54 @@ img[src*="leo"] {
 /* ============================= */
 /* LOGISTICS BLOCK */
 /* ============================= */
+.transport-standalone-section{
+  position: relative;
 
-.transport-standalone-section {
-  padding: 0 0 84px;
-  background: linear-gradient(180deg, #fffaf9 0%, #f4efed 100%);
+  padding: 90px 0;
+
+  overflow: hidden;
+
+  background:
+   linear-gradient(
+  rgba(98, 0, 0, 0.72),
+  rgba(72, 0, 0, 0.78)
+),
+
+    url("../assets/logisticsbg.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* cinematic blur overlay */
+
+.transport-standalone-section::before{
+  content: "";
+
+  mix-blend-mode: screen;
+
+  position: absolute;
+  inset: 0;
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(255,255,255,0.08),
+      transparent 30%
+    );
+
+  pointer-events: none;
+}
+
+/* keep content above overlay */
+
+.transport-standalone-section .container{
+  position: relative;
+  z-index: 2;
 }
 
 .transport-standalone-card {
@@ -2073,6 +2117,27 @@ img[src*="leo"] {
   max-width: 100%;
   min-width: 100%;
   min-height: unset;
+}
+
+.transport-standalone-card{
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255,255,255,0.92) 0%,
+      rgba(255,250,250,0.88) 100%
+    );
+
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  border: 1px solid rgba(255,255,255,0.18);
+
+  box-shadow:
+    0 24px 60px rgba(0,0,0,0.18);
+
+  border-radius: 34px;
+
+  overflow: hidden;
 }
 
 .transport-intro {
