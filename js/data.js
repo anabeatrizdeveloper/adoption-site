@@ -722,7 +722,7 @@ const dogs = [
     height: "—",
     color: "—",
     microchip: "991001005524564",
-    rabiesVaccination: "Scheduled for April 2026",
+    rabiesVaccination: "—",
     coreVaccinations: "—",
     parasiteTreatment: "January 2026",
     neuteredSpayed: "Yes",
@@ -793,7 +793,7 @@ const dogs = [
     height: "—",
     color: "—",
     microchip: "900233002936388",
-    rabiesVaccination: "Scheduled for April 2026",
+    rabiesVaccination: "—",
     coreVaccinations: "—",
     parasiteTreatment: "January 2026",
     neuteredSpayed: "Yes",
@@ -864,7 +864,7 @@ const dogs = [
     height: "—",
     color: "—",
     microchip: "991001005526915",
-    rabiesVaccination: "Scheduled for April 2026",
+    rabiesVaccination: "—",
     coreVaccinations: "—",
     parasiteTreatment: "January 2026",
     neuteredSpayed: "Yes",
@@ -922,76 +922,77 @@ const dogs = [
     videos: []
   },
 
-  {
-    id: "sapsik",
-    type: "cat",
-    status: "available",
-    name: "Şapşik",
-    breed: "—",
-    gender: "Male",
-    birthDate: "Approx. 2024",
-    weight: "approx. 6 kg",
-    height: "—",
-    color: "—",
-    microchip: "990000012301189",
-    rabiesVaccination: "Scheduled for April 2026",
-    coreVaccinations: "Completed (approx. 1.5 years ago)",
-    parasiteTreatment: "January 2026",
-    neuteredSpayed: "Yes",
-    healthCondition: "Excellent",
-    medicalIssues: "None",
-    currentTreatments: "None",
-    strangers: "Very shy, not socialized",
-    children: "Not suitable",
-    menWomenDifferences: "None observed",
-    dogsCompatibility: "Unknown",
-    catsCompatibility: "Excellent",
-    energyLevel: "High",
-    personality: "Shy, independent, minimally socialized",
-    indoorLiving: "Yes",
-    separationAnxiety: "No",
-    barkingLevel: "Very low",
-    escapeTendency: "Yes",
-    aggression: "May react defensively if forced into interaction",
-    timeInCare: "1.5 years",
-    previousOwner: "—",
-    suitableHome: "Indoor home (apartment or house)",
-    experienceRequired: "Experienced adopter required",
-    specialRequirements: "Needs a patient, quiet home and time to adjust",
-    additionalNotes:
-      "Şapşik was rescued from inside a car engine as a kitten. He has had limited human socialization and remains very shy.",
-    shortDescription:
-      "A shy, sensitive soul looking for a calm and patient home.",
-    introTitle:
-      "Meet Şapşik – A Shy Soul Looking for a Patient Home",
-    introText:
-      "Şapşik is a very shy and observant cat who needs time, space, and patience to feel safe.",
-    story:
-      "Şapşik was rescued as a tiny kitten from inside a car engine. Since then, he has been safe in care but has had limited exposure to close human interaction.",
-    personalityHighlights: [
-      "Very shy and independent",
-      "Gets along very well with other cats",
-      "Prefers minimal handling",
-      "Quiet and observant"
-    ],
-    idealHomeHighlights: [
-      "Calm, quiet household",
-      "Experienced adopter",
-      "No children",
-      "A home that can give him time and space to adjust"
-    ],
-    healthHighlights: [
-      "Excellent overall health",
-      "Neutered and parasite-treated",
-      "Vaccinations up to date / scheduled"
-    ],
-    whyAdopt:
-      "Şapşik may not be an immediate lap cat, but for the right person, he offers the chance to build trust with a sensitive and gentle soul.",
-    imageFolder: "assets/cats/sapsik-cat",
-    imagePrefix: "sapsik",
-    imageCount: 6,
-    videos: []
-  },
+
+  //{
+    //id: "sapsik",
+    //type: "cat",
+    //status: "available",
+    //name: "Şapşik",
+    //breed: "—",
+    //gender: "Male",
+    //birthDate: "Approx. 2024",
+    //weight: "approx. 6 kg",
+    //height: "—",
+    //color: "—",
+    //microchip: "990000012301189",
+    //rabiesVaccination: "Scheduled for April 2026",
+    //coreVaccinations: "Completed (approx. 1.5 years ago)",
+    //parasiteTreatment: "January 2026",
+    //neuteredSpayed: "Yes",
+    //healthCondition: "Excellent",
+    //medicalIssues: "None",
+    //currentTreatments: "None",
+    //strangers: "Very shy, not socialized",
+    //children: "Not suitable",
+   // menWomenDifferences: "None observed",
+   // dogsCompatibility: "Unknown",
+    //catsCompatibility: "Excellent",
+   // energyLevel: "High",
+   // personality: "Shy, independent, minimally socialized",
+   // indoorLiving: "Yes",
+   // separationAnxiety: "No",
+   // barkingLevel: "Very low",
+   // escapeTendency: "Yes",
+   // aggression: "May react defensively if forced into interaction",
+   // timeInCare: "1.5 years",
+    //previousOwner: "—",
+    //suitableHome: "Indoor home (apartment or house)",
+    //experienceRequired: "Experienced adopter required",
+    //specialRequirements: "Needs a patient, quiet home and time to adjust",
+    //additionalNotes:
+    //  "Şapşik was rescued from inside a car engine as a kitten. He has had limited human socialization and remains very shy.",
+    //shortDescription:
+     // "A shy, sensitive soul looking for a calm and patient home.",
+    //introTitle:
+    //  "Meet Şapşik – A Shy Soul Looking for a Patient Home",
+    //introText:
+     // "Şapşik is a very shy and observant cat who needs time, space, and patience to feel safe.",
+    //story:
+    //  "Şapşik was rescued as a tiny kitten from inside a car engine. Since then, he has been safe in care but has had limited exposure to close human interaction.",
+    //personalityHighlights: [
+     // "Very shy and independent",
+     // "Gets along very well with other cats",
+     // "Prefers minimal handling",
+     // "Quiet and observant"
+    //],
+    //idealHomeHighlights: [
+      //"Calm, quiet household",
+     // "Experienced adopter",
+   //   "No children",
+   //   "A home that can give him time and space to adjust"
+   // ],
+   // healthHighlights: [
+    //  "Excellent overall health",
+    //  "Neutered and parasite-treated",
+   //   "Vaccinations up to date / scheduled"
+   // ],
+   // whyAdopt:
+    //  "Şapşik may not be an immediate lap cat, but for the right person, he offers the chance to build trust with a sensitive and gentle soul.",
+    //imageFolder: "assets/cats/sapsik-cat",
+    //imagePrefix: "sapsik",
+    //imageCount: 6,
+   // videos: []
+  //},
 
    {
     id: "leo",
