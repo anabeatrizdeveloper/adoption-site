@@ -429,7 +429,11 @@
         <!-- RIGHT SIDE -->
         <div class="contact-form-card side-form-block">
 
-          <form id="contact-form" class="contact-form">
+          <form
+            id="contact-form"
+            class="contact-form"
+            action="https://formspree.io/f/xykaazoq"
+            method="POST">
 
             <div class="form-field">
               <label for="full-name">
@@ -507,7 +511,7 @@
             </button>
 
             <p class="form-note">
-              This form opens your email application directly.
+              Your inquiry will be sent directly to our team.
             </p>
 
             <p
@@ -826,52 +830,27 @@
     }
 
     const contactForm = document.getElementById("contact-form");
-    const successMessage = document.getElementById("form-success-message");
+const successMessage = document.getElementById("form-success-message");
 
-    if (contactForm) {
-      contactForm.addEventListener("submit", (event) => {
-        event.preventDefault();
+contactForm.addEventListener("submit", async (event) => {
+  event.preventDefault();
 
-        const fullName = document.getElementById("full-name").value.trim();
-        const email = document.getElementById("email-address").value.trim();
-        const location = document.getElementById("location").value.trim();
-        const websiteSocial = document.getElementById("website-social").value.trim();
-        const message = document.getElementById("message").value.trim();
-
-        const subject = encodeURIComponent("Partnership Inquiry");
-
-        const body = encodeURIComponent(
-`Organization / Contact Name: ${fullName}
-Email: ${email}
-Location: ${location || "Not specified"}
-Website / Social Media: ${websiteSocial || "Not specified"}
-
-Message:
-${message}`
-        );
-
-        window.open(
-          `https://mail.google.com/mail/?view=cm&fs=1&to=kimcanko@gmail.com&su=${subject}&body=${body}`,
-          "_blank"
-        );
-
-        successMessage.textContent = "Thank you. We look forward to discussing a possible partnership with you.";
-        contactForm.reset();
-      });
+  const response = await fetch(contactForm.action, {
+    method: "POST",
+    body: new FormData(contactForm),
+    headers: {
+      Accept: "application/json"
     }
-
-    /* ============================= */
-/* ACCORDION */
-/* ============================= */
-
-const accordions = document.querySelectorAll(".transport-accordion");
-
-accordions.forEach((accordion) => {
-  const trigger = accordion.querySelector(".accordion-trigger");
-
-  trigger.addEventListener("click", () => {
-    accordion.classList.toggle("active");
   });
+
+  if (response.ok) {
+    successMessage.textContent =
+      "Thank you. We look forward to discussing a possible partnership with you.";
+    contactForm.reset();
+  } else {
+    successMessage.textContent =
+      "Something went wrong. Please try again.";
+  }
 });
 
   </script>
