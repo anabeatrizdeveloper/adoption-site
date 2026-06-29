@@ -6,7 +6,7 @@
 
 A modern and responsive web platform designed to support international pet adoption for a Turkey-based animal rescue organization.
 
-👉 Live: https://anabeatrizdeveloper.github.io/adoption-site/
+👉 Live: [https://anabeatrizdeveloper.github.io/adoption-site/](https://partners.kimcanko.org/)
 
 ---
 
