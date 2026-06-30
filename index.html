@@ -829,30 +829,6 @@
       });
     }
 
-    const contactForm = document.getElementById("contact-form");
-const successMessage = document.getElementById("form-success-message");
-
-contactForm.addEventListener("submit", async (event) => {
-  event.preventDefault();
-
-  const response = await fetch(contactForm.action, {
-    method: "POST",
-    body: new FormData(contactForm),
-    headers: {
-      Accept: "application/json"
-    }
-  });
-
-  if (response.ok) {
-    successMessage.textContent =
-      "Thank you. We look forward to discussing a possible partnership with you.";
-    contactForm.reset();
-  } else {
-    successMessage.textContent =
-      "Something went wrong. Please try again.";
-  }
-});
-
   </script>
 </body>
 </html>
